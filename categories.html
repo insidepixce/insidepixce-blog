@@ -1,0 +1,22 @@
+---
+layout: default
+title: Categories
+---
+
+<div class="container">
+    <header class="page-header">
+    </header>
+
+    <div class="category-list">
+        <ul>
+            {% assign categories = site.categories %}
+            {% for category in categories %}
+                <li>
+                    <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
+                        {{ category[0] }} ({{ category[1].size }})
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+---
+    <ul class="post-list">
+        {% for post in page.posts %}
+          <div class="post-item">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
+            <p class="excerpt">{{ post.excerpt }}</p>
+            ---
+          </div>
+        {% endfor %}
+      </ul>
+      </article>
+      
+      <style>
+        .post-list {
+          padding: 0;
+          margin: 0;
+        }
+      
+        .post-item {
+          margin-bottom: 10px; /* 포스트 간 여백을 줄임 */
+          padding: 5px 0; /* 포스트 내부 여백을 줄임 */
+        }
+      
+        .post-item h2 {
+          font-size: 1rem; /* 제목 폰트 크기를 줄임 */
+          margin: 1px 0; /* 제목과 다른 요소 간 여백을 줄임 */
+        }
+      
+        .post-item h2 a {
+          text-decoration: none;
+          font-size: 0.98rem;
+          color: inherit;
+        }
+      
+        .post-item .date {
+          font-size: 0.8rem; /* 날짜 폰트 크기를 줄임 */
+          margin: 1px 0; /* 날짜와 다른 요소 간 여백을 줄임 */
+        }
+      
+        .post-item .excerpt {
+          font-size: 0.9rem; /* 내용 폰트 크기를 줄임 */
+          margin: 0px 0; /* 내용과 다른 요소 간 여백을 줄임 */
+        }
+      </style>
+      

@@ -1,0 +1,36 @@
+title: Insidepixce inworld
+description: 나의 기막힌 성장기
+author: insidepixce
+avatar: /logo.png
+email: insidepixce@gmail.com
+locale: "ko-KR"
+location: Korea, Daegu
+name: Park Gyodam
+masthead_title: "하고싶은 공부만 합니다"
+subscribe: true
+url: "https://insidepixce.site"
+baseurl: ""
+
+bio: "방랑 개발자"
+social:
+  name: outsidepixce
+  links:
+    - "https://www.instagram.com/outsidepixce/"
+    - "https://github.com/insidepixce"
+timezone: GMT+9
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 15
+paginate_path: /page:num/
+
+disqus:
+  comments: true
+  shortname: "mylog-3"
+
+highlighter: rouge
+markdown: kramdown

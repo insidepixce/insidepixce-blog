@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">
+            {{ page.date | date: "%Y년 %m월 %d일" }} | {{ page.categories | join: ", " }}
+        </p>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer">
+        {% if page.tags %}
+            <p>태그: {{ page.tags | join: ", " }}</p>
+        {% endif %}
+
+        {% if page.comments %}
+            <h3>댓글</h3>
+            <!-- 댓글 시스템 통합 (예: Disqus) -->
+        {% endif %}
+    </footer>
+
+    <nav class="post-navigation">
+        <p>{% if page.previous %} 이전 게시물: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a> {% endif %}</p>
+        <p>{% if page.next %} 다음 게시물: <a href="{{ page.next.url }}">{{ page.next.title }}</a> {% endif %}</p>
+    </nav>
+</article>

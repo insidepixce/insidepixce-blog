@@ -1,22 +1,22 @@
-title: Insidepixce inworld
-description: 나의 기막힌 성장기
-author: insidepixce
-avatar: /logo.png
-email: insidepixce@gmail.com
+title: "Insidepixce inworld"
+description: "나의 기막힌 성장기"
+author: "insidepixce"
+avatar: "/logo.png"
+email: "insidepixce@gmail.com"
 locale: "ko-KR"
-location: Korea, Daegu
-name: Park Gyodam
+location: "Korea, Daegu"
+name: "Park Gyodam"
 masthead_title: "하고싶은 공부만 합니다"
 subscribe: true
 
-
 bio: "방랑 개발자"
 social:
-  name: outsidepixce
+  name: "outsidepixce"
   links:
     - "https://www.instagram.com/outsidepixce/"
     - "https://github.com/insidepixce"
-timezone: GMT+9
+
+timezone: "Asia/Seoul"
 
 plugins:
   - jekyll-seo-tag
@@ -25,10 +25,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 15
-paginate_path: /page:num/
+paginate_path: "/page:num/"
 
-
-
-highlighter: rouge
-markdown: kramdown
-
+highlighter: "rouge"
+markdown: "kramdown"

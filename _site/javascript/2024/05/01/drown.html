@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL) | Insidepixce inworld</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)" />
+<meta name="author" content="insidepixce" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="description" content="오늘의 하루도 코드코드코드" />
+<meta property="og:description" content="오늘의 하루도 코드코드코드" />
+<link rel="canonical" href="http://localhost:4000/javascript/2024/05/01/drown.html" />
+<meta property="og:url" content="http://localhost:4000/javascript/2024/05/01/drown.html" />
+<meta property="og:site_name" content="Insidepixce inworld" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-05-01T14:00:00-09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"insidepixce"},"dateModified":"2024-05-01T14:00:00-09:00","datePublished":"2024-05-01T14:00:00-09:00","description":"오늘의 하루도 코드코드코드","headline":"코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/javascript/2024/05/01/drown.html"},"url":"http://localhost:4000/javascript/2024/05/01/drown.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/logo.jpg" alt="Profile Picture" class="profile-picture">
+                <a href="/" style="text-decoration: none; color:#000000; font-size:20px;">Park gyodam</a>
+                <p class="bio">방랑 개발자</p>
+                <a href="https://www.instagram.com/outsidepixce/" target="_blank">Git</a>
+                <a href="https://github.com/insidepixce" target="_blank">Instagram</a>
+                <a href="mailto:insidepixce@gmail.com">이메일</a>
+                
+                <h3 style="color:black">Categories</h3>
+                <ul class="category-list">
+                    <p>전체 글 수 25 개</p>
+                    
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/ect/index.html" class="category-title">ect (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/javascript/index.html" class="category-title">javascript (17)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/oz-coding/index.html" class="category-title">oz-coding (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/sec/index.html" class="category-title">sec (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/security/index.html" class="category-title">security (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/talk/index.html" class="category-title">talk (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/categories/test/index.html" class="category-title">test (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- 메인 콘텐츠 -->
+        <main class="content">
+            <h1>코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)</h1>
+            <div class="page-content">
+                    <article class="post">
+    <header class="post-header">
+        <p class="post-meta">
+            2024년 05월 01일 | javascript
+        </p>
+    </header>
+
+    <div class="post-content">
+        <p>오늘의 하루도 코드코드코드</p>
+
+<h1 id="성능-최적화--코드-스플리팅과-레이지-로딩">성능 최적화 : 코드 스플리팅과 레이지 로딩</h1>
+<p>-&gt; 코드 스플리팅과 레이지 로딩을 적용하여 초기 로드 시간을 줄이는 방법을 구현해보았다.
+React.lazy와 suspense를 사용하여 컴포넌트를 비동기적으로 로드하고 Webpack의 분할 기능을 활용하여 큰 번들을 더 작은 청크로 나누는 방법을 실험했다. 
+결과적으로 사용자 경험을 개선하고, 페이지의 성능을 향상하였다.</p>
+
+<h1 id="웹-접근성-강화">웹 접근성 강화</h1>
+<p>-&gt; 대규모 사이트 리뉴얼 프로젝트를 진행하며 웹 접근성을 개선하는 작업을 진행했다.
+ARIA(Accessible Rich Internet Applications)라벨을 추가하고, 키보드 네비게이션을 위한 포커스 관리를 개선했다
+이를 통해 WCAG 2.1 지침을 준수하고 시각적, 물리적 제한을 가진 사용자들도 사이트를 원활하게 이용할 수 있다.</p>
+
+<h1 id="프론트엔드-보안-증진">프론트엔드 보안 증진</h1>
+<p>XSS(Cross-Site Scripting)과 CSRF(Cross-Site Request Forgery)와 같은 보안 취약점을 방지하기 위해 콘텐츠 보안 정책(Content Security Policy, CSP)을 설정하는 작업을 진행했다. CSP를 통해 외부 스크립트의 로드를 제한하고, 사이트의 보안을 강화하는 방법을 체계적으로 적용해보았다.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        
+            <p>태그: javascript</p>
+        
+
+        
+            <h3>댓글</h3>
+            <!-- 댓글 시스템 통합 (예: Disqus) -->
+        
+    </footer>
+
+    <nav class="post-navigation">
+        <p> 이전 게시물: <a href="/security/2024/02/24/%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3%E1%84%8B%E1%85%B4-%E1%84%8B%E1%85%B2%E1%84%92%E1%85%A7%E1%86%BC-copy.html">악성코드의 유형</a> </p>
+        <p> 다음 게시물: <a href="/javascript/2024/05/04/%E1%84%8B%E1%85%A5%E1%84%85%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%B5%E1%84%82%E1%85%A1%E1%86%AF.html">sql서브쿼리 실습</a> </p>
+    </nav>
+</article>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Insidepixce inworld - All rights reserved.</p>
+    </footer>
+</body>
+</html>

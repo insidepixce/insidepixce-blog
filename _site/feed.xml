@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-20T02:37:50-09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">오즈코딩 start- 네이버 화면 커스텀하기</title><link href="http://localhost:4000/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st.html" rel="alternate" type="text/html" title="오즈코딩 start- 네이버 화면 커스텀하기" /><published>2024-08-11T17:00:00-09:00</published><updated>2024-08-11T17:00:00-09:00</updated><id>http://localhost:4000/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st</id><content type="html" xml:base="http://localhost:4000/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st.html"><![CDATA[<p>어머머머…굿즈 왔다 ! 잘쓸게요</p>
+
+<p><img src="https://github.com/user-attachments/assets/4d29e84a-06ac-4cda-b979-5d9a6e2d313d" width="50%" height="10%" />
+<img src="https://github.com/user-attachments/assets/6a0bc4a4-e720-42eb-8080-1b199216907a" width="40%" height="10%" /></p>
+
+<p>오즈코딩 굿즈가 집에 도착했다 !!!!</p>
+
+<h1 id="1강-오늘의-목표와-커스텀-준비하기">1강. 오늘의 목표와 커스텀 준비하기</h1>
+
+<blockquote>
+  <p>네이버를 내가 원하는 모습으로 바꿔주자</p>
+
+</blockquote>
+
+<h2 id="내가-사용하는-기능">내가 사용하는 기능</h2>
+
+<p>강의에서는 뉴스탭, 광고등을 다 없애고 로그인과 아이콘들만 남겨두겠다고 했지만, 나는 네이버에서 뉴스를 자주 보기 때문에 나에 맞게 네이버를 좀 바꿔보고싶다는 생각이 들었다.</p>
+
+<p>또 커스텀에 환장한 개발자로서 색을 안 바꿀수 없지 ! 나는 보통 다크모드를 사용하고, 검정과 초록의 조화 즉 사이버펑크한 느낌을 상당히 좋아한다. 그러한 색으로 커스텀을 해보기로 결심했다. 라고 했지만 프사에 맞게 커스텀되었다 ;;</p>
+
+<h2 id="준비하기">준비하기</h2>
+
+<h3 id="1-페이지-소스-보기">1. 페이지 소스 보기</h3>
+
+<p>페이지 소스 보기를 클릭하면 웹 페이지의 광고 및 콘텐츠 블록과 관련된 HTML 및 JS 코드가 나온다.</p>
+
+<p>반응형 디자인에 테마 적용, 이벤트 트래킹까지 알차게 들어있다. (사실 뒤에 코드는 다 안읽었다. 중간에 보다가 내림)</p>
+
+<p><img src="https://github.com/user-attachments/assets/67cf072c-7166-4033-bf61-7c810b4de7ea" alt="image" /></p>
+
+<p>우리가 사용하는 어떤 사이트든 모든 사이트들이 다 소스코드를 공개하고 있다.</p>
+
+<p>모든 코드를 공개하는건 아니고 프론트앤드 코드는 거의 다 공개하고 있다고 보면 됨…</p>
+
+<h3 id="2개발자-도구">2.개발자 도구</h3>
+
+<p>우클릭하고 검사를 누르면 개발자가 도구가 실행된다</p>
+
+<p><img src="https://github.com/user-attachments/assets/8879ff08-8bde-4ac5-925f-8e3119a499bf" alt="image" /></p>
+
+<p>소스 보기를 해서 나온 코드를 좀 더 정렬해서 볼 수 있다</p>
+
+<blockquote>
+  <p>웹사이트는 head와 body가 나눠져 있다</p>
+
+</blockquote>
+
+<h1 id="2강-실습해보자-">2강. 실습해보자 !</h1>
+
+<h2 id="1-도구를-더-알아보자">1. 도구를 더 알아보자</h2>
+
+<h3 id="1-선택자-도구">1. 선택자 도구</h3>
+
+<p><img src="https://github.com/user-attachments/assets/62a24972-f26a-4079-9d0d-5a59fa808ae6" alt="image" /></p>
+
+<p>선택자 도구를 사용해서 코드를 선택하는 방법을 설명해주었다.</p>
+
+<p>어떻게 매칭하는지를 알 수 있었다.</p>
+
+<h2 id="2-임시로-바꿔보자">2. 임시로 바꿔보자</h2>
+
+<p><img src="https://github.com/user-attachments/assets/c2aba516-499f-414b-9f92-03bf5285dcf0" width="600%" /></p>
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/db3fd2bf-0e4f-4e5f-af3f-bf70610c1c4e" width="10%" />
+</div>
+
+<p>코드에 나와있는 웹툰 부분을 야구로 바꿔보았더니 야구로 보여진다.</p>
+
+<p>css도 바꿔서 색상만 바꿀 수 있기도 하다.</p>
+
+<blockquote>
+  <p>새로고침하면 변경한 코드가 모두 변경된다</p>
+
+</blockquote>
+
+<h1 id="3강-영구적으로-적용시키는-방법">3강. 영구적으로 적용시키는 방법</h1>
+
+<p><img src="https://github.com/user-attachments/assets/cdaefda7-37c8-4bd5-ad62-5f20d0341338" alt="image" /></p>
+
+<p>custom style scirpt를 사용하여 저장해줬다
+다른 강의에서도 초반에 네이버를 바꾸는 실습을 잠깐 하고 넘어간적이 있는데 직접 영구적으로 설정할 수 있는 방법을 제시하고 직접 해보게 하는 강의방식이 마음에 들었다.</p>
+
+<h1 id="완성본">완성본</h1>
+<p><img src="https://github.com/user-attachments/assets/3f31a078-8fc8-4d3d-ae09-7ad8930fe259" alt="image" /></p>
+
+<ul>
+  <li>필요없는 부분을 모두 지워주었다(뉴스 제와)</li>
+  <li>로고를 지워주었다 (이때 자바스크립트 사용)</li>
+  <li>로그인 창 밑에 내 프로필 사진을 넣고 싶었는데, css수정만으로 추가적인 구조물을 넣는것은 불가능하여 원래 있던 기상 정보 탭의 기능을 다 없애고 그냥 내 로고를 들어가게 하였다</li>
+  <li>자바스크립트를 활용하여 블로그로(insidepixce.site) 로 이동하는 버튼을 구현했다.</li>
+  <li>뉴스 탭에서 엔터부분과 쇼핑투데이가 있었는데 엔터테이먼트에는 관심이 없고 쇼핑투데이는 광고러 거슬려서 빼주었다. 이때 이부분만 빼는것이 어려워 자바스크립트를 사용했다. 
+<code class="language-plaintext highlighter-rouge">iframe</code>속성을 켜주어야 한ㄷ,.</li>
+  <li>배경화면 색이 안 변해서 한참을 헤매었는데 네이버 측에서 배경화면을 이미지로 설정해뒀더라…</li>
+  <li>이미지를 안보이게 설정하고 background color을 설정해주었다</li>
+</ul>
+
+<h1 id="html-코드-설명">HTML 코드 설명</h1>
+
+<h3 id="1-전체-배경과-스타일-초기화">1. 전체 배경과 스타일 초기화</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>body {
+    background-color: #decbb1 !important; 
+    background-image: none !important; 
+}
+</code></pre></div></div>
+<h3 id="2-배너-영역-숨기기">2. 배너 영역 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.Layout-module__banner_area___CUXNe {
+    display: none;
+}
+</code></pre></div></div>
+<h3 id="3-쇼핑-섹션-숨기기">3. 쇼핑 섹션 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#shopping {
+    display: none !important;
+}
+</code></pre></div></div>
+<h3 id="4-특정-콘텐츠-헤더-항목-숨기기">4. 특정 콘텐츠 헤더 항목 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#feed &gt; div.ContentHeaderView-module__content_header___nSgPg &gt; div &gt; ul &gt; li:nth-child(4) {
+    display: none !important;
+}
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">li:nth-child(4)</code>: 특정 리스트 항목(네 번째)을 숨김. 이렇게 <code class="language-plaintext highlighter-rouge">&gt;</code>을 활용하여 타고타고 선택할수도 있음.</p>
+
+<h3 id="5-피드-숨기기">5. 피드 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#feed {
+    display: none !important;
+}
+</code></pre></div></div>
+<h3 id="6-우측-툴-영역-숨기기">6. 우측 툴 영역 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.RightWidget-module__tool_area___dhpNQ {
+    display: none !important;
+}
+</code></pre></div></div>
+<h3 id="7-바로가기-리스트-숨기기">7. 바로가기 리스트 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.shortcut_list {
+    display: none !important;
+}
+</code></pre></div></div>
+
+<h3 id="8-푸터-숨기기">8. 푸터 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.footer_inner {
+    display: none !important;
+}
+</code></pre></div></div>
+<p>푸터까지는 안 건드리려고 했는데 거슬리는걸 어떡해.</p>
+
+<h3 id="9-하단-배너-숨기기">9. 하단 배너 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.BottomBanner-module__banner_box___aWPRf {
+    display: none !important;
+}
+</code></pre></div></div>
+<h3 id="10-검색-로고-숨기기">10. 검색 로고 숨기기</h3>
+<p>이게 조금 어려웠던게 네이버에서 로고를 두개를 사용하고 있었다. 인터랙티브 로고랑 그냥 일반 svg로고를 사용했는데 움직이는 로고가 special input logo였던걸로 기억함</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#special-input-logo {
+    display: none !important;
+}
+</code></pre></div></div>
+
+<h3 id="11-검색-그룹-스타일-수정">11. 검색 그룹 스타일 수정</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.search_group_inner {
+    border: 0px solid #D2B48C !important; 
+    width: 80% !important; 
+    margin: 0 auto; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+</code></pre></div></div>
+<p>테두리 만들려다가 없애버림. 
+넓이를 더 넓히고 중앙에 위치시키고 
+자동 중앙 정렬시킴
+내부여백 10px정도 줬고 패딩과 테두리가 헷갈리니까 border-box로 때워버림</p>
+
+<h3 id="12-헤더-검색-영역-스타일-수정">12. 헤더 검색 영역 스타일 수정</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#header .header_inner .search_area {
+    border: 0px solid #D2B48C !important; 
+    width: 80% !important; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+</code></pre></div></div>
+
+<p>이것도 보더 만들려다 없애버림
+안예뻤다</p>
+
+<h3 id="13-헤드라인-링크-숨기기">13. 헤드라인 링크 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.link_headline {
+    display: none !important;
+}
+</code></pre></div></div>
+
+<h3 id="14-검색-버튼-색-바꾸기">14. 검색 버튼 색 바꾸기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#search-btn {
+    fill: #D2B48C !important;
+}
+</code></pre></div></div>
+<ul>
+  <li>svg 색 바꿀때는 fill속성을 사용한다</li>
+</ul>
+
+<h3 id="15-로그인-버튼-색-수정">15. 로그인 버튼 색 수정</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#sform {
+    border: 0px solid #D2B48C !important; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    display: flex; 
+    align-items: center;
+}
+</code></pre></div></div>
+
+<h3 id="16-데일리-보드-영역-숨기기">16. 데일리 보드 영역 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.DailyBoardView-module__daily_board_area___Q6Jmf {
+    display: none !important;
+}
+</code></pre></div></div>
+
+<h3 id="18-이슈-배너-스타일-수정">18. 이슈 배너 스타일 수정</h3>
+<p>사진이 들어갈수 있게 이슈 배너 높이를 늘려주었다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.IssueBanner-module__issue_banner_area___pl_8r {
+    height: 300px; 
+}
+</code></pre></div></div>
+<h4 id="배경화면-설정">배경화면 설정</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.IssueBanner-module__issue_banner_area___pl_8r .IssueBanner-module__banner_rolling___Qy0KZ {
+    background-image: url('https://insidepixce.site/logo.png') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+</code></pre></div></div>
+<h3 id="19-이슈-배너-링크-숨기기">19. 이슈 배너 링크 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.IssueBanner-module__link_banner_issue___bNYKC {
+    text-indent: -9999px; 
+    overflow: hidden;
+    display: block;
+}
+</code></pre></div></div>
+
+<h3 id="20-가상-키보드-버튼-숨기기">20. 가상 키보드 버튼 숨기기</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#ke_kbd_btn, #_nx_kbd {
+    display: none !important;
+}
+</code></pre></div></div>
+
+<h1 id="js-코드-설명">js 코드 설명</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.querySelectorAll('.ContentHeaderView-module__tab_item___dz3nK').forEach(function(item) {
+    if (item.textContent.includes('엔터') || item.textContent.includes('쇼핑투데이')) {
+        item.style.display = 'none';
+    }
+});
+</code></pre></div></div>
+<p>엔터와 쇼핑투데이를 없애줌
+요즘 잘 쓰지 않는 문법을 쓰면서 좀 더 코드를 간결하게 쓰는 연습을 하고 있는데 이 코드 문법 좀 쌈@뽕하게 쓴 것 같다</p>
+
+<h2><br /></h2>
+
+<p>열심히 해본 것 같아서 뿌듯하긴 하다. 새로운 도전인 만큼 더욱 더 열심히 준비해야할 것이 많을텐데, 앞으로의 마음가짐을 좀 더 다잡고 시작해봐야겠다.</p>]]></content><author><name>insidepixce</name></author><category term="oz-coding" /><category term="til" /><summary type="html"><![CDATA[어머머머…굿즈 왔다 ! 잘쓸게요]]></summary></entry><entry><title type="html">[뻘글]도대체 어디까지 발전할건데?</title><link href="http://localhost:4000/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy.html" rel="alternate" type="text/html" title="[뻘글]도대체 어디까지 발전할건데?" /><published>2024-08-10T17:00:00-09:00</published><updated>2024-08-10T17:00:00-09:00</updated><id>http://localhost:4000/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st%20copy</id><content type="html" xml:base="http://localhost:4000/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy.html"><![CDATA[<p>요즘 나는 ‘유한함’에 대한 생각을 많이 한다. 상당히 난해한 주제인데, 유한함은 우리 삶에 가장 가까이 다가와있는 속성 중 하나이다. 그 방식은 다양하겠다만 사람은 누구나 태어났고, 죽는다. 인간의 유한함은 바로 이 사실에서 시작된다.</p>
+
+<p>인간은 본능적으로 본인이 처한 상황이 더 편리하게 개선되기를 바란다. 이 본능은 모든 생명체는 유한하기 때문이라는 점에서 시작한다고 생각한다. 죽음에 대한 두려움, 즉 유한한 삶의 끝에 대한 두려움으로 인해 인간은 무한함을 목표로 달려나가고 있으며, 수백년간 몇 차례의 산업 혁명에 걸쳐 끊임없이 발전했다. 1차 산업혁명은 먼 길을 걸어다니는 수고를 덜었고 , 2차 산업혁명은 복잡한 노동을 줄였다. 3차 산업혁명은 정보화 세대를 열었다. 방 안에서 인터넷이라는 또 다른 세계에 접속하여 원하는 거의 모든 정보를 얻을 수 있게 했고, 직접 경험하며 깨우쳐야 할 것들을 손가락 몇 번 움직임으로 얻을 수 있게 되었다.</p>
+
+<p>하지만 조금 시선을 돌려 생각해보자. 1,2차 산업혁명 때는 복잡한 노동을 기계에게 미뤘고, 3차 산업혁명 때는 힘든 계산을 컴퓨터에게 미뤘다. 시간이 지나 현재는 4차 산업혁명이 시작되고 있으며, 이번 산업혁명은 사고하는 것조차 인공지능에게 미루려고 한다. 이미 노동력과 정보 탐색 능력이 기계보다 뒤떨어지는 지금 인간이 내세울만한 유일한 능력인 ‘무에서 유를 창조해낼수 있는 능력’, 즉 상상할 수 있는 능력은 4차 산업혁명이 지속될수록 퇴화할 것이다.</p>
+
+<p>4차 산업 혁명, 도대체 어떤 직업을 가져야 하는가?</p>
+
+<p>뭐 이런 문구의 강의들, 안 본 사람은 없을것이다. 뉴스에서도, 예능에서도, 심지어 학교에서도 4차 산업혁명이 다가온다며 어떤 직업이 살아남을지, 어떤 직업이 대체될지 떠들곤 하니 말이다. 그럴때마다 나는 이러한 생각을 한다.</p>
+
+<p>어차피 다 대체될 거야. 너도, 나도, 그리고 이 말 하시는 강사님도.</p>
+
+<p>나는 줄곧 도대체 얼마나 발전해야 하는가라는 고민을 하곤 했다. 인간이 느낄 수 없는 ms단위의 속도를 개선시키겠다며 새로운 프로그래밍 언어들이 끊임없이 출시되고 있다. 현재의 웹으로도 사람들은 큰 불편함을 느끼지 않으나 개발자들은 항상 ‘최적화’라는 단어를 입에 달고 산다. 뭐, 이러다가 사용자의 생각을 읽어내어 다음 어떤 웹에 접속할건지 예측한 다음 미리 띄워주는 서비스라도 개발하려나 싶었다.</p>
+
+<p>나는 인간이 무한해지기 전까지는 기술이 끊임없이 발전할 것이라 결론지었다.</p>
+
+<p>아마 인간은 아무것도 하지 않아도 될때까지 가지 않을까 싶다. 손 하나 까딱하지 않아도 될 때까지. 물을 마시거나 밥을 먹거나 어딘가에 가거나 즐거움을 느끼거나 슬픔을 느끼거나 흥미로움을 느끼거나 이 모든 일들을 수행하는 데 조금의 노력도 필요없도록.</p>
+
+<p>그내가 이 글을 쓴다고 해서 달라질 건 없다. 내가 발전을 멈추라고 해도 인류는 발전한다. 그리고 발전을 멈추라고 할 생각도 없다. 발전이 나쁘다는 것도 아니다. 나는 그저 쏟아지는 기술에 몸을 맡긴 후 편리함의 극한에 도달할 것이다.</p>
+
+<p>그냥 인간이 어디까지 발전할지 궁금하다. 정확히 말하면 이제는 인간이 발전하는 것이 아닌 기술이 얼마나 발전할지 궁금하다. 그냥 그렇다고 뭐.</p>]]></content><author><name>insidepixce</name></author><category term="talk" /><category term="잡소리" /><summary type="html"><![CDATA[요즘 나는 ‘유한함’에 대한 생각을 많이 한다. 상당히 난해한 주제인데, 유한함은 우리 삶에 가장 가까이 다가와있는 속성 중 하나이다. 그 방식은 다양하겠다만 사람은 누구나 태어났고, 죽는다. 인간의 유한함은 바로 이 사실에서 시작된다.]]></summary></entry><entry><title type="html">DOM이란 무엇인가</title><link href="http://localhost:4000/javascript/2024/07/20/dom.html" rel="alternate" type="text/html" title="DOM이란 무엇인가" /><published>2024-07-20T17:00:00-09:00</published><updated>2024-07-20T17:00:00-09:00</updated><id>http://localhost:4000/javascript/2024/07/20/dom</id><content type="html" xml:base="http://localhost:4000/javascript/2024/07/20/dom.html"><![CDATA[<p>DOM(Document Object Model)은 자바스크립트와 같은 프로그래밍 언어가 웹 페이지의 구조, 스타일, 콘텐츠를 동적으로 조작할 수 있도록 하는 인터페이스이다. 
+<br />웹 페이지가 브라우저에 로드될 때, HTML 문서는 트리 구조로 표현되며, 이 구조를 통해 자바스크립트는 웹 페이지의 각 요소에 접근하고 조작할 수 있다.</p>
+
+<p><img src="https://image.slidesharecdn.com/dom-130225112417-phpapp02/95/an-introduction-to-the-dom-3-638.jpg?cb=1367487766" alt="image" />
+html도 하나의 노드이다! 
+그니까 head,body,title,script,h1 등 모든 태그가 다 노드이다 
+이중 html 태그를 요소노드라고 부르고 요소노드안에 있는 글자를 text노드 라고 부른다</p>
+
+<blockquote>
+  <p>나는 이런 생각을 했어!</p>
+</blockquote>
+
+<p>돔이 약간 고척돔처럼 천장이 덮인 그런 공간감있는 단어기도 하고 뭐 생태계를 구현한 돔구조이다 뭐 이런 생각이 들어서 돔=생태계라는 비유로 이해해보았지롱
+생태계는 하나하나 구성이 있으니까 ! 구성들도 생태계이고, 그 구성들이 모여도 생태계인것처럼</p>
+<h1 id="dom의-기본-개념">DOM의 기본 개념</h1>
+
+<h2 id="트리-구조">트리 구조:</h2>
+<ul>
+  <li>DOM은 트리 구조로 표현됨</li>
+  <li>HTML 문서의 각 요소는 노드(node)로 표현된다
+트리의 최상위 노드는 document 객체이며 이 아래에 HTML 태그들이 계층적으로 연결되어 있음</li>
+</ul>
+
+<blockquote>
+  <html> 요소 아래에 <body>와 <head> 요소가 있고, 그 아래에 자식 요소들 
+</head></body></html>
+</blockquote>
+
+<h2 id="노드node">노드(Node):</h2>
+
+<p>DOM에서 여러 종류의 노드는 문서의 요소를 나타냄</p>
+<h4 id="element-노드">Element 노드</h4>
+<ul>
+  <li>HTML 태그 요소를 나타냄 (예: &lt;div&gt;, &lt;p&gt;).
+    <h4 id="text-노드">Text 노드</h4>
+  </li>
+  <li>요소 내의 텍스트를 나타냄
+    <h4 id="attribute-노드">Attribute 노드</h4>
+  </li>
+  <li>요소의 속성을 나타냅니다 (예: id, class).
+    <h4 id="comment-노드">Comment 노드:</h4>
+  </li>
+  <li>HTML 주석을 나타냅니다.</li>
+</ul>
+
+<h2 id="요소element-선택">요소(Element) 선택:</h2>
+
+<p>자바스크립트가 다양한 방법으로 dom 요소를 선택</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getElementById()</code>: 특정 ID를 가진 요소를 선택.</li>
+  <li><code class="language-plaintext highlighter-rouge">getElementsByClassName()</code>: 특정 클래스 이름을 가진 요소를 모두 선택.</li>
+  <li><code class="language-plaintext highlighter-rouge">getElementsByTagName()</code>: 특정 태그 이름을 가진 요소를 모두 선택.</li>
+  <li><code class="language-plaintext highlighter-rouge">querySelector()</code>: CSS 선택자를 사용하여 첫 번째 일치하는 요소를 선택.</li>
+  <li><code class="language-plaintext highlighter-rouge">querySelectorAll()</code>: CSS 선택자를 사용하여 일치하는 모든 요소를 선택.</li>
+</ul>
+
+<h2 id="dom-조작">DOM 조작:</h2>
+
+<p>선택된 요소를 통해 DOM을 조작</p>
+
+<ul>
+  <li>속성 변경: <code class="language-plaintext highlighter-rouge">element.setAttribute()</code>, ``element.id<code class="language-plaintext highlighter-rouge">, </code>element.className`</li>
+  <li>내용 변경: <code class="language-plaintext highlighter-rouge">element.textContent</code>, <code class="language-plaintext highlighter-rouge">element.innerHTML</code></li>
+  <li>스타일 변경: <code class="language-plaintext highlighter-rouge">element.style</code></li>
+  <li>이벤트 핸들링: <code class="language-plaintext highlighter-rouge">element.addEventListener()</code></li>
+  <li>요소 추가 및 제거: <code class="language-plaintext highlighter-rouge">document.createElement()</code>로 새로운 요소를 생성, <code class="language-plaintext highlighter-rouge">appendChild()</code> 또는 <code class="language-plaintext highlighter-rouge">removeChild()</code>로 요소를 추가하거나 제거</li>
+</ul>
+
+<h2 id="dom-이벤트">DOM 이벤트:</h2>
+<ul>
+  <li>DOM은 사용자의 상호작용(클릭, 입력 등)에 반응하여 동작하는 이벤트를 처리함 (<code class="language-plaintext highlighter-rouge">eventhandler</code>)
+이벤트 핸들러를 사용하여 특정 이벤트가 발생할 때(클릭, 스크롤 등) 실행할 코드를 정의할 수 있음
+예를 들어, 버튼 클릭 시 특정 함수를 실행하거나, 입력 필드에 텍스트가 입력될 때 실시간으로 처리하는 것이 가능</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;DOM 조작 예제&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id="title"&gt;Hello, World!&lt;/h1&gt;
+  &lt;button id="changeTextBtn"&gt;텍스트 변경&lt;/button&gt;
+
+  &lt;script&gt;
+    // 요소 선택
+    const titleElement = document.getElementById('title');
+    const buttonElement = document.getElementById('changeTextBtn');
+
+    // 버튼 클릭 시 텍스트 변경
+    buttonElement.addEventListener('click', () =&gt; {
+      titleElement.textContent = 'DOM 조작 완료!';
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<blockquote>
+  <p>이 예제에서는 Hello, World!라는 제목을 가진 &lt;h1&gt; 요소를 선택한 후, 버튼을 클릭하면 해당 제목의 텍스트가 DOM 조작 완료!로 변경됨</p>
+</blockquote>
+
+<h3 id="요약">요약</h3>
+
+<p>DOM은 웹 페이지의 구조를 표현하는 객체 모델로, 자바스크립트를 사용하여 웹 페이지의 내용을 동적으로 조작할 수 있게 함.</p>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="til,javascript" /><summary type="html"><![CDATA[DOM(Document Object Model)은 자바스크립트와 같은 프로그래밍 언어가 웹 페이지의 구조, 스타일, 콘텐츠를 동적으로 조작할 수 있도록 하는 인터페이스이다. 웹 페이지가 브라우저에 로드될 때, HTML 문서는 트리 구조로 표현되며, 이 구조를 통해 자바스크립트는 웹 페이지의 각 요소에 접근하고 조작할 수 있다.]]></summary></entry><entry><title type="html">서버 로그 저장형 stopwatch 구현 (js편)</title><link href="http://localhost:4000/test/2024/07/19/sd.html" rel="alternate" type="text/html" title="서버 로그 저장형 stopwatch 구현 (js편)" /><published>2024-07-19T17:00:00-09:00</published><updated>2024-07-19T17:00:00-09:00</updated><id>http://localhost:4000/test/2024/07/19/sd</id><content type="html" xml:base="http://localhost:4000/test/2024/07/19/sd.html"><![CDATA[<p>이번에 구현하게 된 기능들 중에 조금 까다로웠던 부분이 있어서 이번 프로젝트에 대해서는 한번 포스팅해 보고 싶었다.
+내가 구현해야 할 기능은 스탑워치를 실행하고, 멈추고, 저장 버튼을 누르면 서버에 업로드되어, 새로고침 후에도 저장한 시간부터 다시 공부시간을 측정하는 것이였다.</p>
+
+<p>이 포스팅은 stopwatch.js부분의 스톱워치 기능을 구현한 방법에 대해서 알아볼것이다.</p>
+
+<h1 id="타이머-정확성-유지">타이머 정확성 유지</h1>
+
+<p>이 작업을 하면서 유난히 어려웠던 부분이 몇가지 있었다. 첫번쨰로는 타이머의 정확성을 유지하는 부분이였다. <code class="language-plaintext highlighter-rouge">setInterval</code> 함수는 명시된 시간 간격으로 함수를 호출하지만 실제 호출 간격은 브라우저의 이벤트 루프와 시스템 리소스에 따라 변동될 수 있었다. 따라서 타이머가 정확히 1초마다 1씩 증가하도록 딱 고정하기가 어려웠는데, 이 문제를 해결하기 위해서 고정된 시간 간격(?)을 유지하도록 계산을 하는 방법을 사용했다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let lastTime = Date.now();
+timer = setInterval(() =&gt; {
+    const now = Date.now();
+    time += (now - lastTime) / 1000;  // 정확한 시간 간격을 계산하여 시간 증가
+    lastTime = now;
+    document.getElementById('timer').textContent = new Date(time * 1000).toISOString().substr(11, 8);
+}, 1000);
+</code></pre></div></div>
+
+<h1 id="상태-관리">상태 관리</h1>
+<p>타이머의 상태를 관리하는 것도 어려운 부분 중 하나였다. 상태를 나타내기 위해서 <code class="language-plaintext highlighter-rouge">running</code>변수를 사용하였다. 실행중인지 여부를 나타낸다는 말이다. 상태 관리를 명확하게 하기 위해 변수 초기화 상태 전환을 잘 잘 잘 처리해야 했다 ;;</p>
+
+<h1 id="데이터-동기화">데이터 동기화</h1>
+<p>저장된 데이터를 서버로부터 불러와 클라이언트에 동기화하는 것도 약간 까다로웠던게, 밀리초 단위로 계산되는지라 이를 변환하는 작업도 참 힘들었던것 같다.</p>
+
+<h2 id="변수-선언">변수 선언</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let timer;
+let running = false;
+let time = 0;
+</code></pre></div></div>
+<p>필요한 변수를 선언해준다. 
+<code class="language-plaintext highlighter-rouge">let timer;</code> 변수를 선언하여 <code class="language-plaintext highlighter-rouge">setInterval</code> 함수의 반환값을 저장한다.  
+<code class="language-plaintext highlighter-rouge">let running</code>은 스톱워치가 실행 중인지 여부를 나타내는 불리언 값이고,<code class="language-plaintext highlighter-rouge">let time</code>은 스톱워치의 현재 시간을 초 단위로 저장한다.</p>
+
+<h2 id="시작정지-버튼-클릭-이벤트-핸들러">시작/정지 버튼 클릭 이벤트 핸들러</h2>
+<p><code class="language-plaintext highlighter-rouge">document.getElementById('startStopButton').addEventListener('click', () =&gt; { ... });</code> 코드를 사용하여 시작/정지 버튼 클릭 이벤트 핸들러를 정의한다
+이 핸들러는 버튼 클릭 시 타이머를 시작하거나 정지한다</p>
+
+<h3 id="타이머-정지">타이머 정지</h3>
+<p>만약 <code class="language-plaintext highlighter-rouge">running</code> 이 <code class="language-plaintext highlighter-rouge">true</code>라면 <code class="language-plaintext highlighter-rouge">clearInterval(timer);</code>를 사용하여 타이머를 정지한다. 
+<br />이때, 타이머 ID는 이전에 <code class="language-plaintext highlighter-rouge">setInterval</code>함수로부터 반환된 값이다. <br />또한, 시작/정지 버튼의 텍스트를 start로 변경해준다.
+<br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.getElementById('startStopButton').addEventListener('click', () =&gt; {
+    if (running) 
+        clearInterval(timer);  // 타이머 정지
+        document.getElementById('startStopButton').textContent = 'Start';  // 버튼 텍스트 변경
+</code></pre></div></div>
+<p><br /></p>
+<h3 id="타이머-시작">타이머 시작</h3>
+<p>만약 <code class="language-plaintext highlighter-rouge">running</code>이 <code class="language-plaintext highlighter-rouge">false</code>이면  <code class="language-plaintext highlighter-rouge">setInterval</code>함수를 사용하여 타이머를 시작한다. <br />
+<code class="language-plaintext highlighter-rouge">setInterval</code> 함수는 첫 번째 인수로 콜백함수를 받고, 두번째 인수로 시간 간격(밀리초 단위)를 받는다. 
+<br />이 함수는 주어진 시간 간격마다 콜백 함수를 반복 실행하며, 고유 타이머 아이디를 생성한다. 
+이 고유 타이머 ID는 <code class="language-plaintext highlighter-rouge">clearInterval</code> 함수를 사용하여 타이머를 중지할 때 사용된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>else {
+        timer = setInterval(() =&gt; {
+            time++;
+            document.getElementById('timer').textContent = new Date(time * 1000).toISOString().substr(11, 8);  // 시간 업데이트
+        }, 1000);  // 1초마다 업데이트
+        document.getElementById('startStopButton').textContent = 'Stop';  // 버튼 텍스트 변경
+    }
+    running = !running;  // 상태 변경
+});
+</code></pre></div></div>
+<h4 id="고유-타이머-id는-어떻게-반환해오는데">고유 타이머 ID는 어떻게 반환해오는데?</h4>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">setInterval</code> 함수가 호출된다
+    <ul>
+      <li>콜백 함수 등록 : 첫번째 인수로 전달된 콜백 함수가 실행 큐에 등록된다</li>
+      <li>시간 간격 설정 : 두 번째 인수로 전달된 시간 간격(밀리초 단위)가 설정된다</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">setInterval</code> 함수는 내부적으로 타이머를 생성하고 , 이를 관리하기 위해 고유한 Id 를 할당한다</li>
+  <li>이 타이머 ID는 <code class="language-plaintext highlighter-rouge">setInterval</code> 함수의 반환값으로 전달된다</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">setInterval</code> 함수의 콜백 함수에서는 <code class="language-plaintext highlighter-rouge">time</code>변수를 1씩 증가시키고 이를 초 단위로 변환하여 화면에 표시한다. 
+<code class="language-plaintext highlighter-rouge">toTSOString</code> 메서드는 <code class="language-plaintext highlighter-rouge">Date</code>객체를 ISO 8601 확장 형식 문자열로 변환한다. 
+-<code class="language-plaintext highlighter-rouge">substr(11, 8)</code> 은 시간 부분(HH:MM)만 추출한다.</p>
+
+<h1 id="리셋-버튼-클릭-이벤트-핸들러">리셋 버튼 클릭 이벤트 핸들러</h1>
+<p>리셋 버튼의 클릭 이벤트 핸들러는 <code class="language-plaintext highlighter-rouge">document.getElementById('resetButton').addEventListener('click', ()=&gt; {...};</code> 로 정의된다. 이 핸들러는 버튼이 클릭되며 타이머를 정지하고 <code class="language-plaintext highlighter-rouge">running</code>상태를 <code class="language-plaintext highlighter-rouge">false</code>로 설정한다.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">time</code> 변수를 0으로 초기화하고 시간 표시 요소를 <code class="language-plaintext highlighter-rouge">00:00:00</code>으로 업데이트한다.</li>
+  <li>시작/정지 버튼의 텍스트를 <code class="language-plaintext highlighter-rouge">Start</code>로 변경시킨다.</li>
+</ul>
+
+<h1 id="저장-버튼-클릭-이벤트-핸들러">저장 버튼 클릭 이벤트 핸들러</h1>
+
+<p>저장 버튼 클릭 이벤트 핸들러가 가장 구현하기 힘들었던 것 같다. 첫째로 비동기 통신 처리를 구현하여야 했다. 사실 비동기 통신 처리라는 말이 어려워 보이기는 해도 그냥 저장 버튼을 클릭하면 클라이언트에서 서버로 데이터 전송하는거 뿐인데, 내가 처음으로 Post 라우터를 작성한 파일이 이 파일이여서 설정하는 데 꽤나 애를 먹었다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">fetch</code> API를 사용하여 비동기 post 요청을 보내는 중 서버로부터 응답을 기다리거나 오류를 처리하는 부분이 여느 떄마냥 쉽지 않았다.</p>
+
+<p>또, 스톱워치의 시간은 초단위로 저장되지만 이를 서버에 전송할때는 json 형식으로 변환해야 했다. 또한 서버로부터 응답을 받을 때도 JSON 형식으로 파싱하여 처리해야 했다. 이 과정에서 데이터 형식 변환과 관련된 오류가 많이 발생하였는데, 이또한 까다롭기 그지 없었다.</p>
+
+<p>아 진짜 이제는 뭘 어떤 기능을 집어넣어야할지도 모르겠고 아무래도 내가 디자인을 안하다 보니 디자인을 어떻게 해야 예쁘게 프로젝트가 만들어지는지도 솔직히 감이 안 잡힌다. 웹디자인 자격증을 취득해보는것도 좋은 방법인 것 같다.</p>]]></content><author><name>insidepixce</name></author><category term="test" /><category term="til" /><summary type="html"><![CDATA[이번에 구현하게 된 기능들 중에 조금 까다로웠던 부분이 있어서 이번 프로젝트에 대해서는 한번 포스팅해 보고 싶었다. 내가 구현해야 할 기능은 스탑워치를 실행하고, 멈추고, 저장 버튼을 누르면 서버에 업로드되어, 새로고침 후에도 저장한 시간부터 다시 공부시간을 측정하는 것이였다.]]></summary></entry><entry><title type="html">리다이렉션</title><link href="http://localhost:4000/sec/2024/07/05/knockon1.html" rel="alternate" type="text/html" title="리다이렉션" /><published>2024-07-05T17:00:00-09:00</published><updated>2024-07-05T17:00:00-09:00</updated><id>http://localhost:4000/sec/2024/07/05/knockon1</id><content type="html" xml:base="http://localhost:4000/sec/2024/07/05/knockon1.html"><![CDATA[<p>리다이렉션에 대해서 공부해보자</p>
+
+<ol>
+  <li>
+    <p>리다이렉션이란? 
+리다이렉션은 명령어의 출력을 파일로 보내거나 명령어의 입력을 파일에서 가져오는 기능이다. 기본적으로 명령어의 출력은 터미널에 표시되고, 명령어의 입력은 키보드로부터 받는다. 리다이렉션을 사용하면 출력을 파일에 저장하거나 파일을 입력으로 사용할 수 있다.</p>
+  </li>
+  <li>리다이렉션 기호
+    <blockquote>
+      <p>: 명령어의 출력을 파일로 저장합니다. 파일이 이미 존재하면 덮어씁니다.</p>
+      <blockquote>
+        <p>: 명령어의 출력을 파일의 끝에 추가합니다.</p>
+        <ul>
+          <li>&lt; : 명령어의 입력을 파일에서 가져온다</li>
+          <li>2&gt; : 표준 오류(stderr)를 파일로 저장한다</li>
+          <li>2» : 표준 오류를 파일의 끝에 추가한다.</li>
+          <li>&amp;&gt; 또는 &gt; file 2&gt;&amp;1 : 표준 출력(stdout)과 표준 오류(stderr)를 같은 파일에 저장한다</li>
+        </ul>
+      </blockquote>
+    </blockquote>
+  </li>
+  <li>파일 디스크립터 (stdin, stdout,stderr)
+리눅스와 유닉스 시스템에서 모든 프로세스는 파일 디스크립터를 사용하여 입력과 출력을 처리한다</li>
+</ol>
+
+<ul>
+  <li>stdin (표준 입력, 파일 디스크립터 0) : 기본적으로 키보드 입력을 받는다</li>
+  <li>stdout (표준 출력, 파일 디스크립터 1): 기본적으로 터미널에 출력을 보낸다</li>
+  <li>stderr (표준 오류 ,파일 디스크립터2 ) : 기본적으로 터미널에 오류 메세지를 보낸다</li>
+</ul>
+
+<h2 id="예제-1">예제 1</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" 1&gt;&amp; a.txt
+</code></pre></div></div>
+<p>이 명령어는 파일 디스크립터 1 (stdout)을 a.txt 파일로 리다이렉트한다</p>
+
+<p>올바른 형식은</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" &gt; a.txt 또는 find / -name "*.txt" 1&gt; a.txt
+</code></pre></div></div>
+
+<h2 id="예제-2">예제 2</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -al -KnockOn 1&gt; b.txt 2&gt; a.txt
+</code></pre></div></div>
+<p>ls -al -KnockOn 명령어의 결과를 처리한다
+1&gt; b.txt : 표준 출력을 b.txt 파일로 리다이렉트한다
+2&gt; a.txt : 표준 오류를 a.txt 파일로 리다이렉트한다
+ls -al -KnockOn 명령어가 잘못된 옵션을 포함하고 있으므로 실행 시 오류가 발생한다. 이 오류 메시지는 a.txt 파일에 저장된다</p>
+
+<h2 id="예제-3">예제 3</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -knockOn &gt; c.txt 2&gt;&amp;1
+</code></pre></div></div>
+<p>ls -knockOn 명령어의 결과를 처리</p>
+<blockquote>
+  <p>c.txt : 표준 출력을 c.txt 파일로 리다이렉트
+2&gt;&amp;1 : 표준 오류를 표준 출력과 동일한 파일로 리다이렉트(c.txt).
+결과적으로 ls -knockOn 명령어의 출력과 오류 메시지가 모두 c.txt 파일에 저장된다</p>
+</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[리다이렉션에 대해서 공부해보자]]></summary></entry><entry><title type="html">맥에서 리눅스 환경 구축하기- 도커 기본 설정값 1편</title><link href="http://localhost:4000/sec/2024/07/05/dockeruse.html" rel="alternate" type="text/html" title="맥에서 리눅스 환경 구축하기- 도커 기본 설정값 1편" /><published>2024-07-05T17:00:00-09:00</published><updated>2024-07-05T17:00:00-09:00</updated><id>http://localhost:4000/sec/2024/07/05/dockeruse</id><content type="html" xml:base="http://localhost:4000/sec/2024/07/05/dockeruse.html"><![CDATA[<p>도커로 리눅스 서버를 띄워보자. 이걸로 실습 다 해내고 말테야. 도대체 왜 나는 앱등이일까? 맥북 짱 편한데 왜 보안에서는 맥북을 사용하기가 더럽게 힘든걸까&gt;?</p>
+
+<h1 id="개요">개요</h1>
+<p>저번 포스팅에서 도커란 무엇인지 알아보았으니 이번 포스팅에서는 도커를 사용해 리눅스 서버를 실행해보자.
+사실 내가 아는 많은 보안 전문가들이 m1을 이용하여 작업을 하지 않는다는걸로 보아 내 시도가 부질없을 확률이 크지만 일단은 임시방편으로는 쓸 수 있을 것 같기도 하고 이 과정을 통해 내가 뭐라도 배우겠지 싶어서 무모한 도전에 뛰어들었다.</p>
+
+<h2 id="steps">steps</h2>
+
+<ol>
+  <li>도커 설치하기
+    <ul>
+      <li>도커 다운로드 및 설치 
+(https://www.docker.com/)에서 도커를 설치할 수 있다. 
+굳이 공식 홈페이지에 들어가서 설치하지 않더라도 mac os 를 조금이라도 다뤄봤다면 설치되어 있을 <strong><em>homebrew</em></strong> 를 통해 설치할 수 있다.</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install --cask docker
+</code></pre></div></div>
+<ul>
+  <li>brew-&gt; 홈브류를 실행하는 명령어.</li>
+  <li>install -&gt; 소프트웨어를 설치하라는 명령어.</li>
+  <li>–cask -&gt; 홈브류의 cask를 사용하라는 옵션이다. homebrew의 cask는 gui어플리케이션을 설치하고 관리하기 위해 사용되는 homebrew의 확장이다.</li>
+  <li>docker -&gt; 설치하려는 소프트웨어 패키지의 이름이다</li>
+</ul>
+
+<ol>
+  <li>도커 실행 확인
+    <ul>
+      <li>터미널을 열고 명령어를 입력하여 도커가 정상적으로 설치되어있는지 확인해준다.
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker --version
+</code></pre></div>        </div>
+        <p><img width="763" alt="스크린샷 2024-07-06 오후 9 32 56" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/cf28dfa6-a063-46df-9d27-c45d2d4cf423" />
+나는 커스텀하는걸 굉장히 좋아하기 때문에 터미널도 이렇게 커스텀을 해주었다. 원래는 일반 터미널로 들어가서 해야함 !!</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p><img width="388" alt="스크린샷 2024-07-06 오후 9 34 20" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/c8b5acaa-f64e-4ddc-aa09-2b2f0d6a007a" /></p>
+
+<p>이렇게 도커의 버전이 확인이 된다</p>
+
+<ol>
+  <li>도커 이미지 다운로드
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull ubuntu
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>원하는 리눅스 이미지를 도커 허브에서 다운로드한다. 예를 들어 ubuntu 이미지를 다운로드해보자. 솔직히 어떤걸 해야할지 몰라가지고 걍 아무거나 했다. 
+<img width="497" alt="스크린샷 2024-07-06 오후 9 35 58" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/770067bc-0f99-4313-b957-df0f8d9b4f1a" />
+만만한 우분투 소환. 이 포스팅을 작성하기 전 필자는 이전에 설치를 해두어서 코드들이 막 폭포마냥 쏟아져내려가진 않는데, 원래는 뭔 프로세스가 미친듯이 작동한다.</p>
+
+<ol>
+  <li>컨테이너 실행
+    <ul>
+      <li>다운로드한 이미지를 이용하여 컨테이너를 실행한다.
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it ubuntu /bin/bash
+</code></pre></div>        </div>
+      </li>
+      <li>docker -&gt; 도커 명령어를 실행하는 도구</li>
+      <li>run -&gt; 새로운 컨테이너를 생성하고 실행하는 명령어이다</li>
+      <li>-it -&gt; 두개의 옵션을 결합한 것이다 
+ -&gt; -i (interective): 컨테이너의 표준 입력을 활성화하여 터미널 입력을 받을수 있게 한다 
+ -&gt; -t (tty): 터미널을 할당하여 컨테이너 내부에서 터미널 세션을 사용할 수 있게 한다. 이 옵션은 터미널 사용자 인터페이스를 제공하는데 필요하다.</li>
+      <li>ubuntu -&gt;  사용할 도커 이미지의 이름이다. 여기서는 우분투 이미지를 사용했고, 이 이미지는 도커 허브에서 자동으로 다운된다. 아까 다운로드를 했기 때문에 우리는 추가적으로 다운로드 되지 않는다</li>
+      <li>/bin/bash -&gt; 컨테이너가 실행될때 시작할 명령어를 뜻한다. 여기서는 ubuntu 컨테이너에서 bash 셀을 실행하도록 지정한다. 이를 통해 컨테이너 내부에서 명령어를 입력하고 실행할 수 있다.</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>ℹ️ 즉 docker run -it ubuntu /bin/bash 명령어는 Ubuntu 도커 이미지를 사용하여 새로운 컨테이너를 생성하고, 그 컨테이너 안에서 인터랙티브 Bash 셸을 실행한다.</p>
+</blockquote>
+
+<blockquote>
+  <p>🔥 이 명령어를 실행하면 터미널이 컨테이너 내부의 bash 셀로 전환되어 사용자가 직접 명령어를 입력하고 실행할 수 있는 환경을 제공한다</p>
+</blockquote>
+
+<ol>
+  <li>컨테이너 내에서의 작업
+컨테이너가 실행되면, 터미널이 ubuntu 셀로 바뀐다. 이제 리눅스 명령어를 사용하여 필요한 작업을 할 수 있따.</li>
+</ol>
+
+<p>나는 제일 먼저 vim을 설치해주었다</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
+apt-get install vim
+</code></pre></div></div>
+<p>프론트앤드 개발자였던 필자의 입장에서 보기에는 <code class="language-plaintext highlighter-rouge">apt-get</code> 과 자바스크립트의 <code class="language-plaintext highlighter-rouge">yarn</code> 그리고 <code class="language-plaintext highlighter-rouge">npm</code> 
+이 꽤나 유사하게 보였다. 
+<img width="1521" alt="스크린샷 2024-07-07 오전 5 23 37" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/c3fb83aa-d0be-4c6a-a64f-86b57ab78ba6" />
+이렇게 프로세스가 뜬다</p>
+
+<p>그렇게 vim을 설치해주고,</p>
+
+<ol>
+  <li>컨테이너 종료
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exit
+</code></pre></div>    </div>
+    <p>작업이 끝나면 컨테이너를 종료햐주면 된다</p>
+  </li>
+  <li>실행 중인 컨테이너 확인
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+</code></pre></div>    </div>
+    <p>여기서 ps는 <code class="language-plaintext highlighter-rouge">process status</code> 를 의미하는데, 이는 유닉스 및 리눅스 시스템에서 프로세스 상태를 보여주는 명령어인 <code class="language-plaintext highlighter-rouge">ps</code>에서 유래하였다. 현재 실행중인 도커 컨테이너의 정보를 출력하며, 기본적으로 실행 중인 컨테이너만 표시한다.</p>
+  </li>
+</ol>
+
+<h3 id="여러가지-옵션들">여러가지 옵션들</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-a</code> 또는 <code class="language-plaintext highlighter-rouge">--all</code> : 모든 컨테이너(실행 중이거나 중지된 컨테이너 모두)</li>
+  <li><code class="language-plaintext highlighter-rouge">-q</code> 또는 <code class="language-plaintext highlighter-rouge">--quiet</code>: 컨테이너 id만 출력한다</li>
+  <li><code class="language-plaintext highlighter-rouge">-f</code> 또는 <code class="language-plaintext highlighter-rouge">--filter</code>: 특정 조건에 맞는 컨테이너만 필터링하여 표시한다</li>
+</ul>
+
+<h3 id="예시">예시</h3>
+
+<p>실행 중인 모든 컨테이너 표시:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+</code></pre></div></div>
+
+<p>모든 컨테이너(실행 중이거나 중지된 것 포함) 표시:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps -a
+</code></pre></div></div>
+
+<p>컨테이너 ID만 출력:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps -q
+</code></pre></div></div>
+
+<p>특정 이미지로 생성된 컨테이너만 표시:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps -f ancestor=ubuntu
+</code></pre></div></div>
+
+<hr />
+<p>자 이제 도커 사용법도 대충 알아봤으니 이제 이걸로 리눅스 서버를 띄워보자 !
+—</p>
+
+<h1 id="리눅스-서버를-띄워보자">리눅스 서버를 띄워보자</h1>
+
+<h2 id="dockerfile-작성">dockerfile 작성</h2>
+
+<h3 id="1-터미널을-열고-작업할-디렉토리-만들기">1. 터미널을 열고 작업할 디렉토리 만들기</h3>
+<p>아까 공부한 대로</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it ubuntu /bin/bash
+</code></pre></div></div>
+<p>이 명령어를 통해 서버를 시작해주면</p>
+
+<p><img width="936" alt="스크린샷 2024-07-07 오전 5 28 09" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/2309cf7d-9f05-4afa-bc3e-76a14a66203b" />
+이러한 프로세스와 함께 뭐가 많이 뜰것이다.</p>
+
+<p>mkdir (디렉토리 이름)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd (디렉토리 이름)
+</code></pre></div></div>
+<p><img width="468" alt="스크린샷 2024-07-07 오전 5 31 48" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/83692fec-9bfc-4c9a-b2d4-9c660d81cc67" /></p>
+
+<p>프론트앤드 개발할때 터미널에서 사용하던 명령어와 같아서 보기가 좀 편했다.
+cd는 해당 디렉토리로 이동하라는 말이였고, mkdir은 해당 디렉토리를 생성하라는 이야기이다. 
+이 상태에서 도커파일을 꺼내보자.</p>
+
+<h3 id="2-도커파일-생성">2. 도커파일 생성</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano Dockerfile
+</code></pre></div></div>
+<p><img width="570" alt="스크린샷 2024-07-07 오전 5 37 15" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/0ff9fd0b-441b-42a6-bab8-f430a1a69e62" />
+nano가 안 깔려있어서 이렇게 뜬다</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi Dockerfile
+</code></pre></div></div>
+<p>둘 중 하나를 선택해서 하면 되는데, 나는 앞서 vim만 설치해두었다. 
+그래서 vi를 사용하여 진행해보려고 하였으나 nano도 찍먹해보고싶어서 설치했다 
+타 개발자분들을 봤을때 vim을 많이 사용하시는것 같아서 앞으로는 vim 위주로 사용햐보려고 한다</p>
+
+<p><br /></p>
+
+<p><strong><em>nano 설치하기</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt install -y nano
+</code></pre></div></div>
+
+<h3 id="3-dockerfile에-이걸-복사붙여넣기-추가한다">3. dockerfile에 이걸 복사붙여넣기 추가한다.</h3>
+<p>언젠가는 나도 이 내용을 하나하나 만져가면서 이해하는 날이 올거라 믿는다. 일단은 주어진 내용만으로도 열심히 이해해보도록 하자</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 최신 Ubuntu 이미지를 기반으로 사용
+FROM ubuntu:latest
+
+# 패키지 목록을 업데이트하고 OpenSSH 서버를 설치
+RUN apt update &amp;&amp; apt install -y openssh-server
+
+# 루트 비밀번호 설정
+RUN echo 'root:password' | chpasswd
+
+# SSH를 통해 루트 로그인 허용
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# 권한 분리 디렉토리 생성
+RUN mkdir -p /run/sshd
+
+# 포트 22 노출
+EXPOSE 22
+
+# SSH 서비스를 시작
+CMD ["/usr/sbin/sshd", "-D"]
+</code></pre></div></div>
+
+<ol>
+  <li>from ubuntu
+    <ul>
+      <li>최신 우분투 이미지를 기반으로 사용한다는 이야기다. <code class="language-plaintext highlighter-rouge">from</code> 지시어는 docker 이미지의 기본 이미지를 지정한다</li>
+    </ul>
+  </li>
+  <li>run apt update &amp;&amp; apt install -y openssh-server
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">openssh-server</code>패키지를 설치한다. <code class="language-plaintext highlighter-rouge">apt update</code>는 패키지 목록을 업데이트하고 <code class="language-plaintext highlighter-rouge">apt-install -y openssh-server</code> 는 상호작용 없이 openSSH 서버를 설치한다…
+이때 상호작용 없이라는 말은 예를 들어
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Do you want to continue? [Y/n]
+</code></pre></div>        </div>
+        <p>이걸 모두 건너뛴다는 것이다. -y라고 했기 떄문에 yes로 설정해놓는다는 이야기.
+이걸 안해놓으면 대참사가 일어난다</p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  ncurses-term openssh-sftp-server
+Suggested packages:
+  ssh-askpass molly-guard rssh monkeysphere
+The following NEW packages will be installed:
+  ncurses-term openssh-server openssh-sftp-server
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,238 kB of archives.
+After this operation, 5,872 kB of additional disk space will be used.
+Do you want to continue? [Y/n]
+</code></pre></div>        </div>
+        <p>이걸 하나하나 다 y를 눌러야 한다는 점.</p>
+      </li>
+    </ul>
+  </li>
+  <li>RUN echo ‘root:비밀번호’ | chpasswd
+    <ul>
+      <li>루트 사용자 계정의 비밀번호를 설정한다. 나는 귀찮아서 그냥 password를 비밀번호로 해두었다!</li>
+    </ul>
+  </li>
+  <li>RUN sed -i ‘s/#PermitRootLogin prohibit-password/PermitRootLogin yes/’ /etc/ssh/sshd_config
+    <ul>
+      <li>ssh 설정 파일 (/etc/ssh/sshd_config)에서 PermitRootLogin 설정을 변경하여 루트 로그인을 허용한다.
+<br /></li>
+      <li>sed -i 명령어는 파일을 직접 수정하는데, #PermitRootLogin prohibit-password를 PermitRootLogin yes로 바꾼다</li>
+    </ul>
+  </li>
+  <li>RUN mkdir -p /run/sshd
+    <ul>
+      <li>ssh 권한 분리 디렉토리를 생성한다.</li>
+    </ul>
+  </li>
+  <li>expose 22
+    <ul>
+      <li>docker 컨테이너가 사용하는 포트 22를 올린다. expose 지시어는 docker 컨테이너가 외부와 통신하기 위해 사용하는 포트를 지정한다</li>
+    </ul>
+  </li>
+  <li>cmd [“/usr/sbin/sshd”, “-D”]
+    <ul>
+      <li>ssh 서비스를 데몬 모드로 시작한다. <code class="language-plaintext highlighter-rouge">cmd</code>지시어는 컨테이너가 시작될 때 실행할 명령어를 지정한다. 여기서는 <code class="language-plaintext highlighter-rouge">sshd</code>를 데몬 모드(<code class="language-plaintext highlighter-rouge">-d</code>)로 실행하여 컨테이너가 종료되지 않도록 한다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>이 도커파일은 우분투 기반의 도커 이미지를 빌드하고 <code class="language-plaintext highlighter-rouge">openssh</code> 서버가 설치되고 설정된 컨테이너를 실행할 수 있다. ssh 를 통해 루트 계정으로 접속할 수 있도록 설정되어 있으며 , 포트 22를 외부에 올려놔서 ssh 접속을 허용한다</p>
+
+<p><br />
+그래도 좀 안면이 있는 vim으로 하기로 결정
+<img width="1516" alt="스크린샷 2024-07-07 오전 6 03 20" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/42e17121-38da-4709-91cc-c0124820d04f" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi Dockerfile
+</code></pre></div></div>
+<p>해당 명령어를 치면 나오는 곳이다. 
+이곳에 아까 그 코드들을 복사 붙여넣기 해주면 되는데, 
+번외편으로 vim 사용법을 짚고 넘어가도록 해보겠다</p>
+
+<h1 id="vim의-기본모드">vim의 기본모드</h1>
+<ol>
+  <li>명령 모드 : vim이 시작될때의 기본 모드이다. 텍스트를 입력하지 않고 명령어를 입력할 수 있다.</li>
+  <li>입력 모드 : 텍스트를 입력할 수 있는 모드이다. 명령 모드에서 i를 눌러 입력 모드로 전환한다.</li>
+  <li>명령-라인 모드 : 파일 저장, 종료 등의 명령어를 입력할 수 있는 모드이다. 명령 모드에서 : 를 눌러 진입한다</li>
+</ol>
+
+<blockquote>
+  <p>여기서 명령 모드와 입력 모드의 차이점이 잘 구별이 안 갔는데, 알고보면 굉장히 쉽다.</p>
+  <h2 id="여러가지-단축키">여러가지 단축키</h2>
+</blockquote>
+
+<h3 id="입력-모드로-전환">입력 모드로 전환</h3>
+
+<ul>
+  <li>i : 현재 커서 위치 앞에 텍스트를 입력한다</li>
+  <li>a : 현재 커서 위치 뒤에 텍스트를 입력한다.</li>
+  <li>o : 현재 커서 아래에 새로운 줄을 추가하고 텍스트를 입력한다.</li>
+</ul>
+
+<h3 id="입력-모드에서-명령-모드로-전환">입력 모드에서 명령 모드로 전환</h3>
+<ul>
+  <li>입력 모드에서 Esc 키</li>
+</ul>
+
+<h3 id="파일-저장-및-종료">파일 저장 및 종료</h3>
+<ul>
+  <li>
+    <p>명령 모드에서 :를 눌러 명령-라인 모드로 전환</p>
+  </li>
+  <li>:w : 파일을 저장</li>
+  <li>:q : vim을 종료</li>
+  <li>:wq 또는 :x : 파일을 저장하고 vim을 종료</li>
+  <li>:q! : 변경 사항을 저장하지 않고 vim을 강제로 종료</li>
+</ul>
+
+<h3 id="텍스트-편집">텍스트 편집</h3>
+<p>명령 모드에서도 텍스트를 편집할 수 있다.</p>
+
+<ul>
+  <li>dd : 현재 줄을 삭제</li>
+  <li>yy : 현재 줄을 복사</li>
+  <li>p : 복사하거나 잘라낸 내용을 현재 커서 위치에 붙여넣기</li>
+  <li>u : 마지막 명령을 취소</li>
+  <li>Ctrl + r : 마지막 명령을 다시 실행</li>
+</ul>
+
+<blockquote>
+  <p>여기서 명령 모드와 입력 모드의 차이점이 드러나는 것이다. 
+내용 수정은 입력 모드에서만 가능하다</p>
+</blockquote>
+
+<p>vim에 접속한 후 i를 누르면 
+<img width="533" alt="스크린샷 2024-07-07 오전 6 11 28" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/f9ca0d5b-b3b2-44c7-8b71-610e1e4e19cb" />
+이렇게 insert 마크가 뜬다. 이때부터 편집하면 된다.</p>
+
+<p><img width="597" alt="스크린샷 2024-07-07 오전 6 15 21" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/458f2aa2-6653-4e57-92d6-8e9c801dcea1" />
+이해를 돕기 위한 주석을 전부 제거하고 입력해주었다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu:latest
+RUN apt update &amp;&amp; apt install -y openssh-server
+RUN echo 'root:password' | chpasswd
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN mkdir -p /run/sshd
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]
+</code></pre></div></div>
+
+<p>esc키를 누르고 :wq를 입력후 나오면 된다</p>
+
+<hr />
+<h3 id="3-docker-이미지-빌드">3. docker 이미지 빌드</h3>
+<p>dockerfile을 사용하여 docker 이미지를 빌드한다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exit
+</code></pre></div></div>
+<p>먼저 이렇게 입력해서 나가줘야 한다
+<img width="293" alt="스크린샷 2024-07-07 오전 6 26 48" src="https://github.com/insidepixce/insidepixce.github.io/assets/126161716/68a51e59-6ef6-4414-bd85-27e64a55db6c" />
+현재 우리는 로컬 머신에서 도커 컨테이너를 실행하고 해당 컨테이너 안에 있는 상황이였다. 도커 명령어가 작동하지 않는 이유는 도커 데몬이 컨테이너 내에서는 실행되지 않기 떄문이다.
+컨테이너 내부에 들어가서 docker 명령어를 실행하려고 하면 컨테이너 안에서는 도커 데몬이 실행되고 있지않기 떄문에 
+command not find 오류가 발생한다.</p>
+
+<p>컨테이너 내부에서 도커 명령어를 사용하려면 도커 호스트 *로컬 머신 으로 돌아가야 한다. 컨테이너 내부에서 ‘exit’명령어를 입력하여 호스트로 돌아갈 수 있다.</p>
+
+<p>아 맞다 , 중요한 점이 있다.</p>
+<h1 id="도커는-한번-나가면-저장이-되지-않는다">도커는 한번 나가면 저장이 되지 않는다</h1>
+<p>이걸 왜 이제야 말해주냐고요ㅕ? 저도 당했거든요 .</p>
+
+<p>그럼 도커에서 작업 후 어떻게 저장하냐면…</p>
+
+<h2 id="1이미지로-커밋하기">1.이미지로 커밋하기:</h2>
+<p>컨테이너 내에서 작업한 내용을 새로운 도커 이미지로 커밋할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker commit &lt;컨테이너_ID&gt; &lt;새로운_이미지_이름&gt;
+</code></pre></div></div>
+<p>예를 들어, my-ubuntu-ssh-modified라는 이름의 새로운 이미지를 만들려면 다음과 같이 실행합니다:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker commit &lt;컨테이너_ID&gt; my-ubuntu-ssh-modified
+</code></pre></div></div>
+
+<h2 id="2-데이터-볼륨-사용하기">2. 데이터 볼륨 사용하기:</h2>
+<p>중요한 데이터를 컨테이너 외부에 저장하고 싶다면 데이터 볼륨을 사용할 수 있다. 
+데이터 볼륨은 호스트 시스템과 컨테이너 간에 데이터를 공유할 수 있도록 해준다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -v /path/on/host:/path/in/container -it ubuntu:latest /bin/bash
+</code></pre></div></div>
+<p>예를 들어, 호스트의 /data 디렉토리를 컨테이너의 /data 디렉토리로 마운트하려면</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -v /data:/data -it ubuntu:latest /bin/bash\
+</code></pre></div></div>
+
+<h2 id="3-컨테이너-중지-후-재시작하기">3. 컨테이너 중지 후 재시작하기:</h2>
+<p>exit 명령어 대신 docker stop 명령어로 컨테이너를 중지한 후 docker start 명령어로 재시작할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker stop &lt;컨테이너_ID&gt;
+docker start &lt;컨테이너_ID&gt;
+</code></pre></div></div>
+
+<h2 id="4-dockerfile-사용하기">4. Dockerfile 사용하기:</h2>
+<p>반복적으로 수행할 작업이나 설치할 패키지가 있다면, Dockerfile에 이러한 작업을 기록해두고 필요할 때마다 이미지를 빌드하여 사용할 수 있다. 
+이를 통해 항상 동일한 환경을 재현할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t insidepixce-test .
+</code></pre></div></div>
+
+<p>나는 4번째 방법을 채택해볼것이다.</p>
+
+<h3 id="1-dockerfile-생성">1. dockerfile 생성</h3>
+<p>먼저 dockerfile을 생성할 디렉토리부터 만들어보자</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir my-docker-image
+cd my-docker-image
+</code></pre></div></div>
+
+<h3 id="2-dockerfile-작성">2. dockerfile 작성</h3>
+<p>텍스트 에디터를 이용해 Dockerfile이라는 이름의 파일을 생성하고 밑에 내용을 추가한다</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu:latest
+RUN apt-get update &amp;&amp; apt-get install -y vim nano
+CMD ["/bin/bash"]
+</code></pre></div></div>
+<p>베이스 이미지로 <code class="language-plaintext highlighter-rouge">ubuntu</code>를 사용하고, 패키지 목록을 업데이트하고 <code class="language-plaintext highlighter-rouge">vim</code>과 <code class="language-plaintext highlighter-rouge">nano</code>를 설치한다. 
+마지막으로 컨테이너가 실행될 떄 기본적으로 bash를 실행하도록 설정한다.</p>
+
+<h3 id="3-도커-이미지-빌드">3. 도커 이미지 빌드</h3>
+<p>작성된 도커파일을 기반으로 이미지를 빌드한다. ‘my-custom-image’는 이미지 이름이다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t my-custom-image .
+</code></pre></div></div>
+
+<h3 id="4-컨테이너-실행">4. 컨테이너 실행</h3>
+<p>빌드한 이미지를 사용하여 컨테이너를 실행한다</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-run -it my-custom-image
+</code></pre></div></div>
+<blockquote>
+  <p>여기서 복습 한번 해보자면 it는 어떤 어떤 옵션을 결합한 명령어였을까? 컨테이너의 표준 입력을 활성화하여 터미널 입력을 받을 수 있게 하고, 터미널을 할당하여 컨테이너 내부에서 터미널 세션을 사용할 수 있게한다고 나와있었다. 이 옵션은 터미널 사용자 인터페이스를 제공하는데 필요한 옵션이다. 까먹지 말자 ! 하나씩 기억해 나가는거야.</p>
+  <h3 id="요약">요약</h3>
+  <ol>
+    <li><code class="language-plaintext highlighter-rouge">Dockerfile</code> 생성 및 작성</li>
+    <li><code class="language-plaintext highlighter-rouge">docker build</code> 명령어로 이미지 빌드</li>
+    <li><code class="language-plaintext highlighter-rouge">docker run</code> 명령어로 컨테이너 실행</li>
+  </ol>
+</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[도커로 리눅스 서버를 띄워보자. 이걸로 실습 다 해내고 말테야. 도대체 왜 나는 앱등이일까? 맥북 짱 편한데 왜 보안에서는 맥북을 사용하기가 더럽게 힘든걸까&gt;?]]></summary></entry><entry><title type="html">맥에서 리눅스 환경 구축하기- 도커란 무엇인가?s</title><link href="http://localhost:4000/javascript/2024/07/05/dailyreport.html" rel="alternate" type="text/html" title="맥에서 리눅스 환경 구축하기- 도커란 무엇인가?s" /><published>2024-07-05T16:00:00-09:00</published><updated>2024-07-05T16:00:00-09:00</updated><id>http://localhost:4000/javascript/2024/07/05/dailyreport</id><content type="html" xml:base="http://localhost:4000/javascript/2024/07/05/dailyreport.html"><![CDATA[<p>도커란 무엇인가? 개념부터 정리해보자.</p>
+
+<h1 id="intro">intro</h1>
+<p>보안을 다뤄야 하는 상황인데, 나는 오직 맥북만 가지고 있다. 심지어 내 맥북은 intel도 아닌 m2.
+기본적인 리눅스 환경을 구축해야 하는데… 나한테는 방법이 없는 상황인걸까? 
+윈도우 pc를 하나 더 사고 설정하기 귀찮았던 나는 docker로 리눅스를 쓰겠다는 다소 무모한 도전을 시작하기로 했다.</p>
+
+<h1 id="어떻게-리눅스-환경을-구축할것인가">어떻게 리눅스 환경을 구축할것인가</h1>
+<p>먼저 도커를 설치하기로 한만큼 , 도커에 대해서 알아보자.</p>
+
+<h2 id="도커란">도커란?</h2>
+<p>도커는 소프트웨어 개발 및 배포에 혁신을 가져온 플랫폼이라고 한다. 애플리케이션을 컨테이너라는 가벼운 가상 환경에서 실행할 수 있도록 도와주고, 이러한 컨테이너는 격리된 환경에서 애플리케이션과 그 종속성을 함께 패키징하여 어디서든 실행할수 있게 도와준다.</p>
+
+<h2 id="비유해보자면">비유해보자면</h2>
+<p>도커는 일종의 컨테이너 선박으로 비유할 수 있다.</p>
+
+<h3 id="컨테이너">컨테이너</h3>
+<p>컨테이너는 물건을 담는 상자이다. 컨테이너는 일정한 크기와 형태를 가지고 있으며, 어떤 물건이든 그 안에 넣을 수 있다. 
+즉 그냥 컨테이너는 진짜 컨테이너라고 생각하면 된다는 이야기이다. 컨테이너 상자에 물건을 넣으면, 그 상자는 배든 기차든 트럭이든 동일하게 운반할 수 있다. 이와 같이 그 애플리케이션은 어떤 컴퓨터에서 동일하게 실행될 수 있다는거다.</p>
+
+<h3 id="이미지">이미지</h3>
+<p>컨테이너에 어플리케이션 채워 넣기 전에 어떻게 채울지를 정하는 설계도나 템플릿이다. 설계도에 따라 컨테이너 상자에 물건을 넣는 것 처럼 말이다,</p>
+
+<h3 id="도커-엔진">도커 엔진</h3>
+<p>컨테이너 선박을 운영하고 관리하는 시스템이다. 도커 엔진은 컨테이너를 생성하고 실행하는 소프트웨어라고 생각하면 된다. 나도 이게 잘 이해가 안되었다,</p>
+
+<h3 id="도커-허브">도커 허브</h3>
+<p>컨테이너를 보관하고 필요할떄 꺼내 쓸수있는 큰 창고이다. 이미지들을 저장하고 공유하는 클라웅드 서비스이다. 
+물건을 보관해두는 창고처럼, 도커 허브는 도커 이미지를 저장해두고 필요할때 다운로드받아 사용할 수 있다 .</p>
+
+<h3 id="도커-컴포즈">도커 컴포즈</h3>
+<p>여러개의 컨테이너 상자를 묶어 한번에 관리하는 시스템이라고 보면 된다 
+여러 컨테이너 상자를 하나의 운송 단위로 묶어 관리하는 느낌?</p>
+
+<h3 id="그니까">그니까…</h3>
+<ul>
+  <li>컨테이너 : 물건을 담은 상자 (애플리케이션과 모든 필요요소를 포함한 패키지)</li>
+  <li>이미지 : 상자를 채우기 위한 설계도(컨테이너 생성 템플릿)</li>
+  <li>도커 엔진 : 선박 운영 시스템 (컨테이너를 생성하고 관리하는 소프트웨어)</li>
+  <li>도커 허브 : 큰 창고 (도커 이미지를 저장하고 공유)</li>
+  <li>도커 컴포즈 : 상자 묶음 관리 시스템 (여러 컨테이너를 정의하고 실행)</li>
+</ul>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[도커란 무엇인가? 개념부터 정리해보자.]]></summary></entry><entry><title type="html">sql서브쿼리 실습</title><link href="http://localhost:4000/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0.html" rel="alternate" type="text/html" title="sql서브쿼리 실습" /><published>2024-05-04T14:00:00-09:00</published><updated>2024-05-04T14:00:00-09:00</updated><id>http://localhost:4000/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0</id><content type="html" xml:base="http://localhost:4000/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0.html"><![CDATA[<p>sql의 세계는 너무 어려워</p>
+
+<h1 id="codeit-sql-서브쿼리-기초-실습">codeit sql 서브쿼리 기초 실습</h1>
+
+<p>이 쿼리는 서브쿼리를 사용하여 ‘2018년 12월 31일’ 이전에 등록된 상품의 ID를 선택하고 그 ID에 해당하는 리뷰를 반환한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT *
+FROM review
+WHERE item_id IN (
+    SELECT item_id
+    FROM item
+    WHERE registration_date &lt; '2019-01-01'
+);
+</code></pre></div></div>
+
+<p>원래 코드</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE `review` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `mem_id` int DEFAULT NULL,
+  `item_id` int DEFAULT NULL,
+  `star` int DEFAULT NULL,
+  `comment` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `review` (`id`, `mem_id`, `item_id`, `star`, `comment`) VALUES 
+(1,1,1,5,'착용감이 너무 좋아요, 요새 맨날 이것만 입고 다닙니다.'),
+(2,1,2,2,'그럭저럭 입을만 하긴 한데 밴딩이 너무 조여요 ㅜㅜ'),
+(3,1,6,5,'한 번 사보고 촉감이 너무 좋아서 10장 구매했습니다~'),
+(4,1,14,4,'두툼한 느낌이 좋기는 한데 실내에서는 땀이 좀 나네요..'),
+(5,2,4,3,'그냥 입을만한 정도에요.'),
+(6,2,8,5,'디자인도 최고고, 착용감도 진짜 좋아요.'),(7,2,9,5,'이거 입고 요새 맨날 헬스장 다닙니다 ㅎㅎ'),(8,2,13,3,'뭔가 일단 사서 입고 있기는 한데 디자인이 이미지보다 좀더 튀네요. '),(9,2,22,4,'뭔가 스타일리쉬한 느낌이라 요새 자주 입고 다녀요. '),(10,3,4,5,'기본템으로 좋은 것 같아서 여러장 샀네요~!'),(11,3,9,5,'땀을 잘 흡수해줘서 좋아요, 가족들 전부 한장씩 사서 줬어요 ㅋㅋ'),(12,3,15,3,'자수 모양이 이쁘긴 한데 좀 올드한 느낌이네요..'),(13,4,2,1,'이거 진짜 날씬한 사람만 입을 수 있는 건가요? 남편이 고무줄이 너무 조인다고 해요.'),(14,4,8,4,'처음에는 좀 너무 큰 사이즈 느낌이었는데 오히려 지금은 잘 산 것 같아요.'),(15,4,22,5,'이거 입고 모임 나가면 어디서 샀냐고 다 물어봐요, 좋아요!!'),(16,4,26,4,'봄가을에 입으면 딱 좋을 듯요 ^^'),(17,6,1,4,'적당히 입고 다니기 좋네요'),(18,6,2,0,'절대 사지마세요.. 남친 선물로 줬는데 허리가 너무 조인다고 해요..'),(19,6,3,5,'딱 스탠다드 런닝 느낌이에요. 남동생 선물로 여러 장 샀네요!'),(20,6,6,1,'이거 왜 세탁하고 나니까 청색이 너무 옅어져버리죠? 이염돼서 다른 옷도 다 망했어요 ㅜ'),(21,6,19,4,'요새 출근할 때 이거만 입고 다닙니다, 정말 예쁘네요~'),(22,6,21,2,'디자인이 조금 애매하네요. 그래도 가끔 입기에는 괜찮네요'),(23,10,1,5,'편하게 입고 다니기에 좋네요. '),(24,10,9,4,'요즘엔 헬스장에서 주는 옷 말고 이거 입고 다녀요. 통기성이 좋네요~'),(25,10,14,5,'가을용으로는 좀 더울 것 같고 겨울에 입으면 좋을 듯 하네요!'),(26,10,19,5,'이 옷은 이제 제 favorite이 될 것 같아요~ 데이트할 때마다 입으려고 해요'),(27,10,20,3,'사진으로 볼 때는 몰랐는데 받아보니 생각보다 좀 올드한 스타일인 것 같네요 ㅜ'),(28,10,23,4,'뭔가 독특한 안감과 겉감 때문에 개성있는 분위기를 연출할 수 있네요~'),(29,10,24,5,'밴딩이 진짜 편하고 길이도 적당해서 좋아요~'),(30,10,25,5,'이거 입고 사진 찍으니까 진짜 이쁘게 나와요!!! 다른 패턴도 또 나왔으면 ㅜ'),(31,10,29,5,'뭔가 사람들이 카라 어디로 떼먹었냐고 물어봐서 웃겨요 ㅋㅋㅋ'),(32,13,1,4,'딱 기본템으로 좋네요, 제 동생도 이쁘다 해서 하나 선물해줬습니다~'),(33,13,4,3,'뭔가 괜찮긴 한데 길이가 좀 짧은 감이 있어요.. 천을 덧대야할 것 같은 느낌..'),(34,13,9,5,'속옷 대신 입고 다녀도 될 정도로 가볍고 좋아요'),(35,13,18,5,'이쁘네요! '),(36,13,20,2,'괜찮긴 한데 물이 금새 빠졌네요..'),(37,13,30,0,'이거 사지 마세요.. 포켓 하나가 단추 떨어져서 왔어요..'),(38,16,1,5,'색깔이 너무 튀지도 않고 딱 좋아요'),(39,16,2,2,'이거 밴딩이 너무 쎄요.. 조절할 수 있도록 해주세요.  '),(40,16,3,4,'괜찮네요, 친구도 이거 샀더라구요 ㅋㅋ'),(41,16,5,3,'난해한 디자인.. 난 모르겠다, 그냥 입고 다닐게요. 착용감은 괜찮아요'),(42,16,7,5,'입기 괜찮네요. 적당한 핏이에요.'),(43,16,12,4,'좋아요, 따뜻하면서 시원해요?! '),(44,16,22,5,'이런 느낌으로 또다른 디자인해서 코트 판매해주세요! 도시적인 느낌 너무 좋아여'),(45,18,1,4,'질감이 괜찮네요, 패턴 제가 따로 입혀서 입고 다니고 있어요'),(46,18,4,3,'이거 뭐야 옷이, 기장 체크하고 살걸..'),(47,19,1,5,'좋아요~! 계절별로 하나씩 이런 느낌의 옷 있으면 좋겠어요, 두께감만 다르게 해서요'),(48,19,15,2,'이거 사놓고 입지도 못할 듯.. 너무 통이 작아서..'),(49,19,20,4,'입기에 괜찮은 듯~굿!'),(50,19,28,2,'괜찮긴 한데 단추 부분이 부실한 듯..'),(51,19,30,4,'괜찮은데 세탁하니까 사이즈가 좀 준 듯?'),(52,20,4,4,'나쁘지 않은 듯~!'),(53,20,9,5,'이거 진짜 좋네요. 내구성도 좋고 땀도 잘 흡수되고~'),(54,20,21,2,'도트 크기가 너무 큰 거 아닌가요.. 여친 주려고 샀는데 반품해야겠어요.'),(55,20,27,3,'엄마 사드렸는데, 옷이 너무 힘이 없는 듯..');
+
+
+CREATE TABLE `item` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` text,
+  `gender` text,
+  `price` int DEFAULT NULL,
+  `description` text,
+  `registration_date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+INSERT INTO `item` (`id`, `name`, `gender`, `price`, `description`, `registration_date`) VALUES 
+(1,'남녀 공용 오버핏 반팔 라운드 티셔츠','u',22000,'캐쥬얼한 무드를 연출할 수 있는 오버핏 반팔 티셔츠입니다, 깔끔한 라운드넥 디자인이라 데일리룩으로 꾸준히 입을 수 있어요!','2018-03-21'),
+(2,'남성용 밴딩 린넨 와이드 팬츠','m',33000,'매 시즌 사랑받았던, 여름에 꼭 필요한 핫한 밴딩 와이드 팬츠입니다. 베이직한 디자인과 컬러로 누구나 부담없이 이쁘게 입을 수 있습니다','2019-08-11'),
+(3,'남성용 순면 러닝','m',9000,'속옷 전문기업의 봉제 기술로 세탁 후에도 깔끔하게 유지됩니다. 봉제선이 최소화되어 편안한 착용감이 있습니다.','2018-04-15'),
+(4,'무지 7부 반팔 티셔츠','u',13000,'유니크한 디테일과 편안한 핏을 위해 최적의 소재를 사용해 만든 젊은 컨셉의 티셔츠입니다. 건강한 식물성 소재로 피부에 닿는 감촉이 부드럽습니다. ','2019-05-14'),
+(5,'브루너 반팔 티셔츠','m',20000,'뉴욕 스트릿의 감성이 살아나는 패턴이 있는 티셔츠입니다. 나만의 개성을 티셔츠로 드러내보세요.','2019-05-14'),(6,'남성용 스판 베이직 워싱 청바지','m',27000,'고퀄리티 상품, 쫀쫀한 스판데님으로 편안한 착용감을 느낄 수 있습니다, 한 두번 롤업해서 입어보는 것도 좋아요~!','2019-05-14'),(7,'남성용 슬렌더 데님','m',50000,'텐션 좋은 원단으로 만든 한정판 청바지, 베이스 워싱으로 은은한 슬림핏을 선사하는 바지입니다. 팬츠 밑단의 엣지 스타일로 트렌디한 디자인을 보실 수 있습니다.','2019-06-21'),(8,'프린팅 오버핏 맨투맨 ','u',35000,'레터링 프린팅으로 포인트를 준 오버핏 캐주얼 맨투맨입니다. 심플한 디자인이 다른 아이템과 잘 매치될 수 있게 해줍니다. 유행을 타지 않아 매년 입을 수 있는 아이템~!','2019-07-12'),(9,'냉감 반팔 티셔츠','u',15000,'아무리 땀흘려도 냄새나지 않는 티셔츠, 운동할 때 뭐입을지 고민하신 분들 많죠? 이 티셔츠 몇 장 사셔서 그런 고민 모두 날려버리세요. ','2019-08-17'),(10,'베어 프린팅 맨투맨 티셔츠','m',52000,'가을에 입으면 좋은 큐티한 상품, 평상복으로도 입을 수 있고, 데이트할 때도 입을 수 있어요! 귀여운 베어의 감성을 입어보세요. ','2019-07-12'),(11,'남성용 캐주얼 긴팔 남방','m',37000,'면 혼방 소재로 부드럽가 편안한 촉감을 느낄 수 있습니다. 트렌디함과 단정함을 모두 느낄 수 있습니다. ','2019-05-14'),(12,'남성용 오버핏 체크셔츠','m',45000,'늦가을부터 겨울까지 챙기면 좋을 베이직한 아이템, 톤 다운된 컬러로 세련된 캐주얼룩을 완성해봅시다.','2019-06-12'),(13,'남성용 스트라이프 셔츠','m',23000,'가끔 특별한 느낌을 주고 싶은 날에는? 스트라이프 디자인으로 주목받는 사람이 되어보세요. 세련미를 풍기는 사람이 되어봅시다. ','2019-07-12'),(14,'뉴밸루 후드집업 ','u',43000,'두툼한 느낌으로 나를 안아주는 후드집업, 집 근처에서도 센스있는 패션을 유지하고 싶다면 뉴밸루 후드집업입니다. 디자인과 실용성 모두 놓치고 싶지 않다면 선택하세요!','2019-03-04'),(15,'자수 반팔 티셔츠','f',52000,'여기저기 뛰어다니는 귀여운 고양이 감성, 오늘만큼은 귀여워지고 싶다면? 장인의 손길로 한땀한땀 새겨진 무늬가 있는 자수 반팔 티셔츠를 추천합니다. ','2019-07-12'),(16,'무지 티셔츠','f',30000,'원단이 주는 맨질맨질한 느낌이 좋습니다. 찰랑거리는 시원한 터치감으로 입지 않은 것처럼 편한 느낌을 줍니다. 누구나 편하게 입을 수 있는 무지 티셔츠~! ','2019-04-14'),(17,'밴딩 롤업 배기 팬츠','f',43000,'허리 사이즈에 상관없이 편하게 입을 수 있는 밴딩 스타일, 힙하면서도 꾸안꾸 스타일을 줄 수 있는 아이템입니다, 원하는 길이만큼 롤업하고 나가면 당신은 멋쟁이~!','2019-07-12'),(18,'박시 후드티 원피스 티셔츠','f',21000,'가볍게 입을 수 있지만 스타일리쉬한 느낌을 주는 원피스 티셔츠, 적당한 두께감으로 다양한 날씨에서 착용 가능합니다. ','2019-06-02'),(19,'플라워 벨티드 더블 자켓','f',71000,'누구보다도 화려해지고 싶은 날이 한번씩 있죠? 꽃이 온몸을 덮는 패턴으로 나의 존재감을 보여주세요. 라인감을 살려주는 디자인으로 당당함을 UP!','2019-07-03'),(20,'스타일리쉬 루즈 청자켓','f',39000,'과감한 프린팅과 찢김 무늬로 나만의 개성을 과시할 수 있습니다. 부담없는 연한 청색으로 은은함도 더했습니다. 아무리 빨아도 색 변화가 없을 거에요~!','2019-07-12'),(21,'여성용 도트 쉬폰 자켓','f',22000,'전통적인 게 가장 아름다운 법, 규칙적인 프린팅과 부드러운 촉감을 가진 쉬폰 자켓을 입어보세요. 발랄하고 스타일이 느껴지는 분위기를 연출할 수 있습니다. ','2019-05-14'),(22,'체크무늬 그린 롱코트','u',110000,'초록색과 검정색의 조화로운 색감으로 도회적인 느낌을 줄 수 있습니다. 오리털 안감으로 부족하지 않은 따뜻함을 느끼게 해줍니다. ','2019-09-14'),(23,'라이트 트렌치 코트','f',63000,'겉은 솔리드, 안은 체크면 두 가지 스타일로 되어 있습니다. 밑단이 분리되어 있는 패턴으로 착장 시 깔끔한 느낌을 줍니다. ','2019-08-19'),(24,'맵시 롱치마','f',40000,'허리 밴딩 타입으로 어떤 코디에도 자연스럽게 어울립니다. 몸에 감기는 시원한 재질로 여름에도 편하게 입을 수 있어요.','2019-05-14'),(25,'민들레 롱 스커트','f',25000,'화사한 민들레 패턴으로 꾸며진 롱 스커트~! 야외에서 사진 찍을 때 예쁜 샷을 선물해줄 스커트입니다. 약간의 늘어남이 있는 소재라 착용감도 좋습니다. ','2019-05-14'),(26,'블레이저 싱글 자켓','u',37000,'댄디하고 클래식한 느낌을 주는 남녀 공용 자켓입니다. 심플함만으로 매력을 선사하는 자켓으로 누구나 하나씩 갖고 있어야하는 기본아이템이죠!','2019-03-04'),(27,'여성 린넨 자켓','f',29000,'유행 타지 않는 아이템, 린넨 자켓! 여유감 있는 폼과 기장으로 안정감 있는 핏을 연출할 수 있습니다. 간단한 롤업으로 세련미를 줄 수도 있구요. ','2019-07-12'),(28,'후드 하프 코트','f',45000,'어머님들이 사랑하는 아이템, 세련된 분위기와 편안함을 함께 보여줄 수 있는 코트입니다. 생각보다 두꺼운 안감이 안정적인 보온 효과를 줍니다. ','2019-03-04'),(29,'여성용 노카라 자켓','f',67000,'평범한 자켓은 가라! 불필요한 카라를 없애고 오로지 실용성과 담백함만을 담은 자켓입니다. 업무 중에 입기에도 적합한 착용감을 제공합니다. ','2019-06-12'),(30,'여성용 투포켓 자켓','f',42000,'청청 패션의 끝을 장식해주는 아이템, 제대로된 청색 아이템을 찾는 다면 이 아이템을 추천합니다. ','2019-07-12');
+</code></pre></div></div>
+
+<p>어렵지 않게 풀었지만 항상 더 좋은 방법이 있을거라 생각이 든다 .</p>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[sql의 세계는 너무 어려워]]></summary></entry><entry><title type="html">코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)</title><link href="http://localhost:4000/javascript/2024/05/01/drown.html" rel="alternate" type="text/html" title="코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)" /><published>2024-05-01T14:00:00-09:00</published><updated>2024-05-01T14:00:00-09:00</updated><id>http://localhost:4000/javascript/2024/05/01/drown</id><content type="html" xml:base="http://localhost:4000/javascript/2024/05/01/drown.html"><![CDATA[<p>오늘의 하루도 코드코드코드</p>
+
+<h1 id="성능-최적화--코드-스플리팅과-레이지-로딩">성능 최적화 : 코드 스플리팅과 레이지 로딩</h1>
+<p>-&gt; 코드 스플리팅과 레이지 로딩을 적용하여 초기 로드 시간을 줄이는 방법을 구현해보았다.
+React.lazy와 suspense를 사용하여 컴포넌트를 비동기적으로 로드하고 Webpack의 분할 기능을 활용하여 큰 번들을 더 작은 청크로 나누는 방법을 실험했다. 
+결과적으로 사용자 경험을 개선하고, 페이지의 성능을 향상하였다.</p>
+
+<h1 id="웹-접근성-강화">웹 접근성 강화</h1>
+<p>-&gt; 대규모 사이트 리뉴얼 프로젝트를 진행하며 웹 접근성을 개선하는 작업을 진행했다.
+ARIA(Accessible Rich Internet Applications)라벨을 추가하고, 키보드 네비게이션을 위한 포커스 관리를 개선했다
+이를 통해 WCAG 2.1 지침을 준수하고 시각적, 물리적 제한을 가진 사용자들도 사이트를 원활하게 이용할 수 있다.</p>
+
+<h1 id="프론트엔드-보안-증진">프론트엔드 보안 증진</h1>
+<p>XSS(Cross-Site Scripting)과 CSRF(Cross-Site Request Forgery)와 같은 보안 취약점을 방지하기 위해 콘텐츠 보안 정책(Content Security Policy, CSP)을 설정하는 작업을 진행했다. CSP를 통해 외부 스크립트의 로드를 제한하고, 사이트의 보안을 강화하는 방법을 체계적으로 적용해보았다.</p>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[오늘의 하루도 코드코드코드]]></summary></entry><entry><title type="html">악성코드의 유형</title><link href="http://localhost:4000/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C%EC%9D%98-%EC%9C%A0%ED%98%95-copy.html" rel="alternate" type="text/html" title="악성코드의 유형" /><published>2024-02-24T14:00:00-09:00</published><updated>2024-02-24T14:00:00-09:00</updated><id>http://localhost:4000/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C%EC%9D%98%20%EC%9C%A0%ED%98%95%20copy</id><content type="html" xml:base="http://localhost:4000/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C%EC%9D%98-%EC%9C%A0%ED%98%95-copy.html"><![CDATA[<p>악성코드의 유형에 대하여 알아보자</p>
+
+<h1 id="악성코드의-유형">악성코드의 유형</h1>
+
+<h1 id="악성코드에는-어떤-유형이-있을까">악성코드에는 어떤 유형이 있을까?</h1>
+
+<p>악성코드를 분석할 떄 악성코드가 시도하는 행위를 먼저 추측하고 그런 가설을 확인하는 방법으로 분석 속도를 높일 수 있따. 물론 악성코드가 일반적으로 하는 행위를 알고 있다면 최선의 추측을 할 수 있을 것이다.</p>
+
+<p>이를 위해 대다수 악성코드가 속하는 범주를 살펴보자</p>
+
+<h2 id="1-백도어-backdoor">1. 백도어 (backdoor)</h2>
+
+<ul>
+  <li>공격자의 접근을 허용할 목적으로 컴퓨에 자기 자신을 설치하는 악성코드</li>
+</ul>
+
+<p>→ 부분 인증이나 무인증 ( no autihentication)으로 컴퓨터에 접속해 로컬에서 명령어를 실행할수 있게 돕는다</p>
+
+<blockquote>
+  <p>부분인증 또는 무인증 상태의 접근이란?</p>
+
+</blockquote>
+
+<blockquote>
+  <p>공격자가 사용자 이름과 암호를 요구하지 않고 시스템에 접근할 수 있는 상태</p>
+
+</blockquote>
+
+<p>→ 일반적으로 백도어를 설치하거나 활성화할 때 공격자가 사용자 인증을 우회하거나 무력화하는 과정으로 이루어진다</p>
+
+<h2 id="2-봇넷-botnet">2. 봇넷 (botnet)</h2>
+
+<ul>
+  <li>공격자가 시스템에 접속할 수 있다는 점에서 백도어와 유사함</li>
+</ul>
+
+<p>→ 동일한 봇넷에 감염된 모든 컴퓨터가 하나의 명령 제어(command-and-control)서버로부터 동일한 명령어를 수신한다</p>
+
+<p>→ 동일한 봇넷에 속한 모든 감염된 기기들은 하나의 명령 및 제어 서버로부터 명령을 수신하고 실행할 수 있다</p>
+
+<blockquote>
+  <p>이 명령어는 각 기기가 수행할 작업에 관한 것이다</p>
+
+</blockquote>
+
+<blockquote>
+  <p>봇넷은 종종 수많은 컴퓨터나 장치를 통해 DDoS(분산 서비스 거부)공격을 수행하거나, 스팸 이메일을 전송하는데 이용된다.</p>
+
+</blockquote>
+
+<p><strong><em>디도스(분산 서비스 거부)에 대해서는 다음 포스팅에서 한번 다뤄보고자 한다</em></strong></p>
+
+<p>→ 봇넷은 백도어보다 더 넓은 범위에서 공격자의 목적을 달성하기 위해 사용되며, 보다 고도화된 공격 형태를 구현할 수 있다. 또한, 봇넷의 감염된 기기들은 개별적으로 제어되지 않고 중앙 서버로부터 명령을 받으므로, 한대의 기기가 감염되면 전체 봇넷에 대한 위협이 될 수 있다.</p>
+
+<h2 id="3-다운로더-downloader">3. 다운로더 (downloader)</h2>
+
+<ul>
+  <li>다른 악성 코드를 다운로드할 목적만으로 존재하는 악성 코드</li>
+</ul>
+
+<p>→ 시스템에 처음으로 접근 권한을 얻으면 공격자는 다운로더를 설치하며, 다운로더 프로그램은 추가 악성코드를 다운로드하고 설치한다</p>
+
+<blockquote>
+  <p>내려받은 데이터나 프로그램이 추가 공격을 위한 악성 코드이거나 악성 코드 작성자의 명령 집합인 경우</p>
+
+</blockquote>
+
+<p>어차피 우리 모두 다 무언가를 다운로드하는걸 자주 하기 때문에 모니터링 시 잘 짚고 넘어가기 쉽지 않다.</p>
+
+<h2 id="4-정보-유출-악성코드-information-stealing-malware">4. 정보 유출 악성코드 (information-stealing malware)</h2>
+
+<p>피해자의 컴퓨터에서 정보를 수집해서 공격자에게 전송하는 악성코드</p>
+
+<ul>
+  <li>스니퍼: 네트워크 트래픽을 모니터링하여 로그인 자격 증명 및 기타 민감한 정보 탈취</li>
+</ul>
+
+<p>→ 네트워크를 통해 전송되는 데이터를 가로채고 분석하여 정보를 추출</p>
+
+<ul>
+  <li>패스워드 해시 수집기 : 저장된 패스워드 해시를 탈취하여 공격자에게 전송</li>
+</ul>
+
+<p>→ 이를 통해 공격자는 패스워드를 복원하거나 해시를 뚫어내어 원본 패스워드를 얻을 수 있음</p>
+
+<ul>
+  <li>키로거: 사용자가 누르는 모든 입력을 기록함.</li>
+</ul>
+
+<p>→ 신용카드 정보, 비밀번호 기록 등을 탈취</p>
+
+<h2 id="5-실행기launcher">5. 실행기(launcher)</h2>
+
+<p>다른 악성 프로그램을 실행할 때 사용하는 악성 프로그램</p>
+
+<p>일반적으로는 시스템의 상위 권한을 이용한다.</p>
+
+<h3 id="이러한-목적이-있을-수-있다">이러한 목적이 있을 수 있다…</h3>
+
+<ol>
+  <li>시스템 권한 상승</li>
+</ol>
+
+<p>실행기는 종종 시스템 내에서의 권한 상승을 시도하여 보다 더 깊은 수준의 시스템 접근을 허용한다. 이는 악성 프로그램이 시스템 내에서 더 많은 작업을 수행할 수 있도록 한다 . 주로 관리자 권한 또는 루트 권한과 같은 더 높은 권한을 말한다.</p>
+
+<p>→ 리눅스와 유닉스 시스템에서는 “sudo” 명령어를 통해 특정 사용자가 관리자 또는 루트 권한으로 특정 명령어를 실행할 수 있도록 권한을 부여한다 .</p>
+
+<ol>
+  <li>은페</li>
+</ol>
+
+<p>자신과 실행할 악성프로그램을 안티바이러스 소프트웨어나 시스템 감시 도구로부터 숨긴다. 탐지를 피하기 위해서다</p>
+
+<h2 id="6-루트킷rootkit">6. 루트킷(rootkit)</h2>
+
+<p>다른 코드 내에서 자신의 존재를 숨기도록 설계한 악성코드</p>
+
+<p>→ 공격자의 원격 접속 허용과 피해자의 코드 탐지를 어렵게 하기 위함</p>
+
+<blockquote>
+  <p>한마디로 연막탄</p>
+
+</blockquote>
+
+<h2 id="7-스케어웨어-scareware">7. 스케어웨어 (scareware)</h2>
+
+<p>감염된 사용자가 뭔가를 사도록 만드는거임. 안티바이러스나 다른 보안 프로그램으로 가장한 사용자 인터페이스를 가짐.</p>
+
+<p>시스템이 악성코드에 감염되었으니 소프트웨어 사야지 제거 가능 !</p>
+
+<p>뭐 이딴  광고 보여주고 사도록 만드는 것임</p>
+
+<h2 id="8-스팸-전송-악성코드-wormvirus">8. 스팸 전송 악성코드 (worm/virus)</h2>
+
+<p>사용자 장비 감염시켜 다른 컴퓨터로 스팸 전송하는 악성코드</p>
+
+<p>스팸 전송 악성코드는 봇넷과 함께 사용되는 경우가 많다</p>
+
+<ul>
+  <li>봇넷 : 다수의 감염된 컴퓨터로 구성된 네트워크이며, 이러한 네트워크는 종종 스팸 전송 악성코드와 함께 사용됨</li>
+</ul>
+
+<h2 id="9-웜-바이러스">9. 웜/ 바이러스</h2>
+
+<p>자기 자신을 복제해 추가로 컴퓨터를 감염시키는 악성코드</p>
+
+<h3 id="웜-worm">웜 (worm)</h3>
+
+<ul>
+  <li>네트워크를 통해 자동으로 퍼져나가는 능력을 갖춘 악성코드</li>
+  <li>별도의 사용자 동작 없이 자동으로 전파될 수 있음</li>
+  <li>이메일 첨부 파일이나 네트워크를 통해 다른 컴퓨터로 전송될 수 있음</li>
+  <li>네트워크의 대역폭을 많이 사용하여 네트워크 성능 저하시킴</li>
+</ul>
+
+<h3 id="바이러스-virus">바이러스 (virus)</h3>
+
+<ul>
+  <li>바이러스는 호스트 파일에 감염되어 복제 및 실행될 때 활성화되는 악성코드</li>
+  <li>파일 시스템이나 실행 가능한 프로그램을 통해 전파되며, 보안 소프트웨어를 우회하거나 제거하기 위해 자체 복제 및 은폐 메커니즘을 사용할 수 있음</li>
+</ul>]]></content><author><name>insidepixce</name></author><category term="security" /><category term="practical malware analysis" /><summary type="html"><![CDATA[악성코드의 유형에 대하여 알아보자]]></summary></entry></feed>

@@ -9,7 +9,9 @@
     --button-bg-color: #2e2d2b; /* 버튼 배경 색상 */
     --button-text-color: #000000; /* 버튼 텍스트 색상 */
 }
-
+.expert {
+    margin-bottom: 0px;
+}
 /* 전체 레이아웃 */
 body {
     font-family: Arial, sans-serif;
@@ -495,6 +497,7 @@ li > p {
 
 .post-item p {
     font-size: 12px !important;
+    margin-bottom: 0px !important;
 }
 
 .post-item a {

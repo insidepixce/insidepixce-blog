@@ -1,7 +1,7 @@
 ---
 pin: true
 layout: post
-title: "맥에서 리눅스 환경 구축하기- 도커란 무엇인가?s"
+title: "맥에서 리눅스 환경 구축하기- 도커란 무엇인가?"
 categories:
   - javascript
 tags:

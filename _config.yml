@@ -8,8 +8,7 @@ location: Korea, Daegu
 name: Park Gyodam
 masthead_title: "하고싶은 공부만 합니다"
 subscribe: true
-url: "https://insidepixce.site"
-baseurl: ""
+
 
 bio: "방랑 개발자"
 social:
@@ -28,9 +27,14 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-disqus:
-  comments: true
-  shortname: "mylog-3"
+
 
 highlighter: rouge
 markdown: kramdown
+
+
+  defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"

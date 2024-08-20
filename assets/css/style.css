@@ -19,6 +19,10 @@ body {
     padding: 0;
 }
 
+.content h1 {
+    font-size:20px;
+}
+
 /* Navbar 스타일 */
 .navbar {
     background-color: var(--main-color);
@@ -85,10 +89,9 @@ body {
 }
 
 .category-title {
-    font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     display: block;
-    text-align:left;
+    text-align:center;
     color: var(--category-title-color); /* 대분류 색상 (검정색) */
 }
 

@@ -44,7 +44,18 @@
                     
                     <li>
                         <!-- 카테고리 링크를 category.html로 연결 -->
-                        <a href="/insidepixce-blog/categories/49challenge/index.html" class="category-title">49challenge (2)</a>
+                        <a href="/insidepixce-blog/categories/49challenge/index.html" class="category-title">49challenge (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/49완독챌린지/index.html" class="category-title">49완독챌린지 (1)</a>
                         <ul class="subcategory-list">
                             
                             
@@ -266,151 +277,6 @@ console.log(person);
   <li>프로토타입 체인을 따라 속성과 메서드를 탐색함</li>
 </ul>
 
-<h1 id="그리고-오늘의-문제">그리고 오늘의 문제</h1>
-
-<h2 id="상품-관리-시스템">상품 관리 시스템</h2>
-<p>1990년, 동네 구멍가게 신세를 탈출한 ‘이마트’. 이제는 계산대로 계산을 하고 싶습니다. 각 상품에는 이름, 가격, 재고 수량,재입고 여부라는 정보가 있는데요, 자동화 시스템을 도입해 재고가 모두 소진된 상품은 자동으로 목록에서 삭제되게 하려고 해요.</p>
-
-<p>함수 설명</p>
-<ul>
-  <li>addProduct: 상품을 추가하는 함수입니다.</li>
-  <li>updateProductName: 상품의 이름을 변경하는 함수입니다.</li>
-  <li>handleOutOfStock: 재고가 0이 되면 재고 수량을 null로 설정하는 함수입니다.</li>
-  <li>printAllProducts: 현재 상점에 있는 모든 상품을 출력하는 함수입니다.</li>
-  <li>removeIfOutOfStock: 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수입니다.</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // 1. 새로운 상품을 객체로 동적으로 추가하는 함수
-function addProduct(store, name, price, quantity, restock) {
-  
-}
-
-// 2. 상품 이름 수정 함수
-function updateProductName(store, oldName, newName) {
- 
-}
-
-// 3. 재고가 0이면 수량을 null로 설정하는 함수
-function handleOutOfStock(store, productName) {
-
-}
-
-// 4. 모든 상품의 최종 목록을 출력하는 함수
-function printAllProducts(store) {
-  
-}
-
-// 5. 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수
-function removeIfOutOfStock(store) {
-  
-}
-
-// 테스트 코드 작성 부분
-function runTests() {
-  let store = {}; // 상점 초기화
-  
-  console.log("==== 상품 추가 테스트 ====");
-  // 1. 상품 추가 테스트
-  addProduct(store, 'Apple', 1.0, 10, true);
-  addProduct(store, 'Banana', 0.5, 5, false);
-  addProduct(store, 'Orange', 0.8, 2, false);
-  printAllProducts(store);
-  
-  console.log("\n==== 상품 이름 수정 테스트 ====");
-  updateProductName(store, 'Orange', 'Grapefruit');
-  printAllProducts(store);
-  
-  console.log("\n==== 재고 소진 처리 테스트 ====");
-  // 3. 재고 소진 처리 테스트
-  handleOutOfStock(store, 'Banana');
-  printAllProducts(store);
-  
-  console.log("\n==== 재고 소진 및 삭제 테스트 ====");
-  // 4. 재고가 0이고 재입고가 불가능한 상품 삭제 테스트
-  removeIfOutOfStock(store);
-  printAllProducts(store);
-}
-
-// 테스트 실행
-runTests();
-</code></pre></div></div>
-
-<h2 id="주민등록시스템이-날아갔어요">주민등록시스템이 날아갔어요!</h2>
-<p>마을에서는 모든 주민의 정보를 개체로 관리하고 있습니다. 각 주민의 이름, 나이, 직업, 그리고 거주지가 적혀있죠. 하지만 시간이 지나면 나이를 먹고(ㅠ) , 회사가 뭣같으면 떄려치고 새로 구직할수도 있겠죠. 그리고, 이사를 가는 주민들도 있어요. 변경사항을 어떻게 해야할까요?</p>
-
-<ol>
-  <li>주민 생성 함수를 만들어 주민의 이름, 나이, 직업, 거주지 정보를 저장하세요</li>
-  <li>직업 변경 함수를 만들어 주민의 직업을 업데이트하세요</li>
-  <li>거주지 변경 함수를 만들어 거주지를 업데이트 할수있도록 하세요</li>
-  <li>이사간 주민을 지워버리는 함수를 만드세요</li>
-  <li>모든 주민 정보를 출력하는 함수를 만드세요</li>
-</ol>
-
-<ul>
-  <li>각 함수는 명확한 인자와 동작을 가져야 하며, 하나의 역할이 있어야 합니다</li>
-  <li>함수의 재사용성과 모듈화에 초점을 맞춰보세요</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 1. 주민 생성 함수
-function createPerson(name, age, job, residence) {
-  // 여기다가 코딩
-}
-
-// 2. 주민 직업 변경 함수
-function updateJob(person, newJob) {
-  //여기다가 코딩
-}
-
-// 3. 주민 거주지 변경 함수
-function updateResidence(person, newResidence) {
-  // 여기다가 코딩
-}
-
-// 4. 주민 삭제 함수
-function deletePerson(residents, name) {
-  // 여기다가 코딩
-}
-
-// 5. 모든 주민 정보 출력 함수
-function printAllResidents(residents) {
-  // 여기다가 코딩
-}
-
- let residents = [];
-  
-  console.log("==== 주민 생성 테스트 ====");
-  // 주민 생성 테스트
-  residents.push(createPerson('Lee', 30, 'Teacher', 'Seoul'));
-  residents.push(createPerson('Kim', 25, 'Engineer', 'Busan'));
-  residents.push(createPerson('Park', 40, 'Doctor', 'Daegu'));
-  
-  // 생성 후 출력
-  printAllResidents(residents);
-  
-  console.log("\n==== 직업 및 거주지 변경 테스트 ====");
-  // 직업 및 거주지 변경 테스트
-  updateJob(residents[0], 'Principal');
-  updateJob(residents[1], 'Developer');
-  updateResidence(residents[0], 'Incheon');
-  updateResidence(residents[2], 'Busan');
-  
-  // 변경 후 출력
-  printAllResidents(residents);
-  
-  console.log("\n==== 주민 삭제 테스트 ====");
-  // 주민 삭제 테스트
-  deletePerson(residents, 'Park');
-  
-  // 삭제 후 출력
-  printAllResidents(residents);
-  
-  console.log("\n==== 추가 삭제 테스트 ====");
-  // 없는 주민 삭제 시도
-  deletePerson(residents, 'Unknown');
-  
-  // 삭제 후 출력
-  printAllResidents(residents);
-</code></pre></div></div>
 
     </div>
 
@@ -427,7 +293,7 @@ function printAllResidents(residents) {
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/">오즈코딩 start- 네이버 화면 커스텀하기 </a> </p>
-        <p> 다음 게시물: <a href="/insidepixce-blog/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/">2024</a> </p>        
+        <p> 다음 게시물: <a href="/insidepixce-blog/49%EC%99%84%EB%8F%85%EC%B1%8C%EB%A6%B0%EC%A7%80/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/">2024</a> </p>        
     </nav>
 </article>
 

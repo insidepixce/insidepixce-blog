@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-21T01:06:45-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본</title><link href="/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/" rel="alternate" type="text/html" title="딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD</id><content type="html" xml:base="/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/"><![CDATA[<p>20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-21T01:07:15-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본</title><link href="/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/" rel="alternate" type="text/html" title="딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD</id><content type="html" xml:base="/insidepixce-blog/49challenge-note/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/"><![CDATA[<p>20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!</p>
 
 <h3 id="1-객체란">1. 객체란?</h3>
 <p>자바스크립트 = 객체 기반 언어 
@@ -36,25 +36,26 @@ typeof 로 찍어보면 object가 나옴</li>
 
 <blockquote>
   <p>띄어쓰기나 특수 문자가 포함되면 따옴표로 감싸야함</p>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce' };
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce' };
 person.age = 22; 
-</code></pre></div>  </div>
-  <h4 id="동적-프로퍼티-키-생성">동적 프로퍼티 키 생성</h4>
-  <p>대괄효 표기법을 사용해 키를 동적으로 설정할 수 있음</p>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let mySchool = {};
+</code></pre></div></div>
+<h4 id="동적-프로퍼티-키-생성">동적 프로퍼티 키 생성</h4>
+<p>대괄효 표기법을 사용해 키를 동적으로 설정할 수 있음</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let mySchool = {};
 let dynamicKey = 'bootcamp';
 mySchool[dynamicKey] = 'oz';
 mySchool['university'] = 'dsu';
 mySchool['major'] = 'software';
 console.log(mySchool); 
-</code></pre></div>  </div>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   bootcamp: 'oz',
   university: 'dsu',
   major:`software`
 }
-</code></pre></div>  </div>
-</blockquote>
+</code></pre></div></div>
 
 <p>이렇게 추가해주면 출력된다</p>
 

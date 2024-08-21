@@ -200,25 +200,26 @@ typeof 로 찍어보면 object가 나옴</li>
 
 <blockquote>
   <p>띄어쓰기나 특수 문자가 포함되면 따옴표로 감싸야함</p>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce' };
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce' };
 person.age = 22; 
-</code></pre></div>  </div>
-  <h4 id="동적-프로퍼티-키-생성">동적 프로퍼티 키 생성</h4>
-  <p>대괄효 표기법을 사용해 키를 동적으로 설정할 수 있음</p>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let mySchool = {};
+</code></pre></div></div>
+<h4 id="동적-프로퍼티-키-생성">동적 프로퍼티 키 생성</h4>
+<p>대괄효 표기법을 사용해 키를 동적으로 설정할 수 있음</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let mySchool = {};
 let dynamicKey = 'bootcamp';
 mySchool[dynamicKey] = 'oz';
 mySchool['university'] = 'dsu';
 mySchool['major'] = 'software';
 console.log(mySchool); 
-</code></pre></div>  </div>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   bootcamp: 'oz',
   university: 'dsu',
   major:`software`
 }
-</code></pre></div>  </div>
-</blockquote>
+</code></pre></div></div>
 
 <p>이렇게 추가해주면 출력된다</p>
 

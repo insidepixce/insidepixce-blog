@@ -1,3 +1,24 @@
+
+<hr />
+<p>pin: true
+layout: post
+title: “가로 마진을 일정하게 하고 싶을떄”
+categories:</p>
+<ul>
+  <li>css
+tags:</li>
+  <li>javascript
+author: insidepixce
+show_excerpts: true
+date: 2024-01-18 15:30:00 +0900
+disqus: true
+paginate: true
+disqus-count-scr: true
+comments: true
+toc: true
+—</li>
+</ul>
+
 <p>이 내용은 종이랑 연필을 가지고와서 직접 그려보면서 생각해보는것도 좋다. 앞에서 마진 상쇄에 대해 배웠는데, 쉽게 말해 세로 마진은 겹친다라는 규칙이 있다고 보면 된다. 예를 들어 세로로 <code class="language-plaintext highlighter-rouge">article</code>이라는 클래스의 <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>태그를 배치하고, 세로 마진을 <code class="language-plaintext highlighter-rouge">24px</code>로 준다고 해보자.</p>
 
 <aside>
@@ -77,4 +98,19 @@
 ```
 
 ### css
+```
+.chip {
+  background-color: #dedede;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: 16px;
+  margin-right: 24px;
+  border-radius: 9999px;
+}
+
+.chip:first-child {
+  margin-left: 24px;
+}
+```
 </span></div></aside>

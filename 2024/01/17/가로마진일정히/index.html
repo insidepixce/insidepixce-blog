@@ -1,0 +1,80 @@
+<p>이 내용은 종이랑 연필을 가지고와서 직접 그려보면서 생각해보는것도 좋다. 앞에서 마진 상쇄에 대해 배웠는데, 쉽게 말해 세로 마진은 겹친다라는 규칙이 있다고 보면 된다. 예를 들어 세로로 <code class="language-plaintext highlighter-rouge">article</code>이라는 클래스의 <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>태그를 배치하고, 세로 마진을 <code class="language-plaintext highlighter-rouge">24px</code>로 준다고 해보자.</p>
+
+<aside>
+💡   `<div>`태그는 블록 요소니까 위에서부터 아래로 배치된다
+
+&lt;/aside&gt;
+
+### html
+
+```jsx
+<div class="article">
+  하나
+</div>
+<div class="article">
+  둘
+</div>
+<div class="article">
+  셋
+</div>
+```
+
+### css
+
+```jsx
+.article {
+  margin: 24px 0;
+  background-color: #ededed;
+}
+```
+
+![스크린샷 2024-08-07 오전 9.58.43.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/799c0fc5-dee0-47bf-9ec4-ecffb2c784b8/c4a117d6-5d63-46f5-94c2-aaf13c45eec8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.58.43.png)
+
+그러면 세로 마진은 겹치니까 `article` 사이의 간격은 24px이 될텐데, 만약에 세로가 아니라 가로 배치되면 어떨까? 앞에서 배웠던 인라인 요소인 <span>태그를 배치해보자 
+
+### html
+
+```jsx
+<span class="chip">섬</span>
+<span class="chip">해변</span>
+<span class="chip">오두막</span>
+```
+
+### css
+
+```jsx
+**.chip {
+  background-color: #dedede;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: 16px;
+  margin: 0 24px;
+  border-radius: 9999px;
+}**
+
+```
+
+![스크린샷 2024-08-07 오전 10.00.51.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/799c0fc5-dee0-47bf-9ec4-ecffb2c784b8/367762bc-b766-4b76-86c5-987c10293971/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.00.51.png)
+
+이렇게 하면 가로로 24px만큼씩 여백이 생기는데, 가로 마진은 안 겹치니까 chip과 chip 사이에는 24 더하기 24, 총 48px만큼 간격이 생길거다. 
+
+<aside>
+💡 만약에 가로로 전부 일정하게 24px로 주고 싶으면 어떻게 해야 할까?
+
+</aside>
+
+예를 들어 아래의 3개의 `chip`에 가로 마진을 `24px`로 주면 `chip`들 사이의 가로마진은 `24+24`해서 `48px`이 된다. 
+
+이럴때는 `margin-left`(왼쪽 마진) `margin-right`(오른쪽 마진)이라는 속성과 함께 `:fist-child`나 `:last-child`를 활용하면 좋다 
+
+### html
+
+```jsx
+<span class="chip">섬</span>
+<span class="chip">해변</span>
+<span class="chip">오두막</span>
+```
+
+### css
+</span></div></aside>

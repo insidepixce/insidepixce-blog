@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/insidepixce-blog/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>typeof/객체리터럴-49완독챌린지 | Insidepixce inworld</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="typeof/객체리터럴-49완독챌린지" />
+<meta name="author" content="insidepixce" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="description" content="49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록" />
+<meta property="og:description" content="49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록" />
+<meta property="og:site_name" content="Insidepixce inworld" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-20T17:00:00-09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="typeof/객체리터럴-49완독챌린지" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"insidepixce"},"dateModified":"2024-08-20T17:00:00-09:00","datePublished":"2024-08-20T17:00:00-09:00","description":"49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록","headline":"typeof/객체리터럴-49완독챌린지","mainEntityOfPage":{"@type":"WebPage","@id":"/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/"},"url":"/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/insidepixce-blog/logo.jpg" alt="Profile Picture" class="profile-picture">
+                <a href="/insidepixce-blog/" style="text-decoration: none; color:#000000; font-size:20px;">Park gyodam</a>
+                <p class="bio">방랑 개발자</p>
+                <a href="https://www.instagram.com/outsidepixce/" target="_blank">Git</a>
+                <a href="https://github.com/insidepixce" target="_blank">Instagram</a>
+                <a href="mailto:insidepixce@gmail.com">이메일</a>
+                
+                <h3 style="color:black">Categories</h3>
+                <ul class="category-list">
+                    <p>전체 글 수 30 개</p>
+                    
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/49challenge/index.html" class="category-title">49challenge (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/ect/index.html" class="category-title">ect (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/javascript/index.html" class="category-title">javascript (17)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/oz-coding/index.html" class="category-title">oz-coding (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/record/index.html" class="category-title">record (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/sec/index.html" class="category-title">sec (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/security/index.html" class="category-title">security (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/talk/index.html" class="category-title">talk (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/test/index.html" class="category-title">test (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- 메인 콘텐츠 -->
+        <main class="content">
+            <h1>typeof/객체리터럴-49완독챌린지</h1>
+            <div class="page-content">
+                    <article class="post">
+    <header class="post-header">
+        <p class="post-meta">
+            2024년 08월 20일 | 49challenge, record
+        </p>
+    </header>
+    
+
+
+    <div class="post-content">
+        <svg width="100%" height="5px">
+            <line x1="0" y1="5" x2="5000" y2="5" stroke="#cccccc" stroke-width="6"/>
+        </svg>
+        <p>49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록</p>
+
+<h3 id="여담">여담</h3>
+<p>해피해킹 키보드를 손에 넣었다 ! 새로운 맥북과 새로운 키보드와 함께 화이팅!</p>
+
+<p><img src="https://github.com/user-attachments/assets/5dcc6888-6916-4a1d-9846-9204eac9287c" alt="IMG_7540 2" />
+원래 해피해킹 회색 정각 썼는데 무각의 매력에 너무 빠져버려서 나 스스로에게 주는 선물 셈 치고 질러버렸다 ㅠ 덕분에 책상이 좀 더 예뻐진 느낌 !</p>
+
+<h1 id="-스터디-정보">🕖 스터디 정보</h1>
+<ul>
+  <li>일시: 2024/08/21</li>
+  <li>참석인원 : FSO_01_박교담 FSO_01_임성준 FSO_01_박영빈</li>
+  <li>교재 진도 : 딥 다이브 인투 자바스크립트 10과</li>
+  <li>코테 과제 : 프로그래머스 코딩테스트 입문 1일차 (4문제)</li>
+</ul>
+
+<h1 id="1-코딩테스트">💯1. 코딩테스트</h1>
+<p>코딩테스트 네 문제 모두 전원 무리없이 풀었음.
+네번째 문제에서 조금 어려움이 있었던 사람이 생김</p>
+
+<h2 id="리뷰사항-코딩테스트---네-번쨰-문제">[✅리뷰사항] 코딩테스트 - 네 번쨰 문제</h2>
+<p>https://school.programmers.co.kr/learn/courses/30/lessons/120805</p>
+
+<blockquote>
+  <p>정수 num1, num2가 매개변수로 주어질 때, num1을 num2로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p>이떄 나머지를 적절하게 처리하지 못해 알아보다가 math.floor를 사용하여 문제 해결하였다</p>
+
+<h3 id="️-스터디중-추가-공부-사항">⛔️ 스터디중 추가 공부 사항</h3>
+<h4 id="mathfloor는-메서드이다">math.floor는 메서드이다.</h4>
+<p><strong>메서드란</strong> 객체에 속한 함수이며, 객체의 상태 변경 혹은 특정 동작 수행에 사용됨</p>
+<ul>
+  <li>프로퍼티에 접근할 수 있음</li>
+</ul>
+
+<h4 id="자바스크립트는-모두가-객체이다">자바스크립트는 모두가 객체이다</h4>
+<p>자바스크립트의 가장 상위 객체는 <code class="language-plaintext highlighter-rouge">window</code>이며, 모든 객체는 이 객체의 하위 속성으로 존재한다.</p>
+<blockquote>
+  <p>모든 전역 변수와 함수는 암묵적으로 이 <code class="language-plaintext highlighter-rouge">window</code>객체의 환경 안에서 동작함</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>window.console.log("hello oz");
+</code></pre></div></div>
+
+<h1 id="본책">본책</h1>
+<p>오늘은 10장 객체 리터럴을 다뤘다. 
+정의만 나와있었지만 추가적인 탐구를 통해 좀 더 많은 지식을 갖게 되었던 계기이지 않을까 싶다.</p>
+
+<h2 id="본책내용-객체-리터럴">[본책내용] 객체 리터럴</h2>
+
+<h2 id="박영민-질문사항-typeof-연산자">[🙋🏻박영민 질문사항] typeof 연산자</h2>
+<p>본 교재 [10-01] 예제</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var person = {
+    name: '49',
+    sayhello : function () {
+        console.log(`hello! my name is ${this.name}.`)
+    }
+};
+
+console.log(typeof person);
+console.log(person);
+</code></pre></div></div>
+<p>여기서 왜 typeOf에 object가 나올까? 
+<br /> typeof는 자바스크립트의 연산자로, 피연산자의 데이터 타입을 문자열로 반환한다.
+<br /> 피연산자의 실제 값이 아니라, 그 값의 타입 종류만 문자열로 반환한다는 것이다.</p>
+
+<p>👩🏻‍🏫 : 문자열로만 받았으면 string이 맞는데 배열로 받았으니까…</p>
+
+<blockquote>
+  <p>이 말에 삘받아서 열심히 typeOf와 관련된 문제들을 내봤다.</p>
+</blockquote>
+
+<p>내 경험상 boolean 타입 연산이 가장 어려웠기 때문에…그 위주로 내봤음</p>
+
+<h3 id="기본-설정값">기본 설정값</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let a = 0;
+let b = 1;
+let bool1 = true;
+let bool2 = false;
+</code></pre></div></div>
+
+<h3 id="1번-문제">1번 문제</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(bool1));
+console.log(typeof(bool2));
+</code></pre></div></div>
+<p>여기까지는 기본적으로 맞춰주셨다.</p>
+
+<h3 id="2번-문제---불리언과-숫자-결합">2번 문제 - 불리언과 숫자 결합</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(bool1 + num2);
+console.log(bool2 + num1);
+console.log(typeof(bool1 +b));
+console.log(typeof(bool2 +a))
+</code></pre></div></div>
+<p>불리언과 숫자의 결합을 중심으로 두고 내봤던 문제였는데 반응이 좋았다 (여기서 반응이 좋았다는 말은 사람들이 많이 고민했다는것이다!)</p>
+<blockquote>
+  <p>💡 자바스크립트에서 불리언 값은 숫자형으로 자동 변환된다!
+true는 숫자 1로 변환되고 false는 숫자 0으로 변환되기 때문에, 숫자 연산이 가능해진다.
+그래서 숫자가 출력되고,typeof로는 boolean이 출력된다</p>
+</blockquote>
+
+<h3 id="3번-문제---논리연산자와-연산자-우선순위를-조금-곁들여서">3번 문제 - 논리연산자와 연산자 우선순위를 조금 곁들여서.</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(!!bool1+b))
+</code></pre></div></div>
+<p>갑자기 얼마전에 배웠던 <code class="language-plaintext highlighter-rouge">이중 부정 연산자</code>가 떠오르고… 거기에 저번에 공부했던 <code class="language-plaintext highlighter-rouge">연산자 우선순위</code>가 떠올라 이러한 문제를 만들어봤다<br />
+이것도 반응 진짜 좋아서 아드레날린 올라옴,,,</p>
+
+<p>undefined, string 등 여러가지 대답이 나왔는데 결과는 <code class="language-plaintext highlighter-rouge">number</code>였다. 😃</p>
+
+<p>이중 부정 연산자는 피연산자를 불리언 값으로 변환하는데, <code class="language-plaintext highlighter-rouge">bool1</code>이 <code class="language-plaintext highlighter-rouge">true</code>일 경우 <code class="language-plaintext highlighter-rouge">!!bool1</code>은 여전히 <code class="language-plaintext highlighter-rouge">true</code>이다. <code class="language-plaintext highlighter-rouge">true</code>는 숫자 1로 변환된다.<br /></p>
+
+<p>0은 <code class="language-plaintext highlighter-rouge">false</code>, 나머지 모든 숫자는 <code class="language-plaintext highlighter-rouge">true</code>이다 !<br /><br />
+b가 숫자 1이라면 1+1이 계산되고, 결과는 2가 나온다. 거기에 <code class="language-plaintext highlighter-rouge">typeof()</code>를 사용하면 당연히 <code class="language-plaintext highlighter-rouge">number</code>가 나올수밖에.</p>
+
+<p>갈피를 못 찾아 <code class="language-plaintext highlighter-rouge">연산자 우선 순위</code> 참고를 말씀드렸더니 바로 맞추셨다</p>
+
+<h3 id="3번-문제-응용---연산자-우선순위를-바꿔볼까">3번 문제 응용 - 연산자 우선순위를 바꿔볼까?</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(!!(bool1+b)));
+</code></pre></div></div>
+<p>이러면 연산자 우선순위가 아예 바뀌게 되어서 <code class="language-plaintext highlighter-rouge">bool1 + b</code>가 우선으로 실행되고, 2가 된다. <br />
+!!2, 즉 이중 부정 연산자로 인해 참인 2는 <code class="language-plaintext highlighter-rouge">true</code>가 되고,</p>
+
+<p>최종적으로는 <code class="language-plaintext highlighter-rouge">typeof(true)</code>인것이기 때문에 boolean이 된다</p>
+
+<h3 id="4번-문제---typeof-연산자가-반환하는-자료형의-자료형은">4번 문제 - typeof 연산자가 반환하는 자료형의 자료형은??</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof String(typeof(!!(bool1 + b)))); 
+</code></pre></div></div>
+<p>이게 가능합니다! <br />
+사실 이 문제를 먼저 낼까 다음 문제를 먼저 낼까 고민을 많이 했는데 다음 문제에서 낚아보려면 이 문제를 먼저 풀어보는게 뇌리에 오래 박힐 것 같았다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">typeof(!!(bool1 + b))</code>이게 <code class="language-plaintext highlighter-rouge">boolean</code>이 나온다는거는 아까 열심히 고민하여 알게 되었다.
+그렇다면 <code class="language-plaintext highlighter-rouge">typeof(String(boolean))</code> 이라는 뜻인데. 
+<code class="language-plaintext highlighter-rouge">String()</code>은 괄호 안에 있는 것들을 문자열로 만들어주는 역할을 한다.
+그러니 이 코드의 결과는 string이 나오는 것이다.</p>
+
+<h3 id="4번-문제-응용---엥-그러면-이거는-안되는거-아니야">4번 문제 응용 - 엥 그러면 이거는 안되는거 아니야?</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(typeof(!!(boo1+b))));
+</code></pre></div></div>
+<p>뭘로 감싸주지도 않았는데?</p>
+<blockquote>
+  <p>typeof는 피연산자의 데이터 타입을 문자열로 반환한다</p>
+</blockquote>
+
+<p>포스팅 초반에 힌트가 있었다. 굳이 string으로 바꾸지 않아도 원래 출력값은 string인걸.</p>
+
+<h1 id="그리고-오늘의-문제">그리고 오늘의 문제</h1>
+
+<h2 id="상품-관리-시스템">상품 관리 시스템</h2>
+<p>1990년, 동네 구멍가게 신세를 탈출한 ‘이마트’. 이제는 계산대로 계산을 하고 싶습니다. 각 상품에는 이름, 가격, 재고 수량,재입고 여부라는 정보가 있는데요, 자동화 시스템을 도입해 재고가 모두 소진된 상품은 자동으로 목록에서 삭제되게 하려고 해요.</p>
+
+<p>함수 설명</p>
+<ul>
+  <li>addProduct: 상품을 추가하는 함수입니다.</li>
+  <li>updateProductName: 상품의 이름을 변경하는 함수입니다.</li>
+  <li>handleOutOfStock: 재고가 0이 되면 재고 수량을 null로 설정하는 함수입니다.</li>
+  <li>printAllProducts: 현재 상점에 있는 모든 상품을 출력하는 함수입니다.</li>
+  <li>removeIfOutOfStock: 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수입니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // 1. 새로운 상품을 객체로 동적으로 추가하는 함수
+function addProduct(store, name, price, quantity, restock) {
+  
+}
+
+// 2. 상품 이름 수정 함수
+function updateProductName(store, oldName, newName) {
+ 
+}
+
+// 3. 재고가 0이면 수량을 null로 설정하는 함수
+function handleOutOfStock(store, productName) {
+
+}
+
+// 4. 모든 상품의 최종 목록을 출력하는 함수
+function printAllProducts(store) {
+  
+}
+
+// 5. 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수
+function removeIfOutOfStock(store) {
+  
+}
+
+// 테스트 코드
+function runTests() {
+  let store = {}; // 상점 초기화
+  
+  console.log("==== 상품 추가 테스트 ====");
+  // 1. 상품 추가 테스트
+  addProduct(store, 'Apple', 1.0, 10, true);
+  addProduct(store, 'Banana', 0.5, 5, false);
+  addProduct(store, 'Orange', 0.8, 2, false);
+  printAllProducts(store);
+  
+  console.log("\n==== 상품 이름 수정 테스트 ====");
+  updateProductName(store, 'Orange', 'Grapefruit');
+  printAllProducts(store);
+  
+  console.log("\n==== 재고 소진 처리 테스트 ====");
+  // 3. 재고 소진 처리 테스트
+  handleOutOfStock(store, 'Banana');
+  printAllProducts(store);
+  
+  console.log("\n==== 재고 소진 및 삭제 테스트 ====");
+  // 4. 재고가 0이고 재입고가 불가능한 상품 삭제 테스트
+  removeIfOutOfStock(store);
+  printAllProducts(store);
+}
+
+// 테스트 실행
+runTests();
+</code></pre></div></div>
+
+<h2 id="주민등록시스템이-날아갔어요">주민등록시스템이 날아갔어요!</h2>
+<p>마을에서는 모든 주민의 정보를 개체로 관리하고 있습니다. 각 주민의 이름, 나이, 직업, 그리고 거주지가 적혀있죠. 하지만 시간이 지나면 나이를 먹고(ㅠ) , 회사가 뭣같으면 떄려치고 새로 구직할수도 있겠죠. 그리고, 이사를 가는 주민들도 있어요. 변경사항을 어떻게 해야할까요?</p>
+
+<p>함수 설명</p>
+<ul>
+  <li>createPerson: 주민의 이름, 나이, 직업, 거주지 정보를 저장하고, 주민 객체를 반환하는 함수입니다.</li>
+  <li>updateJob: 특정 주민의 직업을 변경하는 함수입니다.</li>
+  <li>updateResidence: 특정 주민의 거주지를 변경하는 함수입니다.</li>
+  <li>deletePerson: 주민 목록에서 해당 이름의 주민을 삭제하는 함수입니다.</li>
+  <li>
+    <p>printAllResidents: 현재 등록된 모든 주민의 정보를 출력하는 함수입니다.</p>
+  </li>
+  <li>각 함수는 명확한 인자와 동작을 가져야 하며, 하나의 역할이 있어야 합니다</li>
+  <li>함수의 재사용성과 모듈화에 초점을 맞춰보세요</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 1. 주민 생성 함수
+function createPerson(name, age, job, residence) {
+  // 여기다가 코딩
+}
+
+// 2. 주민 직업 변경 함수
+function updateJob(person, newJob) {
+  //여기다가 코딩
+}
+
+// 3. 주민 거주지 변경 함수
+function updateResidence(person, newResidence) {
+  // 여기다가 코딩
+}
+
+// 4. 주민 삭제 함수
+function deletePerson(residents, name) {
+  // 여기다가 코딩
+}
+
+// 5. 모든 주민 정보 출력 함수
+function printAllResidents(residents) {
+  // 여기다가 코딩
+}
+
+ let residents = [];
+  
+  console.log("==== 주민 생성 테스트 ====");
+  // 주민 생성 테스트
+  residents.push(createPerson('Lee', 30, 'Teacher', 'Seoul'));
+  residents.push(createPerson('Kim', 25, 'Engineer', 'Busan'));
+  residents.push(createPerson('Park', 40, 'Doctor', 'Daegu'));
+  
+  // 생성 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 직업 및 거주지 변경 테스트 ====");
+  // 직업 및 거주지 변경 테스트
+  updateJob(residents[0], 'Principal');
+  updateJob(residents[1], 'Developer');
+  updateResidence(residents[0], 'Incheon');
+  updateResidence(residents[2], 'Busan');
+  
+  // 변경 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 주민 삭제 테스트 ====");
+  // 주민 삭제 테스트
+  deletePerson(residents, 'Park');
+  
+  // 삭제 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 추가 삭제 테스트 ====");
+  // 없는 주민 삭제 시도
+  deletePerson(residents, 'Unknown');
+  
+  // 삭제 후 출력
+  printAllResidents(residents);
+</code></pre></div></div>
+
+    </div>
+
+    <footer class="post-footer">
+        
+            <p>태그: </p>
+        
+
+        
+            <h3>댓글</h3>
+            <!-- 댓글 시스템 통합 (예: Disqus) -->
+        
+    </footer>
+
+    <nav class="post-navigation">
+        <p> 이전 게시물: <a href="/49challenge/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/">딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본</a> </p>
+        <p></p>
+    </nav>
+</article>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+                             <p>                         </p>&copy; 2024 Insidepixce inworld - All rights reserved. 디자인은 너무 어려워 
+    </footer>
+</body>
+</html>

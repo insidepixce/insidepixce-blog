@@ -1,4 +1,411 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-21T17:30:07-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">오즈코딩 start- 네이버 화면 커스텀하기</title><link href="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/" rel="alternate" type="text/html" title="오즈코딩 start- 네이버 화면 커스텀하기" /><published>2024-08-11T17:00:00-09:00</published><updated>2024-08-11T17:00:00-09:00</updated><id>/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st</id><content type="html" xml:base="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/"><![CDATA[<p>어머머머…굿즈 왔다 ! 잘쓸게요</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-21T17:42:07-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본</title><link href="/insidepixce-blog/49challenge/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/" rel="alternate" type="text/html" title="딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD</id><content type="html" xml:base="/insidepixce-blog/49challenge/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/"><![CDATA[<p>20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!</p>
+
+<h3 id="1-객체란">1. 객체란?</h3>
+<p>자바스크립트 = 객체 기반 언어 
+객체는 0개 이상의 프로퍼티(속성)으로 구성됨</p>
+<ul>
+  <li>프로퍼티는 키와 값으로 구성됨, 키는 문자열로 변환
+<br /></li>
+</ul>
+
+<p>원시값(숫자, 문자열, 불리언) 은 불변하지만 객체는 변경 가능한 값</p>
+<ul>
+  <li>프로퍼티의 추가, 수정 삭제 가능
+typeof 로 찍어보면 object가 나옴</li>
+</ul>
+
+<h3 id="2-객체-생성">2. 객체 생성</h3>
+<p>객체는 객체 리터럴로 생성함
+<code class="language-plaintext highlighter-rouge">{}</code>는 빈 객체를 의미하며, 중괄호 <code class="language-plaintext highlighter-rouge">{}</code> 안에 키-값 쌍을 넣음 <br />
+(빈 객체를 typeof로 확인해도 object가 반환됨)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = {
+  name: 'insidepixce'
+};
+</code></pre></div></div>
+
+<h3 id="3-프로퍼티">3. 프로퍼티</h3>
+<ul>
+  <li>프로퍼티 추가 및 내용 갱신 가능
+    <blockquote>
+      <p>프로퍼티 키는 일반적으로 식별자 네이밍 규칙을 따름
+<br /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <p>띄어쓰기나 특수 문자가 포함되면 따옴표로 감싸야함</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce' };
+person.age = 22; 
+</code></pre></div></div>
+<h4 id="동적-프로퍼티-키-생성">동적 프로퍼티 키 생성</h4>
+<p>대괄효 표기법을 사용해 키를 동적으로 설정할 수 있음</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let mySchool = {};
+let dynamicKey = 'bootcamp';
+mySchool[dynamicKey] = 'oz';
+mySchool['university'] = 'dsu';
+mySchool['major'] = 'software';
+console.log(mySchool); 
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  bootcamp: 'oz',
+  university: 'dsu',
+  major:`software`
+}
+</code></pre></div></div>
+
+<p>이렇게 추가해주면 출력된다</p>
+
+<h3 id="4-프로퍼티-접근">4. 프로퍼티 접근</h3>
+<ul>
+  <li><strong>마침표 표기법</strong> : 객체.프로퍼티
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>person.name
+</code></pre></div>    </div>
+  </li>
+  <li><strong>대괄호 표기법</strong> : 객체[프로퍼티]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>person['name']
+</code></pre></div>    </div>
+    <p>대괄호 안의 키는 반드시 문자열이여야 한다. <br />
+키가 유동적으로 결정되거나 특수 문자가 포함된 경우에 사용한다</p>
+  </li>
+</ul>
+
+<h3 id="5-메서드">5. 메서드</h3>
+<p>객체의 프로퍼티 값으로 함수를 사용하는 경우</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = {
+  name: 'oz',
+  greet: function() {
+    console.log('Hello, ' + this.name);
+  }
+};
+person.greet(); 
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hello , oz
+</code></pre></div></div>
+
+<h3 id="6-프로퍼티-삭제">6. 프로퍼티 삭제</h3>
+<p><code class="language-plaintext highlighter-rouge">delete</code>연산자로 객체의 프로퍼티 삭제가능</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let person = { name: 'insidepixce', age: 22 };
+delete person.age;
+console.log(person); 
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{name : insidepixce}
+</code></pre></div></div>
+
+<h3 id="7-여러가지-객체-메서드">7. 여러가지 객체 메서드</h3>
+<ul>
+  <li>Object.keys(obj): 객체의 키 목록을 배열로 반환</li>
+  <li>Object.values(obj): 객체의 값 목록을 배열로 반환</li>
+  <li>Object.entries(obj): 객체의 키-값 쌍을 배열의 배열로 반환</li>
+  <li>Object.assign(target, …sources): 하나 이상의 소스 객체를 타겟 객체로 복사해 합침</li>
+</ul>
+
+<h3 id="8-프로토타입과-상속">8. 프로토타입과 상속</h3>
+<ul>
+  <li>모든 객체는 다른 객체로부터 상속받을 수 있는 프로토타입을 가지고 있음
+    <ul>
+      <li>객체는 다른 객체의 속성과 메서드를 상속받아 사용 가능</li>
+    </ul>
+  </li>
+  <li>객체의 프로토타입 체인 끝에는 <code class="language-plaintext highlighter-rouge">null</code>이 있음.</li>
+  <li>프로토타입 체인을 따라 속성과 메서드를 탐색함</li>
+</ul>]]></content><author><name>insidepixce-record</name></author><category term="49challenge" /><summary type="html"><![CDATA[20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!]]></summary></entry><entry><title type="html">typeof/객체리터럴-49완독챌린지</title><link href="/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/" rel="alternate" type="text/html" title="typeof/객체리터럴-49완독챌린지" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80</id><content type="html" xml:base="/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/"><![CDATA[<p>49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록</p>
+
+<h3 id="여담">여담</h3>
+<p>해피해킹 키보드를 손에 넣었다 ! 새로운 맥북과 새로운 키보드와 함께 화이팅!</p>
+
+<p><img src="https://github.com/user-attachments/assets/5dcc6888-6916-4a1d-9846-9204eac9287c" alt="IMG_7540 2" />
+원래 해피해킹 회색 정각 썼는데 무각의 매력에 너무 빠져버려서 나 스스로에게 주는 선물 셈 치고 질러버렸다 ㅠ 덕분에 책상이 좀 더 예뻐진 느낌 !</p>
+
+<h1 id="-스터디-정보">🕖 스터디 정보</h1>
+<ul>
+  <li>일시: 2024/08/21</li>
+  <li>참석인원 : FSO_01_박교담 FSO_01_임성준 FSO_01_박영빈</li>
+  <li>교재 진도 : 딥 다이브 인투 자바스크립트 10과</li>
+  <li>코테 과제 : 프로그래머스 코딩테스트 입문 1일차 (4문제)</li>
+</ul>
+
+<h1 id="1-코딩테스트">💯1. 코딩테스트</h1>
+<p>코딩테스트 네 문제 모두 전원 무리없이 풀었음.
+네번째 문제에서 조금 어려움이 있었던 사람이 생김</p>
+
+<h2 id="리뷰사항-코딩테스트---네-번쨰-문제">[✅리뷰사항] 코딩테스트 - 네 번쨰 문제</h2>
+<p>https://school.programmers.co.kr/learn/courses/30/lessons/120805</p>
+
+<blockquote>
+  <p>정수 num1, num2가 매개변수로 주어질 때, num1을 num2로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p>이떄 나머지를 적절하게 처리하지 못해 알아보다가 math.floor를 사용하여 문제 해결하였다</p>
+
+<h3 id="️-스터디중-추가-공부-사항">⛔️ 스터디중 추가 공부 사항</h3>
+<h4 id="mathfloor는-메서드이다">math.floor는 메서드이다.</h4>
+<p><strong>메서드란</strong> 객체에 속한 함수이며, 객체의 상태 변경 혹은 특정 동작 수행에 사용됨</p>
+<ul>
+  <li>프로퍼티에 접근할 수 있음</li>
+</ul>
+
+<h4 id="자바스크립트는-모두가-객체이다">자바스크립트는 모두가 객체이다</h4>
+<p>자바스크립트의 가장 상위 객체는 <code class="language-plaintext highlighter-rouge">window</code>이며, 모든 객체는 이 객체의 하위 속성으로 존재한다.</p>
+<blockquote>
+  <p>모든 전역 변수와 함수는 암묵적으로 이 <code class="language-plaintext highlighter-rouge">window</code>객체의 환경 안에서 동작함</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>window.console.log("hello oz");
+</code></pre></div></div>
+
+<h1 id="본책">본책</h1>
+<p>오늘은 10장 객체 리터럴을 다뤘다. 
+정의만 나와있었지만 추가적인 탐구를 통해 좀 더 많은 지식을 갖게 되었던 계기이지 않을까 싶다.</p>
+
+<h2 id="본책내용-객체-리터럴">[본책내용] 객체 리터럴</h2>
+
+<h2 id="박영민-질문사항-typeof-연산자">[🙋🏻박영민 질문사항] typeof 연산자</h2>
+<p>본 교재 [10-01] 예제</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var person = {
+    name: '49',
+    sayhello : function () {
+        console.log(`hello! my name is ${this.name}.`)
+    }
+};
+
+console.log(typeof person);
+console.log(person);
+</code></pre></div></div>
+<p>여기서 왜 typeOf에 object가 나올까? 
+<br /> typeof는 자바스크립트의 연산자로, 피연산자의 데이터 타입을 문자열로 반환한다.
+<br /> 피연산자의 실제 값이 아니라, 그 값의 타입 종류만 문자열로 반환한다는 것이다.</p>
+
+<p>👩🏻‍🏫 : 문자열로만 받았으면 string이 맞는데 배열로 받았으니까…</p>
+
+<blockquote>
+  <p>이 말에 삘받아서 열심히 typeOf와 관련된 문제들을 내봤다.</p>
+</blockquote>
+
+<p>내 경험상 boolean 타입 연산이 가장 어려웠기 때문에…그 위주로 내봤음</p>
+
+<h3 id="기본-설정값">기본 설정값</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let a = 0;
+let b = 1;
+let bool1 = true;
+let bool2 = false;
+</code></pre></div></div>
+
+<h3 id="1번-문제">1번 문제</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(bool1));
+console.log(typeof(bool2));
+</code></pre></div></div>
+<p>여기까지는 기본적으로 맞춰주셨다.</p>
+
+<h3 id="2번-문제---불리언과-숫자-결합">2번 문제 - 불리언과 숫자 결합</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(bool1 + num2);
+console.log(bool2 + num1);
+console.log(typeof(bool1 +b));
+console.log(typeof(bool2 +a))
+</code></pre></div></div>
+<p>불리언과 숫자의 결합을 중심으로 두고 내봤던 문제였는데 반응이 좋았다 (여기서 반응이 좋았다는 말은 사람들이 많이 고민했다는것이다!)</p>
+<blockquote>
+  <p>💡 자바스크립트에서 불리언 값은 숫자형으로 자동 변환된다!
+true는 숫자 1로 변환되고 false는 숫자 0으로 변환되기 때문에, 숫자 연산이 가능해진다.
+그래서 숫자가 출력되고,typeof로는 boolean이 출력된다</p>
+</blockquote>
+
+<h3 id="3번-문제---논리연산자와-연산자-우선순위를-조금-곁들여서">3번 문제 - 논리연산자와 연산자 우선순위를 조금 곁들여서.</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(!!bool1+b))
+</code></pre></div></div>
+<p>갑자기 얼마전에 배웠던 <code class="language-plaintext highlighter-rouge">이중 부정 연산자</code>가 떠오르고… 거기에 저번에 공부했던 <code class="language-plaintext highlighter-rouge">연산자 우선순위</code>가 떠올라 이러한 문제를 만들어봤다<br />
+이것도 반응 진짜 좋아서 아드레날린 올라옴,,,</p>
+
+<p>undefined, string 등 여러가지 대답이 나왔는데 결과는 <code class="language-plaintext highlighter-rouge">number</code>였다. 😃</p>
+
+<p>이중 부정 연산자는 피연산자를 불리언 값으로 변환하는데, <code class="language-plaintext highlighter-rouge">bool1</code>이 <code class="language-plaintext highlighter-rouge">true</code>일 경우 <code class="language-plaintext highlighter-rouge">!!bool1</code>은 여전히 <code class="language-plaintext highlighter-rouge">true</code>이다. <code class="language-plaintext highlighter-rouge">true</code>는 숫자 1로 변환된다.<br /></p>
+
+<p>0은 <code class="language-plaintext highlighter-rouge">false</code>, 나머지 모든 숫자는 <code class="language-plaintext highlighter-rouge">true</code>이다 !<br /><br />
+b가 숫자 1이라면 1+1이 계산되고, 결과는 2가 나온다. 거기에 <code class="language-plaintext highlighter-rouge">typeof()</code>를 사용하면 당연히 <code class="language-plaintext highlighter-rouge">number</code>가 나올수밖에.</p>
+
+<p>갈피를 못 찾아 <code class="language-plaintext highlighter-rouge">연산자 우선 순위</code> 참고를 말씀드렸더니 바로 맞추셨다</p>
+
+<h3 id="3번-문제-응용---연산자-우선순위를-바꿔볼까">3번 문제 응용 - 연산자 우선순위를 바꿔볼까?</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(!!(bool1+b)));
+</code></pre></div></div>
+<p>이러면 연산자 우선순위가 아예 바뀌게 되어서 <code class="language-plaintext highlighter-rouge">bool1 + b</code>가 우선으로 실행되고, 2가 된다. <br />
+!!2, 즉 이중 부정 연산자로 인해 참인 2는 <code class="language-plaintext highlighter-rouge">true</code>가 되고,</p>
+
+<p>최종적으로는 <code class="language-plaintext highlighter-rouge">typeof(true)</code>인것이기 때문에 boolean이 된다</p>
+
+<h3 id="4번-문제---typeof-연산자가-반환하는-자료형의-자료형은">4번 문제 - typeof 연산자가 반환하는 자료형의 자료형은??</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof String(typeof(!!(bool1 + b)))); 
+</code></pre></div></div>
+<p>이게 가능합니다! <br />
+사실 이 문제를 먼저 낼까 다음 문제를 먼저 낼까 고민을 많이 했는데 다음 문제에서 낚아보려면 이 문제를 먼저 풀어보는게 뇌리에 오래 박힐 것 같았다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">typeof(!!(bool1 + b))</code>이게 <code class="language-plaintext highlighter-rouge">boolean</code>이 나온다는거는 아까 열심히 고민하여 알게 되었다.
+그렇다면 <code class="language-plaintext highlighter-rouge">typeof(String(boolean))</code> 이라는 뜻인데. 
+<code class="language-plaintext highlighter-rouge">String()</code>은 괄호 안에 있는 것들을 문자열로 만들어주는 역할을 한다.
+그러니 이 코드의 결과는 string이 나오는 것이다.</p>
+
+<h3 id="4번-문제-응용---엥-그러면-이거는-안되는거-아니야">4번 문제 응용 - 엥 그러면 이거는 안되는거 아니야?</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof(typeof(!!(boo1+b))));
+</code></pre></div></div>
+<p>뭘로 감싸주지도 않았는데?</p>
+<blockquote>
+  <p>typeof는 피연산자의 데이터 타입을 문자열로 반환한다</p>
+</blockquote>
+
+<p>포스팅 초반에 힌트가 있었다. 굳이 string으로 바꾸지 않아도 원래 출력값은 string인걸.</p>
+
+<h1 id="그리고-오늘의-문제">그리고 오늘의 문제</h1>
+
+<h2 id="상품-관리-시스템">상품 관리 시스템</h2>
+<p>1990년, 동네 구멍가게 신세를 탈출한 ‘이마트’. 이제는 계산대로 계산을 하고 싶습니다. 각 상품에는 이름, 가격, 재고 수량,재입고 여부라는 정보가 있는데요, 자동화 시스템을 도입해 재고가 모두 소진된 상품은 자동으로 목록에서 삭제되게 하려고 해요.</p>
+
+<p>함수 설명</p>
+<ul>
+  <li>addProduct: 상품을 추가하는 함수입니다.</li>
+  <li>updateProductName: 상품의 이름을 변경하는 함수입니다.</li>
+  <li>handleOutOfStock: 재고가 0이 되면 재고 수량을 null로 설정하는 함수입니다.</li>
+  <li>printAllProducts: 현재 상점에 있는 모든 상품을 출력하는 함수입니다.</li>
+  <li>removeIfOutOfStock: 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수입니다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // 1. 새로운 상품을 객체로 동적으로 추가하는 함수
+function addProduct(store, name, price, quantity, restock) {
+  
+}
+
+// 2. 상품 이름 수정 함수
+function updateProductName(store, oldName, newName) {
+ 
+}
+
+// 3. 재고가 0이면 수량을 null로 설정하는 함수
+function handleOutOfStock(store, productName) {
+
+}
+
+// 4. 모든 상품의 최종 목록을 출력하는 함수
+function printAllProducts(store) {
+  
+}
+
+// 5. 재고가 0이고 재입고가 불가능한 상품을 목록에서 삭제하는 함수
+function removeIfOutOfStock(store) {
+  
+}
+
+// 테스트 코드
+function runTests() {
+  let store = {}; // 상점 초기화
+  
+  console.log("==== 상품 추가 테스트 ====");
+  // 1. 상품 추가 테스트
+  addProduct(store, 'Apple', 1.0, 10, true);
+  addProduct(store, 'Banana', 0.5, 5, false);
+  addProduct(store, 'Orange', 0.8, 2, false);
+  printAllProducts(store);
+  
+  console.log("\n==== 상품 이름 수정 테스트 ====");
+  updateProductName(store, 'Orange', 'Grapefruit');
+  printAllProducts(store);
+  
+  console.log("\n==== 재고 소진 처리 테스트 ====");
+  // 3. 재고 소진 처리 테스트
+  handleOutOfStock(store, 'Banana');
+  printAllProducts(store);
+  
+  console.log("\n==== 재고 소진 및 삭제 테스트 ====");
+  // 4. 재고가 0이고 재입고가 불가능한 상품 삭제 테스트
+  removeIfOutOfStock(store);
+  printAllProducts(store);
+}
+
+// 테스트 실행
+runTests();
+</code></pre></div></div>
+
+<h2 id="주민등록시스템이-날아갔어요">주민등록시스템이 날아갔어요!</h2>
+<p>마을에서는 모든 주민의 정보를 개체로 관리하고 있습니다. 각 주민의 이름, 나이, 직업, 그리고 거주지가 적혀있죠. 하지만 시간이 지나면 나이를 먹고(ㅠ) , 회사가 뭣같으면 떄려치고 새로 구직할수도 있겠죠. 그리고, 이사를 가는 주민들도 있어요. 변경사항을 어떻게 해야할까요?</p>
+
+<p>함수 설명</p>
+<ul>
+  <li>createPerson: 주민의 이름, 나이, 직업, 거주지 정보를 저장하고, 주민 객체를 반환하는 함수입니다.</li>
+  <li>updateJob: 특정 주민의 직업을 변경하는 함수입니다.</li>
+  <li>updateResidence: 특정 주민의 거주지를 변경하는 함수입니다.</li>
+  <li>deletePerson: 주민 목록에서 해당 이름의 주민을 삭제하는 함수입니다.</li>
+  <li>
+    <p>printAllResidents: 현재 등록된 모든 주민의 정보를 출력하는 함수입니다.</p>
+  </li>
+  <li>각 함수는 명확한 인자와 동작을 가져야 하며, 하나의 역할이 있어야 합니다</li>
+  <li>함수의 재사용성과 모듈화에 초점을 맞춰보세요</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 1. 주민 생성 함수
+function createPerson(name, age, job, residence) {
+  // 여기다가 코딩
+}
+
+// 2. 주민 직업 변경 함수
+function updateJob(person, newJob) {
+  //여기다가 코딩
+}
+
+// 3. 주민 거주지 변경 함수
+function updateResidence(person, newResidence) {
+  // 여기다가 코딩
+}
+
+// 4. 주민 삭제 함수
+function deletePerson(residents, name) {
+  // 여기다가 코딩
+}
+
+// 5. 모든 주민 정보 출력 함수
+function printAllResidents(residents) {
+  // 여기다가 코딩
+}
+
+ let residents = [];
+  
+  console.log("==== 주민 생성 테스트 ====");
+  // 주민 생성 테스트
+  residents.push(createPerson('Lee', 30, 'Teacher', 'Seoul'));
+  residents.push(createPerson('Kim', 25, 'Engineer', 'Busan'));
+  residents.push(createPerson('Park', 40, 'Doctor', 'Daegu'));
+  
+  // 생성 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 직업 및 거주지 변경 테스트 ====");
+  // 직업 및 거주지 변경 테스트
+  updateJob(residents[0], 'Principal');
+  updateJob(residents[1], 'Developer');
+  updateResidence(residents[0], 'Incheon');
+  updateResidence(residents[2], 'Busan');
+  
+  // 변경 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 주민 삭제 테스트 ====");
+  // 주민 삭제 테스트
+  deletePerson(residents, 'Park');
+  
+  // 삭제 후 출력
+  printAllResidents(residents);
+  
+  console.log("\n==== 추가 삭제 테스트 ====");
+  // 없는 주민 삭제 시도
+  deletePerson(residents, 'Unknown');
+  
+  // 삭제 후 출력
+  printAllResidents(residents);
+</code></pre></div></div>]]></content><author><name>insidepixce</name></author><category term="49challenge" /><category term="record" /><summary type="html"><![CDATA[49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록]]></summary></entry><entry><title type="html">오즈코딩 start- 네이버 화면 커스텀하기</title><link href="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/" rel="alternate" type="text/html" title="오즈코딩 start- 네이버 화면 커스텀하기" /><published>2024-08-11T17:00:00-09:00</published><updated>2024-08-11T17:00:00-09:00</updated><id>/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st</id><content type="html" xml:base="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/"><![CDATA[<p>어머머머…굿즈 왔다 ! 잘쓸게요</p>
 
 <p><img src="https://github.com/user-attachments/assets/4d29e84a-06ac-4cda-b979-5d9a6e2d313d" width="50%" height="10%" />
 <img src="https://github.com/user-attachments/assets/6a0bc4a4-e720-42eb-8080-1b199216907a" width="40%" height="10%" /></p>
@@ -1007,141 +1414,43 @@ ls -al -KnockOn 명령어가 잘못된 옵션을 포함하고 있으므로 실�
   <li>도커 엔진 : 선박 운영 시스템 (컨테이너를 생성하고 관리하는 소프트웨어)</li>
   <li>도커 허브 : 큰 창고 (도커 이미지를 저장하고 공유)</li>
   <li>도커 컴포즈 : 상자 묶음 관리 시스템 (여러 컨테이너를 정의하고 실행)</li>
-</ul>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[도커란 무엇인가? 개념부터 정리해보자.]]></summary></entry><entry><title type="html">sql서브쿼리 실습</title><link href="/insidepixce-blog/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0/" rel="alternate" type="text/html" title="sql서브쿼리 실습" /><published>2024-05-04T14:00:00-09:00</published><updated>2024-05-04T14:00:00-09:00</updated><id>/insidepixce-blog/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0</id><content type="html" xml:base="/insidepixce-blog/javascript/2024/05/04/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0/"><![CDATA[<p>sql의 세계는 너무 어려워</p>
-
-<h1 id="codeit-sql-서브쿼리-기초-실습">codeit sql 서브쿼리 기초 실습</h1>
-
-<p>이 쿼리는 서브쿼리를 사용하여 ‘2018년 12월 31일’ 이전에 등록된 상품의 ID를 선택하고 그 ID에 해당하는 리뷰를 반환한다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT *
-FROM review
-WHERE item_id IN (
-    SELECT item_id
-    FROM item
-    WHERE registration_date &lt; '2019-01-01'
-);
-</code></pre></div></div>
-
-<p>원래 코드</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE `review` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `mem_id` int DEFAULT NULL,
-  `item_id` int DEFAULT NULL,
-  `star` int DEFAULT NULL,
-  `comment` text,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-INSERT INTO `review` (`id`, `mem_id`, `item_id`, `star`, `comment`) VALUES 
-(1,1,1,5,'착용감이 너무 좋아요, 요새 맨날 이것만 입고 다닙니다.'),
-(2,1,2,2,'그럭저럭 입을만 하긴 한데 밴딩이 너무 조여요 ㅜㅜ'),
-(3,1,6,5,'한 번 사보고 촉감이 너무 좋아서 10장 구매했습니다~'),
-(4,1,14,4,'두툼한 느낌이 좋기는 한데 실내에서는 땀이 좀 나네요..'),
-(5,2,4,3,'그냥 입을만한 정도에요.'),
-(6,2,8,5,'디자인도 최고고, 착용감도 진짜 좋아요.'),(7,2,9,5,'이거 입고 요새 맨날 헬스장 다닙니다 ㅎㅎ'),(8,2,13,3,'뭔가 일단 사서 입고 있기는 한데 디자인이 이미지보다 좀더 튀네요. '),(9,2,22,4,'뭔가 스타일리쉬한 느낌이라 요새 자주 입고 다녀요. '),(10,3,4,5,'기본템으로 좋은 것 같아서 여러장 샀네요~!'),(11,3,9,5,'땀을 잘 흡수해줘서 좋아요, 가족들 전부 한장씩 사서 줬어요 ㅋㅋ'),(12,3,15,3,'자수 모양이 이쁘긴 한데 좀 올드한 느낌이네요..'),(13,4,2,1,'이거 진짜 날씬한 사람만 입을 수 있는 건가요? 남편이 고무줄이 너무 조인다고 해요.'),(14,4,8,4,'처음에는 좀 너무 큰 사이즈 느낌이었는데 오히려 지금은 잘 산 것 같아요.'),(15,4,22,5,'이거 입고 모임 나가면 어디서 샀냐고 다 물어봐요, 좋아요!!'),(16,4,26,4,'봄가을에 입으면 딱 좋을 듯요 ^^'),(17,6,1,4,'적당히 입고 다니기 좋네요'),(18,6,2,0,'절대 사지마세요.. 남친 선물로 줬는데 허리가 너무 조인다고 해요..'),(19,6,3,5,'딱 스탠다드 런닝 느낌이에요. 남동생 선물로 여러 장 샀네요!'),(20,6,6,1,'이거 왜 세탁하고 나니까 청색이 너무 옅어져버리죠? 이염돼서 다른 옷도 다 망했어요 ㅜ'),(21,6,19,4,'요새 출근할 때 이거만 입고 다닙니다, 정말 예쁘네요~'),(22,6,21,2,'디자인이 조금 애매하네요. 그래도 가끔 입기에는 괜찮네요'),(23,10,1,5,'편하게 입고 다니기에 좋네요. '),(24,10,9,4,'요즘엔 헬스장에서 주는 옷 말고 이거 입고 다녀요. 통기성이 좋네요~'),(25,10,14,5,'가을용으로는 좀 더울 것 같고 겨울에 입으면 좋을 듯 하네요!'),(26,10,19,5,'이 옷은 이제 제 favorite이 될 것 같아요~ 데이트할 때마다 입으려고 해요'),(27,10,20,3,'사진으로 볼 때는 몰랐는데 받아보니 생각보다 좀 올드한 스타일인 것 같네요 ㅜ'),(28,10,23,4,'뭔가 독특한 안감과 겉감 때문에 개성있는 분위기를 연출할 수 있네요~'),(29,10,24,5,'밴딩이 진짜 편하고 길이도 적당해서 좋아요~'),(30,10,25,5,'이거 입고 사진 찍으니까 진짜 이쁘게 나와요!!! 다른 패턴도 또 나왔으면 ㅜ'),(31,10,29,5,'뭔가 사람들이 카라 어디로 떼먹었냐고 물어봐서 웃겨요 ㅋㅋㅋ'),(32,13,1,4,'딱 기본템으로 좋네요, 제 동생도 이쁘다 해서 하나 선물해줬습니다~'),(33,13,4,3,'뭔가 괜찮긴 한데 길이가 좀 짧은 감이 있어요.. 천을 덧대야할 것 같은 느낌..'),(34,13,9,5,'속옷 대신 입고 다녀도 될 정도로 가볍고 좋아요'),(35,13,18,5,'이쁘네요! '),(36,13,20,2,'괜찮긴 한데 물이 금새 빠졌네요..'),(37,13,30,0,'이거 사지 마세요.. 포켓 하나가 단추 떨어져서 왔어요..'),(38,16,1,5,'색깔이 너무 튀지도 않고 딱 좋아요'),(39,16,2,2,'이거 밴딩이 너무 쎄요.. 조절할 수 있도록 해주세요.  '),(40,16,3,4,'괜찮네요, 친구도 이거 샀더라구요 ㅋㅋ'),(41,16,5,3,'난해한 디자인.. 난 모르겠다, 그냥 입고 다닐게요. 착용감은 괜찮아요'),(42,16,7,5,'입기 괜찮네요. 적당한 핏이에요.'),(43,16,12,4,'좋아요, 따뜻하면서 시원해요?! '),(44,16,22,5,'이런 느낌으로 또다른 디자인해서 코트 판매해주세요! 도시적인 느낌 너무 좋아여'),(45,18,1,4,'질감이 괜찮네요, 패턴 제가 따로 입혀서 입고 다니고 있어요'),(46,18,4,3,'이거 뭐야 옷이, 기장 체크하고 살걸..'),(47,19,1,5,'좋아요~! 계절별로 하나씩 이런 느낌의 옷 있으면 좋겠어요, 두께감만 다르게 해서요'),(48,19,15,2,'이거 사놓고 입지도 못할 듯.. 너무 통이 작아서..'),(49,19,20,4,'입기에 괜찮은 듯~굿!'),(50,19,28,2,'괜찮긴 한데 단추 부분이 부실한 듯..'),(51,19,30,4,'괜찮은데 세탁하니까 사이즈가 좀 준 듯?'),(52,20,4,4,'나쁘지 않은 듯~!'),(53,20,9,5,'이거 진짜 좋네요. 내구성도 좋고 땀도 잘 흡수되고~'),(54,20,21,2,'도트 크기가 너무 큰 거 아닌가요.. 여친 주려고 샀는데 반품해야겠어요.'),(55,20,27,3,'엄마 사드렸는데, 옷이 너무 힘이 없는 듯..');
-
-
-CREATE TABLE `item` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` text,
-  `gender` text,
-  `price` int DEFAULT NULL,
-  `description` text,
-  `registration_date` date DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
-INSERT INTO `item` (`id`, `name`, `gender`, `price`, `description`, `registration_date`) VALUES 
-(1,'남녀 공용 오버핏 반팔 라운드 티셔츠','u',22000,'캐쥬얼한 무드를 연출할 수 있는 오버핏 반팔 티셔츠입니다, 깔끔한 라운드넥 디자인이라 데일리룩으로 꾸준히 입을 수 있어요!','2018-03-21'),
-(2,'남성용 밴딩 린넨 와이드 팬츠','m',33000,'매 시즌 사랑받았던, 여름에 꼭 필요한 핫한 밴딩 와이드 팬츠입니다. 베이직한 디자인과 컬러로 누구나 부담없이 이쁘게 입을 수 있습니다','2019-08-11'),
-(3,'남성용 순면 러닝','m',9000,'속옷 전문기업의 봉제 기술로 세탁 후에도 깔끔하게 유지됩니다. 봉제선이 최소화되어 편안한 착용감이 있습니다.','2018-04-15'),
-(4,'무지 7부 반팔 티셔츠','u',13000,'유니크한 디테일과 편안한 핏을 위해 최적의 소재를 사용해 만든 젊은 컨셉의 티셔츠입니다. 건강한 식물성 소재로 피부에 닿는 감촉이 부드럽습니다. ','2019-05-14'),
-(5,'브루너 반팔 티셔츠','m',20000,'뉴욕 스트릿의 감성이 살아나는 패턴이 있는 티셔츠입니다. 나만의 개성을 티셔츠로 드러내보세요.','2019-05-14'),(6,'남성용 스판 베이직 워싱 청바지','m',27000,'고퀄리티 상품, 쫀쫀한 스판데님으로 편안한 착용감을 느낄 수 있습니다, 한 두번 롤업해서 입어보는 것도 좋아요~!','2019-05-14'),(7,'남성용 슬렌더 데님','m',50000,'텐션 좋은 원단으로 만든 한정판 청바지, 베이스 워싱으로 은은한 슬림핏을 선사하는 바지입니다. 팬츠 밑단의 엣지 스타일로 트렌디한 디자인을 보실 수 있습니다.','2019-06-21'),(8,'프린팅 오버핏 맨투맨 ','u',35000,'레터링 프린팅으로 포인트를 준 오버핏 캐주얼 맨투맨입니다. 심플한 디자인이 다른 아이템과 잘 매치될 수 있게 해줍니다. 유행을 타지 않아 매년 입을 수 있는 아이템~!','2019-07-12'),(9,'냉감 반팔 티셔츠','u',15000,'아무리 땀흘려도 냄새나지 않는 티셔츠, 운동할 때 뭐입을지 고민하신 분들 많죠? 이 티셔츠 몇 장 사셔서 그런 고민 모두 날려버리세요. ','2019-08-17'),(10,'베어 프린팅 맨투맨 티셔츠','m',52000,'가을에 입으면 좋은 큐티한 상품, 평상복으로도 입을 수 있고, 데이트할 때도 입을 수 있어요! 귀여운 베어의 감성을 입어보세요. ','2019-07-12'),(11,'남성용 캐주얼 긴팔 남방','m',37000,'면 혼방 소재로 부드럽가 편안한 촉감을 느낄 수 있습니다. 트렌디함과 단정함을 모두 느낄 수 있습니다. ','2019-05-14'),(12,'남성용 오버핏 체크셔츠','m',45000,'늦가을부터 겨울까지 챙기면 좋을 베이직한 아이템, 톤 다운된 컬러로 세련된 캐주얼룩을 완성해봅시다.','2019-06-12'),(13,'남성용 스트라이프 셔츠','m',23000,'가끔 특별한 느낌을 주고 싶은 날에는? 스트라이프 디자인으로 주목받는 사람이 되어보세요. 세련미를 풍기는 사람이 되어봅시다. ','2019-07-12'),(14,'뉴밸루 후드집업 ','u',43000,'두툼한 느낌으로 나를 안아주는 후드집업, 집 근처에서도 센스있는 패션을 유지하고 싶다면 뉴밸루 후드집업입니다. 디자인과 실용성 모두 놓치고 싶지 않다면 선택하세요!','2019-03-04'),(15,'자수 반팔 티셔츠','f',52000,'여기저기 뛰어다니는 귀여운 고양이 감성, 오늘만큼은 귀여워지고 싶다면? 장인의 손길로 한땀한땀 새겨진 무늬가 있는 자수 반팔 티셔츠를 추천합니다. ','2019-07-12'),(16,'무지 티셔츠','f',30000,'원단이 주는 맨질맨질한 느낌이 좋습니다. 찰랑거리는 시원한 터치감으로 입지 않은 것처럼 편한 느낌을 줍니다. 누구나 편하게 입을 수 있는 무지 티셔츠~! ','2019-04-14'),(17,'밴딩 롤업 배기 팬츠','f',43000,'허리 사이즈에 상관없이 편하게 입을 수 있는 밴딩 스타일, 힙하면서도 꾸안꾸 스타일을 줄 수 있는 아이템입니다, 원하는 길이만큼 롤업하고 나가면 당신은 멋쟁이~!','2019-07-12'),(18,'박시 후드티 원피스 티셔츠','f',21000,'가볍게 입을 수 있지만 스타일리쉬한 느낌을 주는 원피스 티셔츠, 적당한 두께감으로 다양한 날씨에서 착용 가능합니다. ','2019-06-02'),(19,'플라워 벨티드 더블 자켓','f',71000,'누구보다도 화려해지고 싶은 날이 한번씩 있죠? 꽃이 온몸을 덮는 패턴으로 나의 존재감을 보여주세요. 라인감을 살려주는 디자인으로 당당함을 UP!','2019-07-03'),(20,'스타일리쉬 루즈 청자켓','f',39000,'과감한 프린팅과 찢김 무늬로 나만의 개성을 과시할 수 있습니다. 부담없는 연한 청색으로 은은함도 더했습니다. 아무리 빨아도 색 변화가 없을 거에요~!','2019-07-12'),(21,'여성용 도트 쉬폰 자켓','f',22000,'전통적인 게 가장 아름다운 법, 규칙적인 프린팅과 부드러운 촉감을 가진 쉬폰 자켓을 입어보세요. 발랄하고 스타일이 느껴지는 분위기를 연출할 수 있습니다. ','2019-05-14'),(22,'체크무늬 그린 롱코트','u',110000,'초록색과 검정색의 조화로운 색감으로 도회적인 느낌을 줄 수 있습니다. 오리털 안감으로 부족하지 않은 따뜻함을 느끼게 해줍니다. ','2019-09-14'),(23,'라이트 트렌치 코트','f',63000,'겉은 솔리드, 안은 체크면 두 가지 스타일로 되어 있습니다. 밑단이 분리되어 있는 패턴으로 착장 시 깔끔한 느낌을 줍니다. ','2019-08-19'),(24,'맵시 롱치마','f',40000,'허리 밴딩 타입으로 어떤 코디에도 자연스럽게 어울립니다. 몸에 감기는 시원한 재질로 여름에도 편하게 입을 수 있어요.','2019-05-14'),(25,'민들레 롱 스커트','f',25000,'화사한 민들레 패턴으로 꾸며진 롱 스커트~! 야외에서 사진 찍을 때 예쁜 샷을 선물해줄 스커트입니다. 약간의 늘어남이 있는 소재라 착용감도 좋습니다. ','2019-05-14'),(26,'블레이저 싱글 자켓','u',37000,'댄디하고 클래식한 느낌을 주는 남녀 공용 자켓입니다. 심플함만으로 매력을 선사하는 자켓으로 누구나 하나씩 갖고 있어야하는 기본아이템이죠!','2019-03-04'),(27,'여성 린넨 자켓','f',29000,'유행 타지 않는 아이템, 린넨 자켓! 여유감 있는 폼과 기장으로 안정감 있는 핏을 연출할 수 있습니다. 간단한 롤업으로 세련미를 줄 수도 있구요. ','2019-07-12'),(28,'후드 하프 코트','f',45000,'어머님들이 사랑하는 아이템, 세련된 분위기와 편안함을 함께 보여줄 수 있는 코트입니다. 생각보다 두꺼운 안감이 안정적인 보온 효과를 줍니다. ','2019-03-04'),(29,'여성용 노카라 자켓','f',67000,'평범한 자켓은 가라! 불필요한 카라를 없애고 오로지 실용성과 담백함만을 담은 자켓입니다. 업무 중에 입기에도 적합한 착용감을 제공합니다. ','2019-06-12'),(30,'여성용 투포켓 자켓','f',42000,'청청 패션의 끝을 장식해주는 아이템, 제대로된 청색 아이템을 찾는 다면 이 아이템을 추천합니다. ','2019-07-12');
-</code></pre></div></div>
-
-<p>어렵지 않게 풀었지만 항상 더 좋은 방법이 있을거라 생각이 든다 .</p>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[sql의 세계는 너무 어려워]]></summary></entry><entry><title type="html">코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)</title><link href="/insidepixce-blog/javascript/2024/05/01/drown/" rel="alternate" type="text/html" title="코드 스플리팅/레이지 로딩/웹 접근성 강화(TIL)" /><published>2024-05-01T14:00:00-09:00</published><updated>2024-05-01T14:00:00-09:00</updated><id>/insidepixce-blog/javascript/2024/05/01/drown</id><content type="html" xml:base="/insidepixce-blog/javascript/2024/05/01/drown/"><![CDATA[<p>오늘의 하루도 코드코드코드</p>
-
-<h1 id="성능-최적화--코드-스플리팅과-레이지-로딩">성능 최적화 : 코드 스플리팅과 레이지 로딩</h1>
-<p>-&gt; 코드 스플리팅과 레이지 로딩을 적용하여 초기 로드 시간을 줄이는 방법을 구현해보았다.
-React.lazy와 suspense를 사용하여 컴포넌트를 비동기적으로 로드하고 Webpack의 분할 기능을 활용하여 큰 번들을 더 작은 청크로 나누는 방법을 실험했다. 
-결과적으로 사용자 경험을 개선하고, 페이지의 성능을 향상하였다.</p>
-
-<h1 id="웹-접근성-강화">웹 접근성 강화</h1>
-<p>-&gt; 대규모 사이트 리뉴얼 프로젝트를 진행하며 웹 접근성을 개선하는 작업을 진행했다.
-ARIA(Accessible Rich Internet Applications)라벨을 추가하고, 키보드 네비게이션을 위한 포커스 관리를 개선했다
-이를 통해 WCAG 2.1 지침을 준수하고 시각적, 물리적 제한을 가진 사용자들도 사이트를 원활하게 이용할 수 있다.</p>
-
-<h1 id="프론트엔드-보안-증진">프론트엔드 보안 증진</h1>
-<p>XSS(Cross-Site Scripting)과 CSRF(Cross-Site Request Forgery)와 같은 보안 취약점을 방지하기 위해 콘텐츠 보안 정책(Content Security Policy, CSP)을 설정하는 작업을 진행했다. CSP를 통해 외부 스크립트의 로드를 제한하고, 사이트의 보안을 강화하는 방법을 체계적으로 적용해보았다.</p>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[오늘의 하루도 코드코드코드]]></summary></entry><entry><title type="html">악성코드 분석의 종류</title><link href="/insidepixce-blog/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D%EC%9D%98-%EC%A2%85%EB%A5%98/" rel="alternate" type="text/html" title="악성코드 분석의 종류" /><published>2024-02-24T14:00:00-09:00</published><updated>2024-02-24T14:00:00-09:00</updated><id>/insidepixce-blog/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EC%9D%98%20%EC%A2%85%EB%A5%98</id><content type="html" xml:base="/insidepixce-blog/security/2024/02/24/%EC%95%85%EC%84%B1%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D%EC%9D%98-%EC%A2%85%EB%A5%98/"><![CDATA[<p>악성코드 분석에 입문해보자!</p>
-
-<h1 id="악성코드-분석-입문">악성코드 분석 입문</h1>
-
-<h2 id="악성코드-분석의-목표">악성코드 분석의 목표</h2>
-
-<p>→ 네트워크 침입 대응에 필요한 정보를 알아내기 위함</p>
-
-<p>→ 감염된 시스템과 파일이 무엇인지 확실하게 인지하는 것</p>
-
-<p>일반적인 분석 목적 : 의심스러운 특정 바이너리가 하는 행위/ 네트워크 탐지 방법/ 피해 범위, 슻정</p>
-
+</ul>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[도커란 무엇인가? 개념부터 정리해보자.]]></summary></entry><entry><title type="html">다양한링크동작</title><link href="/insidepixce-blog/2024/05/21/%EB%8B%A4%EC%96%91%ED%95%9C%EB%A7%81%ED%81%AC%EB%8F%99%EC%9E%91/" rel="alternate" type="text/html" title="다양한링크동작" /><published>2024-05-21T00:00:00-09:00</published><updated>2024-05-21T00:00:00-09:00</updated><id>/insidepixce-blog/2024/05/21/%EB%8B%A4%EC%96%91%ED%95%9C%EB%A7%81%ED%81%AC%EB%8F%99%EC%9E%91</id><content type="html" xml:base="/insidepixce-blog/2024/05/21/%EB%8B%A4%EC%96%91%ED%95%9C%EB%A7%81%ED%81%AC%EB%8F%99%EC%9E%91/"><![CDATA[<hr />
+<p>pin: true
+layout: post
+title: “다양한 링크 동작”
+categories:</p>
 <ul>
-  <li>전체 분석이 필요하다는 판단이 내려지면 감염을 탐지할 수 있는 시그니처를 개발해야 함</li>
+  <li>css
+author: insidepixce
+show_excerpts: true
+date: 2024-01-18 15:30:00 +0900
+disqus: true
+paginate: true
+disqus-count-scr: true
+comments: true
+toc: true
+—
+링크는 보통 해당 주소의 페이지로 연결해준다.  그리고 그 링크 동작은 페이지 연결 외에 다른 동작들도 가능한데, https:// 나 http:// 대신에 다른 내용을 넣으면 된다.</li>
 </ul>
 
-<p>호스트 기반 시그니처나 흔적 → 탐지할때 사용</p>
+<p>이런 약속들을 uri 스킴이라고 부른다.</p>
 
-<p><strong>시그니처</strong> : 악성코드 자체의 특성</p>
+<p>https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml</p>
 
-<p><strong>악성코드 흔적</strong>: 악성코드가 시스템에 가한 행위</p>
+<p>여기서 다양한 스킴들을 확인할 수 있다</p>
 
-<p>→ 형태를 변경 OR 하드 디스크에서 지알아서 삭제하는 코드를 탐지하는데 효과적임</p>
+<h2 id="이메일-보내기">이메일 보내기</h2>
 
-<p><strong>네트워크 시그니처 :</strong> 악성코드 분석 없이 실행할 수 있지만 악성코드 분석을 이용해 생성한 시그니처는 훨씬 효과적</p>
+<p><code class="language-plaintext highlighter-rouge">mailto:&lt;이메일 주소&gt;</code> 를 사용하면 이메일을 보낼 수 있다. 이 링크를 클릭하면 이메일 프로그램이나 이메일 앱을 열 수 있고, 받는 사람 주소에 링크에 적힌 이메일 주소를 자동으로 입력해준다.</p>
 
-<p>→ 높은 탐지율과 낮은 오탐률</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">test</span><span class="k">@example</span><span class="p">.</span><span class="n">com으로</span> <span class="n">이메일</span> <span class="n">보내기</span> <span class="n">--</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="err">=</span><span class="s1">"mailto:test@example.com"</span><span class="err">&gt;</span><span class="n">메일</span> <span class="n">보내기</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span>
+</code></pre></div></div>
 
-<h1 id="악성코드-분석-기법">악성코드 분석 기법</h1>
+<h2 id="전화-걸기">전화 걸기</h2>
 
-<p>두가지 접근 기법이 있음</p>
+<p><code class="language-plaintext highlighter-rouge">tel:전화번호</code> 를 사용하면 전화를 걸 수 있다. 데스크톱 컴퓨터에는 전확 기능이 없을 수 있지만 스마트폰에서 이 링크를 클릭하면 전화 앱으로 연결된다</p>
 
-<p>→ 정적 분석 : 악성코드를 실행하지 않고 조사할 수 있음</p>
-
-<p>→ 동적 분석 : 악성코드를 실행하면서 분석</p>
-
-<h2 id="기초-정적-분석">기초 정적 분석</h2>
-
-<p>악성코드 분석을 수행할 때 대부분의 경우 그 대상은 사람이 읽을 수 없는 형태의 악성코드 파일일것임.</p>
-
-<p>→ 다양한 도구와 기법을 활용해 적은 양의 정보를 부분적으로 알아낼 수 있음</p>
-
-<p>→ 전체적인 그림을 그리려면 다양한 도구가 필요함</p>
-
-<p>→ 정교한 악성 코드에는 비효율적</p>
-
-<h2 id="기초-동적-분석">기초 동적 분석</h2>
-
-<p>악성코드를 실행한 후 감염 흔적 제거 OR 유효한 시그니처를 만듦</p>
-
-<p>→ 시스템의 행위를 관찰함</p>
-
-<p>→ 연구용으로 실행할 수 있는 환경을 설정해야함</p>
-
-<h2 id="고급-정적-분석">고급 정적 분석</h2>
-
-<p>프로그램의 <strong>명령어</strong>가 하는 작업이 무엇인지 파악하는게 목적</p>
-
-<p>→ 실행 파일을 디스어셈블러로 로드</p>
-
-<p>→ 악성코드의 내부를 역공학하는 과정</p>
-
-<p>→ cpu 가 실행하므로 고급 정적 분석을 통해 프로그램의 정확한 내용을 알 수 있음</p>
-
-<p>→ 디스어셈블블리에 특화된 지식, 코드 구성과 윈도우 운영체제 개념을 요구함</p>
-
-<h2 id="고급-동적-분석">고급 동적 분석</h2>
-
-<p>디버거를 이용해 동작하는 악성 실행 파일의 내부 상태를 점검함</p>
-
-<p>→ 실행 파일에서 세부 정보를 추출한다</p>]]></content><author><name>insidepixce</name></author><category term="security" /><category term="practical malware analysis" /><summary type="html"><![CDATA[악성코드 분석에 입문해보자!]]></summary></entry></feed>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">한국의</span> <span class="err">010</span><span class="nt">-1234-0123으로</span> <span class="nt">전화걸기</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">"tel:+821012340123"</span><span class="o">&gt;</span><span class="nt">전화</span> <span class="nt">걸기</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span>
+</code></pre></div></div>]]></content><author><name>insidepixce</name></author><summary type="html"><![CDATA[pin: true layout: post title: “다양한 링크 동작” categories: css author: insidepixce show_excerpts: true date: 2024-01-18 15:30:00 +0900 disqus: true paginate: true disqus-count-scr: true comments: true toc: true — 링크는 보통 해당 주소의 페이지로 연결해준다. 그리고 그 링크 동작은 페이지 연결 외에 다른 동작들도 가능한데, https:// 나 http:// 대신에 다른 내용을 넣으면 된다.]]></summary></entry></feed>

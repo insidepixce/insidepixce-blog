@@ -1,0 +1,102 @@
+
+<hr />
+<p>pin: true
+layout: post
+title: “display 정리”
+categories:</p>
+<ul>
+  <li>css
+tags:</li>
+  <li>javascript
+author: insidepixce
+show_excerpts: true
+date: 2024-01-18 15:30:00 +0900
+disqus: true
+paginate: true
+disqus-count-scr: true
+comments: true
+toc: true
+—
+    <h1 id="블록block">블록(block)</h1>
+    <p><img src="https://github.com/user-attachments/assets/4aa14bb9-3955-431c-a2ab-cf4e56910f90" alt="image" /></p>
+  </li>
+</ul>
+
+<p>위에서 아래로 차례대로 배치되는 요소이다.</p>
+
+<p>크기를 지정할 수 있으며, 예네들은 기본적으로 <code class="language-plaintext highlighter-rouge">display</code>값이 <code class="language-plaintext highlighter-rouge">block</code>이다</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, …, <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code></li>
+</ul>
+
+<h1 id="인라인inline">인라인(inline)</h1>
+
+<p><img src="https://github.com/user-attachments/assets/3d5a673d-fd71-409e-bceb-be3b0867e8ae" alt="image" /></p>
+
+<p>글을 쓰는 방향으로 줄이 바뀌면서 배치된다.</p>
+
+<p>블록과 달리 크기를 지정할 수 있으며,</p>
+
+<p>얘네들은 기본적으로 <code class="language-plaintext highlighter-rouge">display</code>값이 <code class="language-plaintext highlighter-rouge">inline</code>이다</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;br&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;img&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;span&gt;</code></li>
+</ul>
+
+<p>참고로 이미지 같이 외부 데이터를 보여 주는 태그는 인라인이지만 크기를 지정할 수 있다.</p>
+
+<h1 id="인라인-블록inline-block">인라인 블록(inline-block)</h1>
+
+<p><img src="https://github.com/user-attachments/assets/20d238d4-c671-47d9-805c-2d9099d44bf3" alt="image" /></p>
+
+<p>인라인처럼 배치되지만 블록처럼 크기를 가지고 싶을떄 사용하는 display 속성이다</p>
+
+<h1 id="float-속성">float 속성</h1>
+<p><img src="https://github.com/user-attachments/assets/179cfd41-be76-4c7b-a2a7-e5e7bc026ba6" alt="image" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">float</code> 속성은 요소를 페이지 왼쪽이나 오른쪽에 삽화처럼 배치하고, 그 주변으로 인라인 요소들을 배치할 수 있다.</p>
+
+<h1 id="블록-인라인-블록-인라인-비교"><strong>블록, 인라인 블록, 인라인 비교</strong></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th><strong>블록</strong></th>
+      <th><strong>인라인 블록</strong></th>
+      <th><strong>인라인</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>기본 크기</strong></td>
+      <td><strong>좌우로 꽉 참</strong></td>
+      <td><strong>콘텐트에 딱 맞게</strong></td>
+      <td><strong>콘텐트에 딱 맞게</strong></td>
+    </tr>
+    <tr>
+      <td><strong>배치</strong></td>
+      <td><strong>위에서 아래로</strong></td>
+      <td><strong>글 쓰는 방향</strong></td>
+      <td><strong>글 쓰는 방향</strong></td>
+    </tr>
+    <tr>
+      <td><strong>width 와 height</strong></td>
+      <td><strong>O</strong></td>
+      <td><strong>O</strong></td>
+      <td><strong>X</strong></td>
+    </tr>
+    <tr>
+      <td><strong>margin 과 padding</strong></td>
+      <td><strong>O</strong></td>
+      <td><strong>O</strong></td>
+      <td><strong>▵인라인 진행 방향(=가로)만 제대로 사용 가능</strong></td>
+    </tr>
+  </tbody>
+</table>

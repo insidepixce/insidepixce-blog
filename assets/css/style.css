@@ -370,7 +370,7 @@ li {
 
 /* 코드 블럭 스타일 */
 pre {
-    background-color:#e6e6e6;
+    background-color: #e0e0e0;
     color: #000000;
     padding: 15px;
     border-radius: 5px;
@@ -379,7 +379,7 @@ pre {
 }
 
 code {
-    background-color: transparent;
+    background-color: #f4f4f4;
     padding: 2px 5px;
     border-radius: 3px;
     font-size: 15px;

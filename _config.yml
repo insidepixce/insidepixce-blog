@@ -28,7 +28,9 @@ plugins:
 
 paginate: 15
 paginate_path: /page:num/
-
+disqus:
+  comments: true
+  shortname: "mylog-3" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 
 highlighter: rouge

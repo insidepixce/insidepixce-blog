@@ -29,6 +29,22 @@ layout: default
         {% endif %}
     </footer>
 
+  {% if page.comments %}
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '{{ site.url }}{{ page.url }}';
+      this.page.identifier = '{{ page.url }}';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+{% endif %}
+
     <nav class="post-navigation">
         <p>{% if page.previous %} 이전 게시물: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a> {% endif %}</p>
         <p>{% if page.next %} 다음 게시물: <a href="{{ page.next.url }}">{{ page.next.title }}</a> {% endif %}</p>

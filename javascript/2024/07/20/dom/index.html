@@ -293,6 +293,22 @@ html도 하나의 노드이다!
         
     </footer>
 
+  
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/javascript/2024/07/20/dom/';
+      this.page.identifier = '/javascript/2024/07/20/dom/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://mylog-3.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/test/2024/07/19/sd/">서버 로그 저장형 stopwatch 구현 (js편)</a> </p>
         <p> 다음 게시물: <a href="/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy/">[뻘글]도대체 어디까지 발전할건데?</a> </p>

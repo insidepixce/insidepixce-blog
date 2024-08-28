@@ -155,8 +155,6 @@
             2024년 07월 05일 | sec
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -605,25 +603,23 @@ CMD ["/bin/bash"]
 
         
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '/sec/2024/07/05/dockeruse/';
+                    this.page.identifier = '/sec/2024/07/05/dockeruse/';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mylog-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         
     </footer>
-
-  
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '/sec/2024/07/05/dockeruse/';
-      this.page.identifier = '/sec/2024/07/05/dockeruse/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mylog-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/javascript/2024/07/05/dailyreport/">맥에서 리눅스 환경 구축하기- 도커란 무엇인가?</a> </p>

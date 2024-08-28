@@ -155,8 +155,6 @@
             2024년 01월 14일 | javascript
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -284,25 +282,23 @@
 
         
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '/javascript/2024/01/14/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90/';
+                    this.page.identifier = '/javascript/2024/01/14/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90/';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mylog-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         
     </footer>
-
-  
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '/javascript/2024/01/14/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90/';
-      this.page.identifier = '/javascript/2024/01/14/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mylog-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/javascript/2024/01/11/%EB%B3%80%EC%88%98%EC%97%90%EC%84%9C%EC%8A%A4%EC%99%80%ED%95%91/">변수로 시작해 스와핑기법까지</a> </p>

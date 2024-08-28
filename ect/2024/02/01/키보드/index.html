@@ -155,8 +155,6 @@
             2024년 02월 01일 | ect
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -404,25 +402,23 @@ Owlab London Fog 100ea
 
         
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '/ect/2024/02/01/%ED%82%A4%EB%B3%B4%EB%93%9C/';
+                    this.page.identifier = '/ect/2024/02/01/%ED%82%A4%EB%B3%B4%EB%93%9C/';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mylog-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         
     </footer>
-
-  
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '/ect/2024/02/01/%ED%82%A4%EB%B3%B4%EB%93%9C/';
-      this.page.identifier = '/ect/2024/02/01/%ED%82%A4%EB%B3%B4%EB%93%9C/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mylog-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/javascript/2024/01/28/TIssL/">실행 컨텍스트</a> </p>

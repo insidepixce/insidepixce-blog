@@ -155,8 +155,6 @@
             2024년 08월 10일 | talk
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -193,25 +191,23 @@
 
         
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy/';
+                    this.page.identifier = '/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy/';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mylog-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         
     </footer>
-
-  
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy/';
-      this.page.identifier = '/talk/2024/08/10/%EB%8F%84%EC%96%B4%EC%84%B1st-copy/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mylog-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/javascript/2024/07/20/dom/">DOM이란 무엇인가</a> </p>

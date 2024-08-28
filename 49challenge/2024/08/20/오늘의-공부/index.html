@@ -155,8 +155,6 @@
             2024년 08월 20일 | 49challenge
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -466,25 +464,23 @@ function printAllResidents(residents) {
 
         
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/';
+                    this.page.identifier = '/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mylog-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         
     </footer>
-
-  
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/';
-      this.page.identifier = '/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mylog-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 
     <nav class="post-navigation">
         <p> 이전 게시물: <a href="/49challenge/2024/08/20/%EA%B0%9D%EC%B2%B4%EC%9A%94%EC%95%BD/">딥 다이브 인투 자바스크립트 10장 - 객체 리터럴 요약본</a> </p>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/insidepixce-blog/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>함수1 | Insidepixce inworld</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="함수1" />
+<meta name="author" content="insidepixce" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="description" content="오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚" />
+<meta property="og:description" content="오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚" />
+<meta property="og:site_name" content="Insidepixce inworld" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-27T23:09:00-09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="함수1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"insidepixce"},"dateModified":"2024-08-27T23:09:00-09:00","datePublished":"2024-08-27T23:09:00-09:00","description":"오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚","headline":"함수1","mainEntityOfPage":{"@type":"WebPage","@id":"/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/"},"url":"/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/insidepixce-blog/logo.jpg" alt="Profile Picture" class="profile-picture">
+                <a href="/insidepixce-blog/" style="text-decoration: none; color:#000000; font-size:20px;">Park gyodam</a>
+                <p class="bio">방랑 개발자</p>
+                <a href="https://www.instagram.com/outsidepixce/" target="_blank">Git</a>
+                <a href="https://github.com/insidepixce" target="_blank">Instagram</a>
+                <a href="mailto:insidepixce@gmail.com">이메일</a>
+                
+                <h3 style="color:black">Categories</h3>
+                <ul class="category-list">
+                    <p>전체 글 수 32 개</p>
+                    
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/49challenge/index.html" class="category-title">49challenge (3)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/ect/index.html" class="category-title">ect (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/html-css/index.html" class="category-title">html-css (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/javascript/index.html" class="category-title">javascript (17)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/oz-coding/index.html" class="category-title">oz-coding (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/sec/index.html" class="category-title">sec (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/security/index.html" class="category-title">security (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/talk/index.html" class="category-title">talk (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/test/index.html" class="category-title">test (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- 메인 콘텐츠 -->
+        <main class="content">
+            <h1>함수1</h1>
+            <div class="page-content">
+                    <article class="post">
+    <header class="post-header">
+        <p class="post-meta">
+            2024년 08월 27일 | 49challenge
+        </p>
+    </header>
+    
+
+
+    <div class="post-content">
+        <svg width="100%" height="5px">
+            <line x1="0" y1="5" x2="5000" y2="5" stroke="#cccccc" stroke-width="6"/>
+        </svg>
+        <p>오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚</p>
+
+<p>우리가 중고등학교 수학 과정을 공부할때 ‘함수’에 대해서 많이들 익히 들어본 경험이 있죠. 저는 그 함수랑 이 함수가 비슷하다고 생각해요! 🤔</p>
+
+<h1 id="함수란-">함수란? 🤖</h1>
+
+<blockquote>
+  <p><em>함수는 마치 재료를 투입받아 제품을 생산하는 기계와 같다</em></p>
+
+  <p>-모던 자바스크립트 딥다이브 154쪽-</p>
+
+</blockquote>
+
+<p>저는 함수를 책의 정의와는 조금 다른 ‘자판기’에 비유하고는 하는데요. 🥤</p>
+
+<h3 id="내가-한번-자판기에-비유해볼게-">내가 한번 자판기에 비유해볼게! 🎯</h3>
+
+<p>먼저 자판기에 동전을 넣고 나면 해당 동전은 분류를 위해 과정을 거치죠. 분류 과정에는 이게 500원짜리인지, 100원짜리인지, 10원짜리인지, 50원짜리인지 알기 위해 각 단계를 거쳐요. 💰➡️⚙️</p>
+
+<p>그 단계가 저는 마치 함수 안에 있는 실행문들이라고 느껴졌어요. if문에 대입할수도 있겠죠. 만약 이 동전이 500원짜리라는 판단이 내려지면, 나머지 분류 단계는 거칠 필요가 없으니까, 500원짜리를 입력받았다고 기록하고, 결과물인 상품을 내보내겠죠? 🎁</p>
+
+<h3 id="이걸로-return과-consolelog를-이해해보자-️">이걸로 return과 console.log를 이해해보자! 🔄🖥️</h3>
+
+<p>상품이 나오기는 했지만 꺼내야 내가 먹거나 사용할 수 있으니 함수안에서 return을 해줘야 그걸 꺼내가지고 가져갈 수 있고요. 🍹</p>
+
+<p>500원 짜리가 들어왔습니다라는 문구를 출력해줘야 우리가 넣은 동전이 잘 인식되었는지 볼 수 있죠. 💬✅</p>
+
+<hr />
+
+<p>하지만 console.log는 그저 출력해줄 뿐이고, 자판기로 비유하자면 일정 시간이 지나 프로세스가 끝나버리면 증발해버리는 애죠. 🌬️</p>
+
+<p>근데 return 으로 음료수를 꺼내주면? 우리가 자판기 밖에서도 먹을 수 있죠? 🍹🥤</p>
+
+<p>글재주가 안좋아서 비유가 찰떡은 아니다만, 그냥 그렇다구요 ㅎㅎㅎ 😅</p>
+
+<h1 id="정의해보자-">정의해보자! 🔍</h1>
+
+<blockquote>
+  <p><em>함수란 일련의 과정을 문으로 구현하고 코드 블록으로 감싸서 하나의 실행 단위로 정의한 것이다</em></p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 155쪽-</li>
+  </ul>
+</blockquote>
+
+<p>그니까, 함수는 여러가지 실행시킬 것들을 모아서 그냥 하나로 묶은 거라고 볼 수 있겠네요. 🎁🔗</p>
+
+<h3 id="용어를-알아보자-">용어를 알아보자! 📖</h3>
+
+<p><strong>매개변수</strong> : 함수 내부로 입력을 전달받는 변수 ⚙️</p>
+
+<p><strong>인수</strong> : 입력 💻</p>
+
+<p><strong>반환값</strong> : 출력 📤</p>
+
+<p>책은 이렇게 정의를 해두었는데요. 구조상으로 보자면 이래요. 🛠️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nf">함수이름</span><span class="p">(</span><span class="nx">매개변수1</span><span class="p">,</span> <span class="nx">매개변수2</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nx">실행문</span>
+ <span class="p">}</span>
+
+ <span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수1</span><span class="p">,</span> <span class="nx">인수2</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p>이렇게 볼 수 있겠죠! 👀 책에서는 이러한 실행문의 예시를 들었는데요.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">return</span> <span class="nx">반환값1</span> <span class="o">+</span> <span class="nx">반환값2</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>이걸 전부 대입한 예시도 써볼게요. ✏️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="nf">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p>그림 12-2의 예시거든요. 이런 식으로 함수가 사용된다고 보시면 돼요. 💡</p>
+
+<h3 id="주목할-점-">주목할 점! 🔍</h3>
+
+<blockquote>
+  <p>함수 정의만으로 함수가 실행되는것은 아니다</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 155쪽-</li>
+  </ul>
+</blockquote>
+
+<p>자 , 함수의 정의가 무엇이였을까요? 🤔</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이게 정의에요. 지금 아까의 코드에서 <code class="language-plaintext highlighter-rouge">add(2,5)</code> 만 빠져있는 상태죠? 이렇게 정의만 하면 아무 일도 실행되지 않아요. 🛑</p>
+
+<p>여기서 <code class="language-plaintext highlighter-rouge">return</code> 과 <code class="language-plaintext highlighter-rouge">console.log</code>를 이해하신 분들 중에서는 이러한 질문도 있을 수 있겠네요? 🤷‍♀️</p>
+
+<blockquote>
+  <p>console.log가 없어서 그런 거 아냐?</p>
+
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span> <span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이 코드만으로 실행이 될까요? 정답은 ‘아니다’입니다. ❌ 왜냐면 함수는 정의만으로 실행되지 않거든요. 우리가 기계를 만들어놓고 실행버튼을 안 눌러주면 작동하지 않는거랑 똑같아요. ⚙️🔘</p>
+
+<h3 id="그럼-어떻게-실행시켜야-하는데-">그럼 어떻게 실행시켜야 하는데? 🚀</h3>
+
+<p><code class="language-plaintext highlighter-rouge">함수 호출</code> 을 하셔야 합니다. ☎️</p>
+
+<blockquote>
+  <p>함수를 호출하면 코드 블록에 담긴 문들이 일괄적으로 실행되고, 실행 결과, 즉 반환값을 반환한다</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 156쪽-</li>
+  </ul>
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수</span><span class="p">,</span> <span class="nx">인수</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>인수가 여러개라면 더 넣을수도 있겠죠? 📥 일단은 이게 함수 호출의 폼이라고 생각해주시면 돼요. 📝</p>
+
+<h3 id="함수-이거-왜쓰는데-️">함수, 이거 왜쓰는데? 🤷‍♂️</h3>
+
+<blockquote>
+  <p>필요할 때 호출할 수 있어서!</p>
+
+  <p>몇 번이든 재사용이 가능해서!</p>
+
+</blockquote>
+
+<p>즉 , <strong>코드의 재사용</strong> 측면에서 굉장히 좋다고 생각해요. 유지보수도 쉽고요. 🔄🛠️</p>
+
+<p>한번만 써놓고 함수 호출을 통해 여러번 써먹을 수 있다는게 장점이라는거죠. 💡</p>
+
+<h1 id="함수-리터럴-️">함수 리터럴 🖊️</h1>
+
+<blockquote>
+  <p>자바스크립트의 함수는 객체 타입의 값이다. 따라서 숫자 값을 숫자 리터럴로 생성하고 객체를 객체 리터럴로 생성하는 것 처럼 함수도 리터럴로 생성할 수 있다. 함수 리터럴은 function 키워드, 함수 이름, 매개변수, 함수 몸체로 구성된다.</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 157쪽-</li>
+  </ul>
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">변수</span><span class="o">=</span> <span class="kd">function</span> <span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수</span><span class="p">,</span><span class="nx">인수</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">실행문</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<p>그냥 함수 자체를 변수에 저장할 수 있다는 소리를 저렇게도 거창하게 해놨네요. 😅</p>
+
+<h2 id="함수-리터럴과-관련된-이야기들-">함수 리터럴과 관련된 이야기들 💬</h2>
+
+<ul>
+  <li>함수 이름은 식별자기 때문에 식별자 네이밍 규칙을 따라야 해요.</li>
+  <li>함수 이름은 함수 몸체 내에서만 참조할 수 있는 식별자에요.</li>
+  <li>함수 이름은 생략할 수 있어요
+    <ul>
+      <li>이름이 있는 함수를 기명함수, 이름이 없는 함수를 익명 함수라고 해요. 🤐</li>
+    </ul>
+  </li>
+  <li>각 매개변수는 순서별로 구별되어요. ⏩</li>
+  <li>매개변수는 함수 몸체 내에서 변수와 같아요. 그러니 식별자 네이밍 규칙을 따라야 해요. 🛠️</li>
+</ul>
+
+<p>이렇게 기본적으로 함수에 대해 알아봤는데요. 📘</p>
+
+<p>아, 함수는 객체긴 한데 일반 객체와는 좀 달라요. 호출할 수 있고 없고, 그리고 고유한 프로퍼티를 가지는지 안 가지는지에 따라 다른데요. 🤖</p>
+
+<p>아마 일주일 뒤면 이 개념에 대해 완벽하게 이해할 수 있을 것 같아요. 18장에 나온다고 하니깐요! 🗓️📖</p>
+
+<h1 id="오늘-스터디에서-생각해볼-문제">오늘 스터디에서 생각해볼 문제</h1>
+
+<p>저는 오늘 스터디에서 질문으로 본책 157쪽의 이 구문을 제시해보려고 해요</p>
+
+<blockquote>
+  <p>함수 이름은 함수 몸체 내에서만 참조할 수 있는 식별자이다</p>
+
+</blockquote>
+
+<blockquote>
+  <p>함수 이름은 생략할 수 있다. 이름이 있는 함수를 기명 함수, 이름이 없는 함수를 무명/익명 함수라고 한다</p>
+
+</blockquote>
+
+<p>이거에 대해서 한번 이야기를 해보면 좋을 것 같아요. 부가적인 정보가 없었기에 좀 더 살펴보면 좋을 것 같아서요:)</p>
+
+<p>이렇게 스터디 준비를 마쳐보았는데요, 오늘 스터디에는 다른 주제도 있어서 지식 공유가 정말 풍부할 것 같아요. 벌써부터 설레는걸요! 😄🎉 그럼 저는 이만 가볼게요! 안녕 👋😊</p>
+
+    </div>
+
+    <footer class="post-footer">
+        
+            <p>태그: </p>
+        
+
+        
+            <h3>댓글</h3>
+            <!-- 댓글 시스템 통합 (예: Disqus) -->
+        
+    </footer>
+
+  
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/';
+      this.page.identifier = '/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://mylog-3.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+
+    <nav class="post-navigation">
+        <p> 이전 게시물: <a href="/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/">[5]미디어 쿼리</a> </p>
+        <p></p>
+    </nav>
+</article>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+                             <p>                       </p>&copy; 2024 Insidepixce inworld - All rights reserved. 디자인은 너무 어려워 
+    </footer>
+</body>
+</html>

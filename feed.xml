@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-27T19:58:44-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">[5]미디어 쿼리</title><link href="/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/" rel="alternate" type="text/html" title="[5]미디어 쿼리" /><published>2024-08-27T19:42:00-09:00</published><updated>2024-08-27T19:42:00-09:00</updated><id>/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC</id><content type="html" xml:base="/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/"><![CDATA[<p>오늘은 오즈코딩스쿨 🖐🏻일차! 🎨<strong>미디어 쿼리</strong>에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-27T23:11:13-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">함수1</title><link href="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/" rel="alternate" type="text/html" title="함수1" /><published>2024-08-27T23:09:00-09:00</published><updated>2024-08-27T23:09:00-09:00</updated><id>/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828</id><content type="html" xml:base="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/"><![CDATA[<p>오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚</p>
+
+<p>우리가 중고등학교 수학 과정을 공부할때 ‘함수’에 대해서 많이들 익히 들어본 경험이 있죠. 저는 그 함수랑 이 함수가 비슷하다고 생각해요! 🤔</p>
+
+<h1 id="함수란-">함수란? 🤖</h1>
+
+<blockquote>
+  <p><em>함수는 마치 재료를 투입받아 제품을 생산하는 기계와 같다</em></p>
+
+  <p>-모던 자바스크립트 딥다이브 154쪽-</p>
+
+</blockquote>
+
+<p>저는 함수를 책의 정의와는 조금 다른 ‘자판기’에 비유하고는 하는데요. 🥤</p>
+
+<h3 id="내가-한번-자판기에-비유해볼게-">내가 한번 자판기에 비유해볼게! 🎯</h3>
+
+<p>먼저 자판기에 동전을 넣고 나면 해당 동전은 분류를 위해 과정을 거치죠. 분류 과정에는 이게 500원짜리인지, 100원짜리인지, 10원짜리인지, 50원짜리인지 알기 위해 각 단계를 거쳐요. 💰➡️⚙️</p>
+
+<p>그 단계가 저는 마치 함수 안에 있는 실행문들이라고 느껴졌어요. if문에 대입할수도 있겠죠. 만약 이 동전이 500원짜리라는 판단이 내려지면, 나머지 분류 단계는 거칠 필요가 없으니까, 500원짜리를 입력받았다고 기록하고, 결과물인 상품을 내보내겠죠? 🎁</p>
+
+<h3 id="이걸로-return과-consolelog를-이해해보자-️">이걸로 return과 console.log를 이해해보자! 🔄🖥️</h3>
+
+<p>상품이 나오기는 했지만 꺼내야 내가 먹거나 사용할 수 있으니 함수안에서 return을 해줘야 그걸 꺼내가지고 가져갈 수 있고요. 🍹</p>
+
+<p>500원 짜리가 들어왔습니다라는 문구를 출력해줘야 우리가 넣은 동전이 잘 인식되었는지 볼 수 있죠. 💬✅</p>
+
+<hr />
+
+<p>하지만 console.log는 그저 출력해줄 뿐이고, 자판기로 비유하자면 일정 시간이 지나 프로세스가 끝나버리면 증발해버리는 애죠. 🌬️</p>
+
+<p>근데 return 으로 음료수를 꺼내주면? 우리가 자판기 밖에서도 먹을 수 있죠? 🍹🥤</p>
+
+<p>글재주가 안좋아서 비유가 찰떡은 아니다만, 그냥 그렇다구요 ㅎㅎㅎ 😅</p>
+
+<h1 id="정의해보자-">정의해보자! 🔍</h1>
+
+<blockquote>
+  <p><em>함수란 일련의 과정을 문으로 구현하고 코드 블록으로 감싸서 하나의 실행 단위로 정의한 것이다</em></p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 155쪽-</li>
+  </ul>
+</blockquote>
+
+<p>그니까, 함수는 여러가지 실행시킬 것들을 모아서 그냥 하나로 묶은 거라고 볼 수 있겠네요. 🎁🔗</p>
+
+<h3 id="용어를-알아보자-">용어를 알아보자! 📖</h3>
+
+<p><strong>매개변수</strong> : 함수 내부로 입력을 전달받는 변수 ⚙️</p>
+
+<p><strong>인수</strong> : 입력 💻</p>
+
+<p><strong>반환값</strong> : 출력 📤</p>
+
+<p>책은 이렇게 정의를 해두었는데요. 구조상으로 보자면 이래요. 🛠️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nf">함수이름</span><span class="p">(</span><span class="nx">매개변수1</span><span class="p">,</span> <span class="nx">매개변수2</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nx">실행문</span>
+ <span class="p">}</span>
+
+ <span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수1</span><span class="p">,</span> <span class="nx">인수2</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p>이렇게 볼 수 있겠죠! 👀 책에서는 이러한 실행문의 예시를 들었는데요.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">return</span> <span class="nx">반환값1</span> <span class="o">+</span> <span class="nx">반환값2</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>이걸 전부 대입한 예시도 써볼게요. ✏️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="nf">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p>그림 12-2의 예시거든요. 이런 식으로 함수가 사용된다고 보시면 돼요. 💡</p>
+
+<h3 id="주목할-점-">주목할 점! 🔍</h3>
+
+<blockquote>
+  <p>함수 정의만으로 함수가 실행되는것은 아니다</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 155쪽-</li>
+  </ul>
+</blockquote>
+
+<p>자 , 함수의 정의가 무엇이였을까요? 🤔</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이게 정의에요. 지금 아까의 코드에서 <code class="language-plaintext highlighter-rouge">add(2,5)</code> 만 빠져있는 상태죠? 이렇게 정의만 하면 아무 일도 실행되지 않아요. 🛑</p>
+
+<p>여기서 <code class="language-plaintext highlighter-rouge">return</code> 과 <code class="language-plaintext highlighter-rouge">console.log</code>를 이해하신 분들 중에서는 이러한 질문도 있을 수 있겠네요? 🤷‍♀️</p>
+
+<blockquote>
+  <p>console.log가 없어서 그런 거 아냐?</p>
+
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span> <span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이 코드만으로 실행이 될까요? 정답은 ‘아니다’입니다. ❌ 왜냐면 함수는 정의만으로 실행되지 않거든요. 우리가 기계를 만들어놓고 실행버튼을 안 눌러주면 작동하지 않는거랑 똑같아요. ⚙️🔘</p>
+
+<h3 id="그럼-어떻게-실행시켜야-하는데-">그럼 어떻게 실행시켜야 하는데? 🚀</h3>
+
+<p><code class="language-plaintext highlighter-rouge">함수 호출</code> 을 하셔야 합니다. ☎️</p>
+
+<blockquote>
+  <p>함수를 호출하면 코드 블록에 담긴 문들이 일괄적으로 실행되고, 실행 결과, 즉 반환값을 반환한다</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 156쪽-</li>
+  </ul>
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수</span><span class="p">,</span> <span class="nx">인수</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>인수가 여러개라면 더 넣을수도 있겠죠? 📥 일단은 이게 함수 호출의 폼이라고 생각해주시면 돼요. 📝</p>
+
+<h3 id="함수-이거-왜쓰는데-️">함수, 이거 왜쓰는데? 🤷‍♂️</h3>
+
+<blockquote>
+  <p>필요할 때 호출할 수 있어서!</p>
+
+  <p>몇 번이든 재사용이 가능해서!</p>
+
+</blockquote>
+
+<p>즉 , <strong>코드의 재사용</strong> 측면에서 굉장히 좋다고 생각해요. 유지보수도 쉽고요. 🔄🛠️</p>
+
+<p>한번만 써놓고 함수 호출을 통해 여러번 써먹을 수 있다는게 장점이라는거죠. 💡</p>
+
+<h1 id="함수-리터럴-️">함수 리터럴 🖊️</h1>
+
+<blockquote>
+  <p>자바스크립트의 함수는 객체 타입의 값이다. 따라서 숫자 값을 숫자 리터럴로 생성하고 객체를 객체 리터럴로 생성하는 것 처럼 함수도 리터럴로 생성할 수 있다. 함수 리터럴은 function 키워드, 함수 이름, 매개변수, 함수 몸체로 구성된다.</p>
+
+  <ul>
+    <li>모던 자바스크립트 딥다이브 157쪽-</li>
+  </ul>
+</blockquote>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">변수</span><span class="o">=</span> <span class="kd">function</span> <span class="nf">함수이름</span><span class="p">(</span><span class="nx">인수</span><span class="p">,</span><span class="nx">인수</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">실행문</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<p>그냥 함수 자체를 변수에 저장할 수 있다는 소리를 저렇게도 거창하게 해놨네요. 😅</p>
+
+<h2 id="함수-리터럴과-관련된-이야기들-">함수 리터럴과 관련된 이야기들 💬</h2>
+
+<ul>
+  <li>함수 이름은 식별자기 때문에 식별자 네이밍 규칙을 따라야 해요.</li>
+  <li>함수 이름은 함수 몸체 내에서만 참조할 수 있는 식별자에요.</li>
+  <li>함수 이름은 생략할 수 있어요
+    <ul>
+      <li>이름이 있는 함수를 기명함수, 이름이 없는 함수를 익명 함수라고 해요. 🤐</li>
+    </ul>
+  </li>
+  <li>각 매개변수는 순서별로 구별되어요. ⏩</li>
+  <li>매개변수는 함수 몸체 내에서 변수와 같아요. 그러니 식별자 네이밍 규칙을 따라야 해요. 🛠️</li>
+</ul>
+
+<p>이렇게 기본적으로 함수에 대해 알아봤는데요. 📘</p>
+
+<p>아, 함수는 객체긴 한데 일반 객체와는 좀 달라요. 호출할 수 있고 없고, 그리고 고유한 프로퍼티를 가지는지 안 가지는지에 따라 다른데요. 🤖</p>
+
+<p>아마 일주일 뒤면 이 개념에 대해 완벽하게 이해할 수 있을 것 같아요. 18장에 나온다고 하니깐요! 🗓️📖</p>
+
+<h1 id="오늘-스터디에서-생각해볼-문제">오늘 스터디에서 생각해볼 문제</h1>
+
+<p>저는 오늘 스터디에서 질문으로 본책 157쪽의 이 구문을 제시해보려고 해요</p>
+
+<blockquote>
+  <p>함수 이름은 함수 몸체 내에서만 참조할 수 있는 식별자이다</p>
+
+</blockquote>
+
+<blockquote>
+  <p>함수 이름은 생략할 수 있다. 이름이 있는 함수를 기명 함수, 이름이 없는 함수를 무명/익명 함수라고 한다</p>
+
+</blockquote>
+
+<p>이거에 대해서 한번 이야기를 해보면 좋을 것 같아요. 부가적인 정보가 없었기에 좀 더 살펴보면 좋을 것 같아서요:)</p>
+
+<p>이렇게 스터디 준비를 마쳐보았는데요, 오늘 스터디에는 다른 주제도 있어서 지식 공유가 정말 풍부할 것 같아요. 벌써부터 설레는걸요! 😄🎉 그럼 저는 이만 가볼게요! 안녕 👋😊</p>]]></content><author><name>insidepixce</name></author><category term="49challenge" /><summary type="html"><![CDATA[오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚]]></summary></entry><entry><title type="html">[5]미디어 쿼리</title><link href="/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/" rel="alternate" type="text/html" title="[5]미디어 쿼리" /><published>2024-08-27T19:42:00-09:00</published><updated>2024-08-27T19:42:00-09:00</updated><id>/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC</id><content type="html" xml:base="/insidepixce-blog/html-css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/"><![CDATA[<p>오늘은 오즈코딩스쿨 🖐🏻일차! 🎨<strong>미디어 쿼리</strong>에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?</p>
 
 <h1 id="-미디어-쿼리-완벽-가이드-반응형-웹-디자인의-핵심-개념들-">🎨 미디어 쿼리 완벽 가이드: 반응형 웹 디자인의 핵심 개념들 💻</h1>
 
@@ -483,7 +687,7 @@ console.log(person);
   </li>
   <li>객체의 프로토타입 체인 끝에는 <code class="language-plaintext highlighter-rouge">null</code>이 있음.</li>
   <li>프로토타입 체인을 따라 속성과 메서드를 탐색함</li>
-</ul>]]></content><author><name>insidepixce-record</name></author><category term="49challenge" /><summary type="html"><![CDATA[20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!]]></summary></entry><entry><title type="html">typeof/객체리터럴-49완독챌린지</title><link href="/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/" rel="alternate" type="text/html" title="typeof/객체리터럴-49완독챌린지" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80</id><content type="html" xml:base="/insidepixce-blog/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/"><![CDATA[<p>49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록</p>
+</ul>]]></content><author><name>insidepixce-record</name></author><category term="49challenge" /><summary type="html"><![CDATA[20240821 스터디용 ! 내일은 본과정 시작이니 내일부터도 열심히 달려보자구!]]></summary></entry><entry><title type="html">typeof/객체리터럴-49완독챌린지</title><link href="/insidepixce-blog/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/" rel="alternate" type="text/html" title="typeof/객체리터럴-49완독챌린지" /><published>2024-08-20T17:00:00-09:00</published><updated>2024-08-20T17:00:00-09:00</updated><id>/insidepixce-blog/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80</id><content type="html" xml:base="/insidepixce-blog/49challenge/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/"><![CDATA[<p>49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록</p>
 
 <h3 id="여담">여담</h3>
 <p>해피해킹 키보드를 손에 넣었다 ! 새로운 맥북과 새로운 키보드와 함께 화이팅!</p>
@@ -776,7 +980,7 @@ function printAllResidents(residents) {
   
   // 삭제 후 출력
   printAllResidents(residents);
-</code></pre></div></div>]]></content><author><name>insidepixce</name></author><category term="49challenge" /><category term="record" /><summary type="html"><![CDATA[49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록]]></summary></entry><entry><title type="html">오즈코딩 start- 네이버 화면 커스텀하기</title><link href="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/" rel="alternate" type="text/html" title="오즈코딩 start- 네이버 화면 커스텀하기" /><published>2024-08-11T17:00:00-09:00</published><updated>2024-08-11T17:00:00-09:00</updated><id>/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st</id><content type="html" xml:base="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/"><![CDATA[<p>어머머머…굿즈 왔다 ! 잘쓸게요</p>
+</code></pre></div></div>]]></content><author><name>insidepixce</name></author><category term="49challenge" /><summary type="html"><![CDATA[49완독 챌린지 8일차 , 딥다이브 인투 자바스크립트 10과 스터디 기록]]></summary></entry><entry><title type="html">오즈코딩 start- 네이버 화면 커스텀하기</title><link href="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/" rel="alternate" type="text/html" title="오즈코딩 start- 네이버 화면 커스텀하기" /><published>2024-08-11T17:00:00-09:00</published><updated>2024-08-11T17:00:00-09:00</updated><id>/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st</id><content type="html" xml:base="/insidepixce-blog/oz-coding/2024/08/11/%EC%98%A4%EC%A6%881st/"><![CDATA[<p>어머머머…굿즈 왔다 ! 잘쓸게요</p>
 
 <p><img src="https://github.com/user-attachments/assets/4d29e84a-06ac-4cda-b979-5d9a6e2d313d" width="50%" height="10%" />
 <img src="https://github.com/user-attachments/assets/6a0bc4a4-e720-42eb-8080-1b199216907a" width="40%" height="10%" /></p>
@@ -1744,45 +1948,4 @@ ls -al -KnockOn 명령어가 잘못된 옵션을 포함하고 있으므로 실�
   <p>c.txt : 표준 출력을 c.txt 파일로 리다이렉트
 2&gt;&amp;1 : 표준 오류를 표준 출력과 동일한 파일로 리다이렉트(c.txt).
 결과적으로 ls -knockOn 명령어의 출력과 오류 메시지가 모두 c.txt 파일에 저장된다</p>
-</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[리다이렉션에 대해서 공부해보자]]></summary></entry><entry><title type="html">맥에서 리눅스 환경 구축하기- 도커란 무엇인가?</title><link href="/insidepixce-blog/javascript/2024/07/05/dailyreport/" rel="alternate" type="text/html" title="맥에서 리눅스 환경 구축하기- 도커란 무엇인가?" /><published>2024-07-05T16:00:00-09:00</published><updated>2024-07-05T16:00:00-09:00</updated><id>/insidepixce-blog/javascript/2024/07/05/dailyreport</id><content type="html" xml:base="/insidepixce-blog/javascript/2024/07/05/dailyreport/"><![CDATA[<p>도커란 무엇인가? 개념부터 정리해보자.</p>
-
-<h1 id="intro">intro</h1>
-<p>보안을 다뤄야 하는 상황인데, 나는 오직 맥북만 가지고 있다. 심지어 내 맥북은 intel도 아닌 m2.
-기본적인 리눅스 환경을 구축해야 하는데… 나한테는 방법이 없는 상황인걸까? 
-윈도우 pc를 하나 더 사고 설정하기 귀찮았던 나는 docker로 리눅스를 쓰겠다는 다소 무모한 도전을 시작하기로 했다.</p>
-
-<h1 id="어떻게-리눅스-환경을-구축할것인가">어떻게 리눅스 환경을 구축할것인가</h1>
-<p>먼저 도커를 설치하기로 한만큼 , 도커에 대해서 알아보자.</p>
-
-<h2 id="도커란">도커란?</h2>
-<p>도커는 소프트웨어 개발 및 배포에 혁신을 가져온 플랫폼이라고 한다. 애플리케이션을 컨테이너라는 가벼운 가상 환경에서 실행할 수 있도록 도와주고, 이러한 컨테이너는 격리된 환경에서 애플리케이션과 그 종속성을 함께 패키징하여 어디서든 실행할수 있게 도와준다.</p>
-
-<h2 id="비유해보자면">비유해보자면</h2>
-<p>도커는 일종의 컨테이너 선박으로 비유할 수 있다.</p>
-
-<h3 id="컨테이너">컨테이너</h3>
-<p>컨테이너는 물건을 담는 상자이다. 컨테이너는 일정한 크기와 형태를 가지고 있으며, 어떤 물건이든 그 안에 넣을 수 있다. 
-즉 그냥 컨테이너는 진짜 컨테이너라고 생각하면 된다는 이야기이다. 컨테이너 상자에 물건을 넣으면, 그 상자는 배든 기차든 트럭이든 동일하게 운반할 수 있다. 이와 같이 그 애플리케이션은 어떤 컴퓨터에서 동일하게 실행될 수 있다는거다.</p>
-
-<h3 id="이미지">이미지</h3>
-<p>컨테이너에 어플리케이션 채워 넣기 전에 어떻게 채울지를 정하는 설계도나 템플릿이다. 설계도에 따라 컨테이너 상자에 물건을 넣는 것 처럼 말이다,</p>
-
-<h3 id="도커-엔진">도커 엔진</h3>
-<p>컨테이너 선박을 운영하고 관리하는 시스템이다. 도커 엔진은 컨테이너를 생성하고 실행하는 소프트웨어라고 생각하면 된다. 나도 이게 잘 이해가 안되었다,</p>
-
-<h3 id="도커-허브">도커 허브</h3>
-<p>컨테이너를 보관하고 필요할떄 꺼내 쓸수있는 큰 창고이다. 이미지들을 저장하고 공유하는 클라웅드 서비스이다. 
-물건을 보관해두는 창고처럼, 도커 허브는 도커 이미지를 저장해두고 필요할때 다운로드받아 사용할 수 있다 .</p>
-
-<h3 id="도커-컴포즈">도커 컴포즈</h3>
-<p>여러개의 컨테이너 상자를 묶어 한번에 관리하는 시스템이라고 보면 된다 
-여러 컨테이너 상자를 하나의 운송 단위로 묶어 관리하는 느낌?</p>
-
-<h3 id="그니까">그니까…</h3>
-<ul>
-  <li>컨테이너 : 물건을 담은 상자 (애플리케이션과 모든 필요요소를 포함한 패키지)</li>
-  <li>이미지 : 상자를 채우기 위한 설계도(컨테이너 생성 템플릿)</li>
-  <li>도커 엔진 : 선박 운영 시스템 (컨테이너를 생성하고 관리하는 소프트웨어)</li>
-  <li>도커 허브 : 큰 창고 (도커 이미지를 저장하고 공유)</li>
-  <li>도커 컴포즈 : 상자 묶음 관리 시스템 (여러 컨테이너를 정의하고 실행)</li>
-</ul>]]></content><author><name>insidepixce</name></author><category term="javascript" /><category term="javascript" /><summary type="html"><![CDATA[도커란 무엇인가? 개념부터 정리해보자.]]></summary></entry></feed>
+</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[리다이렉션에 대해서 공부해보자]]></summary></entry></feed>

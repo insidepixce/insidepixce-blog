@@ -1,4 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-27T23:25:41-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">함수1</title><link href="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/" rel="alternate" type="text/html" title="함수1" /><published>2024-08-27T23:09:00-09:00</published><updated>2024-08-27T23:09:00-09:00</updated><id>/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828</id><content type="html" xml:base="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/"><![CDATA[<p>오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/insidepixce-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/insidepixce-blog/" rel="alternate" type="text/html" /><updated>2024-08-27T23:35:49-09:00</updated><id>/insidepixce-blog/feed.xml</id><title type="html">Insidepixce inworld</title><subtitle>나의 기막힌 성장기</subtitle><author><name>insidepixce</name></author><entry><title type="html">DOM과 렌더링 엔진 완벽 이해하기!</title><link href="/insidepixce-blog/html-css/2024/08/27/dom/" rel="alternate" type="text/html" title="DOM과 렌더링 엔진 완벽 이해하기!" /><published>2024-08-27T23:09:00-09:00</published><updated>2024-08-27T23:09:00-09:00</updated><id>/insidepixce-blog/html-css/2024/08/27/dom</id><content type="html" xml:base="/insidepixce-blog/html-css/2024/08/27/dom/"><![CDATA[<p>오늘은 스터디 주제에 추가적인 주제가 있었는데요! 우리가 듣고 있는 과정에 들어있는 부분이라 논의해 보면 좋을 것 같았어요!</p>
+
+<h1 id="-dom과-렌더링-엔진-완벽-이해하기-️">🌐 DOM과 렌더링 엔진 완벽 이해하기! 🛠️</h1>
+
+<p>웹 개발에서 꼭 알아야 할 <strong>DOM</strong>과 <strong>렌더링 엔진</strong>에 대해서 알아보려고 해요! 🤔 HTML, CSS, JavaScript가 웹사이트에서 어떻게 동작하고, 브라우저가 이 모든 것을 처리하는지 궁금하시죠? 그러면 함께 공부해볼까요? ✨</p>
+
+<hr />
+
+<h2 id="dom이란-">DOM이란? 🤖</h2>
+
+<p>DOM은 <strong>Document Object Model</strong>의 약자에요. 📝 웹 페이지를 구조화된 <strong>트리 형태</strong>로 변환한 모델이죠. HTML 문서가 브라우저에 의해 <strong>파싱</strong>되면, DOM이라는 트리 구조로 변환되어 우리가 페이지의 각 요소에 쉽게 접근하고 조작할 수 있게 돼요. 🌳</p>
+
+<h3 id="dom의-특징">DOM의 특징</h3>
+
+<ul>
+  <li><strong>파싱</strong>: 브라우저는 HTML 파일을 읽고 분석해서 DOM이라는 트리 구조를 만들어요. 📄➡️🌳</li>
+  <li><strong>구조화</strong>: DOM은 문서의 계층적인 구조를 표현해요. HTML 태그들은 부모-자식 관계로 연결되고, 이로 인해 문서가 트리처럼 생긴 구조를 가지게 돼요. 🌿</li>
+  <li><strong>동적</strong>: DOM은 <strong>동적으로</strong> 변경 가능해요. JavaScript로 DOM을 조작하면 웹 페이지의 내용을 실시간으로 수정할 수 있답니다! 😎✨</li>
+</ul>
+
+<h3 id="dom-구조-예시-">DOM 구조 예시 🌟</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>DOM 예시<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello, World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>이것은 DOM의 예시입니다.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<p>이 HTML 문서가 파싱되면, 브라우저는 이를 아래와 같은 DOM 트리로 변환해요. 🌳</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">
+-</span> Document
+<span class="p">  -</span> html
+<span class="p">    -</span> head
+<span class="p">      -</span> title
+<span class="p">        -</span> "DOM 예시"
+<span class="p">    -</span> body
+<span class="p">      -</span> h1
+<span class="p">        -</span> "Hello, World!"
+<span class="p">      -</span> p
+<span class="p">        -</span> "이것은 DOM의 예시입니다."
+
+</code></pre></div></div>
+
+<p>여기서 모든 요소는 노드로 표현되고, 각 노드는 부모-자식 관계를 가지는 계층적인 구조로 연결돼요. DOM 덕분에 JavaScript로 웹 페이지의 특정 부분을 쉽게 선택하고 조작할 수 있는 거죠! 🛠️</p>
+
+<hr />
+
+<h2 id="렌더링-엔진이란-">렌더링 엔진이란? 🎨</h2>
+
+<p>브라우저의 <strong>렌더링 엔진</strong>은 웹 페이지를 <strong>그리는</strong> 중요한 역할을 해요! 🖼️ HTML, CSS, JavaScript를 읽어서 사용자가 보는 멋진 화면을 만들어주는 엔진이죠. 웹 페이지가 <strong>렌더링</strong>되는 과정은 생각보다 복잡한데, 여기서 중요한 건 <strong>어떻게 순서대로 처리되는지</strong>를 이해하는 거예요! 🕹️</p>
+
+<h3 id="렌더링-엔진의-과정-">렌더링 엔진의 과정 🚀</h3>
+
+<p>1️⃣ <strong>HTML 파싱 및 DOM 생성</strong></p>
+
+<p>브라우저는 HTML 문서를 읽고, 이를 파싱해서 DOM 트리를 생성해요. 🌳</p>
+
+<p>2️⃣ <strong>CSS 파싱 및 CSSOM 생성</strong></p>
+
+<p>CSS 파일을 읽어들여 <strong>CSSOM</strong>(CSS Object Model) 트리로 변환해요. 이 트리도 DOM처럼 구조화된 형태랍니다! 🎨</p>
+
+<p>3️⃣ <strong>렌더 트리 생성</strong></p>
+
+<p>이제 <strong>렌더 트리</strong>가 만들어지는데, 이 과정에서는 DOM과 CSSOM이 결합되어 브라우저가 각 요소가 화면에 어떻게 배치될지를 결정해요. 💡 렌더 트리는 DOM 트리와 달리 화면에 표시되지 않는 요소(예: <code class="language-plaintext highlighter-rouge">display: none;</code>으로 숨겨진 요소)는 제외됩니다.</p>
+
+<p>4️⃣ <strong>레이아웃 계산</strong></p>
+
+<p>렌더 트리가 만들어지면, 각 요소가 어디에 위치해야 할지 계산하는 <strong>레이아웃 단계</strong>가 시작돼요. 요소들의 크기와 위치가 결정됩니다. 📏</p>
+
+<p>5️⃣ <strong>페인팅 (Painting)</strong></p>
+
+<p>모든 요소의 위치가 결정되면, 브라우저가 실제로 화면에 그리기 시작해요! 이 단계에서 각 요소의 색상, 그림자, 테두리 등이 적용돼요. 🎨🖌️</p>
+
+<p>6️⃣ <strong>컴포지팅 (Compositing)</strong></p>
+
+<p>페인팅이 끝난 후, 브라우저는 각 레이어를 합쳐서 최종 화면을 구성해요. 이 과정에서 애니메이션이나 변환이 있을 경우, 컴포지팅 단계에서 처리돼요. ✨</p>
+
+<hr />
+
+<h2 id="dom과-렌더링-엔진의-관계-">DOM과 렌더링 엔진의 관계 🔗</h2>
+
+<p>이제 DOM과 렌더링 엔진의 관계를 쉽게 설명해볼게요! 🧩</p>
+
+<ul>
+  <li><strong>DOM</strong>은 웹 페이지의 구조를 나타내는 <strong>트리</strong>이고, <strong>렌더링 엔진</strong>은 이 DOM을 읽고 <strong>화면에 그리는 역할</strong>을 해요.</li>
+  <li>렌더링 엔진은 <strong>DOM 트리</strong>와 <strong>CSSOM 트리</strong>를 결합하여 웹 페이지의 <strong>레이아웃과 스타일</strong>을 결정한 후, <strong>페인팅</strong> 과정을 통해 화면에 표시합니다.</li>
+</ul>
+
+<p>즉, DOM은 웹 페이지의 뼈대를 형성하고, 렌더링 엔진은 그 뼈대에 옷을 입히고 색칠하는 과정인 셈이죠! 😄💡</p>
+
+<hr />
+
+<h2 id="cssom이란-️">CSSOM이란? 🖼️</h2>
+
+<p><strong>CSSOM</strong>은 <strong>CSS Object Model</strong>의 약자예요! 🎨 쉽게 말해, <strong>CSSOM은 CSS를 구조화한 트리</strong>라고 할 수 있어요. CSS 파일이나 <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> 태그에 있는 CSS 스타일이 브라우저에 의해 <strong>파싱</strong>되면서 구조화된 트리로 변환되는 거죠. 이 트리는 웹 페이지의 스타일을 관리하고, 브라우저가 <strong>어떻게 스타일을 적용할지</strong> 결정하는 데 사용돼요! 📑</p>
+
+<h3 id="cssom의-역할-">CSSOM의 역할 ✨</h3>
+
+<ul>
+  <li><strong>파싱</strong>: 브라우저는 CSS 파일이나 HTML 내의 <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> 태그를 읽고 이를 파싱해 <strong>CSSOM 트리</strong>를 생성해요. 🌳</li>
+  <li><strong>구조화</strong>: DOM처럼, CSSOM도 <strong>계층적인 구조</strong>를 가지고 있어요. 각 스타일 규칙이 구조적으로 나열되고, 특정 요소에 어떤 스타일이 적용되는지 명확하게 나타내요. 🌐</li>
+  <li><strong>스타일 적용</strong>: CSSOM은 <strong>DOM과 함께 동작</strong>해요. DOM은 웹 페이지의 <strong>구조</strong>를 나타내고, CSSOM은 그 구조에 <strong>스타일을 적용</strong>하는 거죠. 두 트리가 결합되어 브라우저는 각 요소가 어떤 스타일을 가져야 하는지 알아낼 수 있어요! 🎨</li>
+</ul>
+
+<hr />
+
+<h2 id="cssom-트리의-생성-과정-">CSSOM 트리의 생성 과정 🌱</h2>
+
+<p>1️⃣ <strong>CSS 파싱</strong></p>
+
+<p>브라우저가 CSS 파일을 읽으면, 이를 분석해 CSSOM 트리를 만들어요. 각 CSS 규칙은 트리의 한 노드로 변환돼요. 🌳</p>
+
+<p>2️⃣ <strong>계층적 구조 생성</strong></p>
+
+<p>CSS 규칙이 DOM 요소에 맞춰 <strong>계층적으로 정리</strong>돼요. 이 구조 덕분에 브라우저는 어떤 CSS 규칙이 어떤 요소에 적용되는지를 명확하게 알 수 있답니다. 😊</p>
+
+<h3 id="cssom-트리-예시-">CSSOM 트리 예시 🌟</h3>
+
+<p>다음과 같은 CSS 스타일이 있다고 해볼게요:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">lightblue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">darkblue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이 CSS 스타일이 <strong>CSSOM 트리</strong>로 변환되면, 다음과 같이 구조화돼요:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">
+-</span> CSSOM
+<span class="p">  -</span> body
+<span class="p">    -</span> background-color: lightblue
+<span class="p">  -</span> h1
+<span class="p">    -</span> color: darkblue
+<span class="p">  -</span> p
+<span class="p">    -</span> font-size: 16px
+
+</code></pre></div></div>
+
+<p>이 구조는 <strong>DOM 트리</strong>와 매칭되어 각 요소가 어떻게 스타일링될지를 결정해줘요. DOM은 페이지의 구조를 나타내고, CSSOM은 그 구조에 스타일을 입히는 거죠! 🎨✨</p>
+
+<hr />
+
+<h2 id="cssom과-dom의-관계-">CSSOM과 DOM의 관계 🔗</h2>
+
+<p>이제 <strong>DOM</strong>과 <strong>CSSOM</strong>이 어떻게 함께 동작하는지 설명해볼게요! 🔄</p>
+
+<ul>
+  <li><strong>DOM</strong>은 웹 페이지의 <strong>구조</strong>를 나타내고, <strong>CSSOM</strong>은 그 구조에 <strong>스타일을 적용</strong>해요. 두 트리는 결합되어 브라우저가 <strong>렌더 트리</strong>를 생성해요. 이 렌더 트리는 실제로 화면에 그려질 요소들과 그 스타일을 결정하는 중요한 트리랍니다! 🎯</li>
+  <li><strong>렌더링 엔진</strong>은 DOM과 CSSOM을 읽고 결합하여 <strong>화면에 표시될 최종 레이아웃과 스타일</strong>을 계산해요. 그 후, 페인팅 과정을 통해 화면에 나타나게 되죠! 🖼️</li>
+</ul>
+
+<hr />
+
+<h2 id="-결론-">✨ 결론 ✨</h2>
+
+<p>DOM과 렌더링 엔진은 웹 페이지가 화면에 나타나기까지 중요한 역할을 하는 친구들이에요! DOM은 HTML 문서를 구조화한 트리이고, 렌더링 엔진은 그 DOM과 CSSOM을 활용해 실제 화면에 페이지를 그리는 작업을 수행하죠. 🖥️</p>
+
+<p>이 과정을 이해하면, 웹 페이지를 더 효율적으로 만들고, 최적화하는 방법을 알게 될 거예요! 😊 앞으로 더 복잡한 웹 기술들도 차근차근 공부하면서, 멋진 웹사이트를 만들어봐요! 🎉</p>
+
+<hr />]]></content><author><name>insidepixce</name></author><category term="html-css" /><summary type="html"><![CDATA[오늘은 스터디 주제에 추가적인 주제가 있었는데요! 우리가 듣고 있는 과정에 들어있는 부분이라 논의해 보면 좋을 것 같았어요!]]></summary></entry><entry><title type="html">함수1</title><link href="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/" rel="alternate" type="text/html" title="함수1" /><published>2024-08-27T23:09:00-09:00</published><updated>2024-08-27T23:09:00-09:00</updated><id>/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828</id><content type="html" xml:base="/insidepixce-blog/49challenge/2024/08/27/%ED%95%A8%EC%88%980828/"><![CDATA[<p>오늘 49일 챌린지에서는 함수에 대해서 공부해보았는데요, 양이 너무 많아가지고 12과인 함수 전부 공부하지 않고 12과 12.3까지 공부하도록 했어요. ✍️📚</p>
 
 <p>우리가 중고등학교 수학 과정을 공부할때 ‘함수’에 대해서 많이들 익히 들어본 경험이 있죠. 저는 그 함수랑 이 함수가 비슷하다고 생각해요! 🤔</p>
 
@@ -1892,60 +2070,4 @@ CMD ["/bin/bash"]
     <li><code class="language-plaintext highlighter-rouge">docker build</code> 명령어로 이미지 빌드</li>
     <li><code class="language-plaintext highlighter-rouge">docker run</code> 명령어로 컨테이너 실행</li>
   </ol>
-</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[도커로 리눅스 서버를 띄워보자. 이걸로 실습 다 해내고 말테야. 도대체 왜 나는 앱등이일까? 맥북 짱 편한데 왜 보안에서는 맥북을 사용하기가 더럽게 힘든걸까&gt;?]]></summary></entry><entry><title type="html">리다이렉션</title><link href="/insidepixce-blog/sec/2024/07/05/knockon1/" rel="alternate" type="text/html" title="리다이렉션" /><published>2024-07-05T17:00:00-09:00</published><updated>2024-07-05T17:00:00-09:00</updated><id>/insidepixce-blog/sec/2024/07/05/knockon1</id><content type="html" xml:base="/insidepixce-blog/sec/2024/07/05/knockon1/"><![CDATA[<p>리다이렉션에 대해서 공부해보자</p>
-
-<ol>
-  <li>
-    <p>리다이렉션이란? 
-리다이렉션은 명령어의 출력을 파일로 보내거나 명령어의 입력을 파일에서 가져오는 기능이다. 기본적으로 명령어의 출력은 터미널에 표시되고, 명령어의 입력은 키보드로부터 받는다. 리다이렉션을 사용하면 출력을 파일에 저장하거나 파일을 입력으로 사용할 수 있다.</p>
-  </li>
-  <li>리다이렉션 기호
-    <blockquote>
-      <p>: 명령어의 출력을 파일로 저장합니다. 파일이 이미 존재하면 덮어씁니다.</p>
-      <blockquote>
-        <p>: 명령어의 출력을 파일의 끝에 추가합니다.</p>
-        <ul>
-          <li>&lt; : 명령어의 입력을 파일에서 가져온다</li>
-          <li>2&gt; : 표준 오류(stderr)를 파일로 저장한다</li>
-          <li>2» : 표준 오류를 파일의 끝에 추가한다.</li>
-          <li>&amp;&gt; 또는 &gt; file 2&gt;&amp;1 : 표준 출력(stdout)과 표준 오류(stderr)를 같은 파일에 저장한다</li>
-        </ul>
-      </blockquote>
-    </blockquote>
-  </li>
-  <li>파일 디스크립터 (stdin, stdout,stderr)
-리눅스와 유닉스 시스템에서 모든 프로세스는 파일 디스크립터를 사용하여 입력과 출력을 처리한다</li>
-</ol>
-
-<ul>
-  <li>stdin (표준 입력, 파일 디스크립터 0) : 기본적으로 키보드 입력을 받는다</li>
-  <li>stdout (표준 출력, 파일 디스크립터 1): 기본적으로 터미널에 출력을 보낸다</li>
-  <li>stderr (표준 오류 ,파일 디스크립터2 ) : 기본적으로 터미널에 오류 메세지를 보낸다</li>
-</ul>
-
-<h2 id="예제-1">예제 1</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" 1&gt;&amp; a.txt
-</code></pre></div></div>
-<p>이 명령어는 파일 디스크립터 1 (stdout)을 a.txt 파일로 리다이렉트한다</p>
-
-<p>올바른 형식은</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" &gt; a.txt 또는 find / -name "*.txt" 1&gt; a.txt
-</code></pre></div></div>
-
-<h2 id="예제-2">예제 2</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -al -KnockOn 1&gt; b.txt 2&gt; a.txt
-</code></pre></div></div>
-<p>ls -al -KnockOn 명령어의 결과를 처리한다
-1&gt; b.txt : 표준 출력을 b.txt 파일로 리다이렉트한다
-2&gt; a.txt : 표준 오류를 a.txt 파일로 리다이렉트한다
-ls -al -KnockOn 명령어가 잘못된 옵션을 포함하고 있으므로 실행 시 오류가 발생한다. 이 오류 메시지는 a.txt 파일에 저장된다</p>
-
-<h2 id="예제-3">예제 3</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -knockOn &gt; c.txt 2&gt;&amp;1
-</code></pre></div></div>
-<p>ls -knockOn 명령어의 결과를 처리</p>
-<blockquote>
-  <p>c.txt : 표준 출력을 c.txt 파일로 리다이렉트
-2&gt;&amp;1 : 표준 오류를 표준 출력과 동일한 파일로 리다이렉트(c.txt).
-결과적으로 ls -knockOn 명령어의 출력과 오류 메시지가 모두 c.txt 파일에 저장된다</p>
-</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[리다이렉션에 대해서 공부해보자]]></summary></entry></feed>
+</blockquote>]]></content><author><name>insidepixce</name></author><category term="sec" /><category term="sec" /><summary type="html"><![CDATA[도커로 리눅스 서버를 띄워보자. 이걸로 실습 다 해내고 말테야. 도대체 왜 나는 앱등이일까? 맥북 짱 편한데 왜 보안에서는 맥북을 사용하기가 더럽게 힘든걸까&gt;?]]></summary></entry></feed>

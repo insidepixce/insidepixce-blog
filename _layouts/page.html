@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en' }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
     {% seo %}
-</head>
-<body>
+  </head>
+  <body>
     <header class="site-header">
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
     </header>
 
     <nav class="navbar">
-        <div class="navbar-container">
-            <a href="{{ site.baseurl }}/" class="navbar-logo">{{ site.title }}</a>
-            <ul class="navbar-menu">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/about/">About</a></li>
-                <li><a href="{{ site.baseurl }}/categories/">Categories</a></li>
-                <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-            </ul>
-        </div>
+      <div class="navbar-container">
+        <a href="{{ site.baseurl }}/" class="navbar-logo">{{ site.title }}</a>
+        <ul class="navbar-menu">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/about/">About</a></li>
+          <li><a href="{{ site.baseurl }}/categories/">Categories</a></li>
+          <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <!-- 사이드바 추가 -->
-        <aside class="sidebar">
-            <h3>Categories</h3>
-            <ul class="category-list">
-                {% for category in site.categories %}
-                <li>
-                    <span class="category-title">{{ category[0] }} ({{ category[1].size }})</span>
-                    <ul class="subcategory-list">
-                        {% for post in category[1] %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </li>
-                {% endfor %}
+      <!-- 사이드바 추가 -->
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul class="category-list">
+          {% for category in site.categories %}
+          <li>
+            <span class="category-title"
+              >{{ category[0] }} ({{ category[1].size }})</span
+            >
+            <ul class="subcategory-list">
+              {% for post in category[1] %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
             </ul>
-        </aside>
+          </li>
+          {% endfor %}
+        </ul>
+      </aside>
 
-        <!-- 메인 콘텐츠 -->
-        <main class="content">
-            <h1>{{ page.title }}</h1>
-            <div class="page-content">
-                {{ content }}
-            </div>
-        </main>
+      <!-- 메인 콘텐츠 -->
+      <main class="content">
+        <h1>{{ page.title }}</h1>
+        <div class="page-content">{{ content }}</div>
+      </main>
     </div>
 
     <footer class="site-footer">
-        <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }} - All rights reserved.</p>
+      <p>
+        &copy; {{ "now" | date: "%Y" }} {{ site.title }} - All rights reserved.
+      </p>
     </footer>
 
     <script>
-        // 카테고리 클릭 시 소분류 펼치기 기능 추가
-        document.querySelectorAll('.category-title').forEach(function(category) {
-            category.addEventListener('click', function() {
-                const subcategoryList = this.nextElementSibling;
-                if (subcategoryList.style.display === 'block') {
-                    subcategoryList.style.display = 'none';
-                } else {
-                    subcategoryList.style.display = 'block';
-                }
-            });
+      // 카테고리 클릭 시 소분류 펼치기 기능 추가
+      document.querySelectorAll(".category-title").forEach(function (category) {
+        category.addEventListener("click", function () {
+          const subcategoryList = this.nextElementSibling;
+          if (subcategoryList.style.display === "block") {
+            subcategoryList.style.display = "none";
+          } else {
+            subcategoryList.style.display = "block";
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>

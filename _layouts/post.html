@@ -8,8 +8,6 @@ layout: default
             {{ page.date | date: "%Y년 %m월 %d일" }} | {{ page.categories | join: ", " }}
         </p>
     </header>
-    
-
 
     <div class="post-content">
         <svg width="100%" height="5px">
@@ -25,25 +23,23 @@ layout: default
 
         {% if page.comments %}
             <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
+            <!-- Disqus 댓글 시스템 통합 -->
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '{{ site.url }}{{ page.url }}';
+                    this.page.identifier = '{{ page.url }}';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>댓글을 보려면 자바스크립트를 활성화하세요.</noscript>
         {% endif %}
     </footer>
-
-  {% if page.comments %}
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '{{ site.url }}{{ page.url }}';
-      this.page.identifier = '{{ page.url }}';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-{% endif %}
 
     <nav class="post-navigation">
         <p>{% if page.previous %} 이전 게시물: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a> {% endif %}</p>

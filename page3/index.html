@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/insidepixce-blog/assets/css/style.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>리다이렉션 | Insidepixce inworld</title>
+<title>Page 3 of 3 for Home | Insidepixce inworld</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="리다이렉션" />
+<meta property="og:title" content="Home" />
 <meta name="author" content="insidepixce" />
 <meta property="og:locale" content="ko_KR" />
-<meta name="description" content="리다이렉션에 대해서 공부해보자" />
-<meta property="og:description" content="리다이렉션에 대해서 공부해보자" />
+<meta name="description" content="나의 기막힌 성장기" />
+<meta property="og:description" content="나의 기막힌 성장기" />
 <meta property="og:site_name" content="Insidepixce inworld" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-07-05T17:00:00-09:00" />
+<meta property="og:type" content="website" />
+<link rel="prev" href="/insidepixce-blog/page2/" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="리다이렉션" />
+<meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"insidepixce"},"dateModified":"2024-07-05T17:00:00-09:00","datePublished":"2024-07-05T17:00:00-09:00","description":"리다이렉션에 대해서 공부해보자","headline":"리다이렉션","mainEntityOfPage":{"@type":"WebPage","@id":"/insidepixce-blog/sec/2024/07/05/knockon1/"},"url":"/insidepixce-blog/sec/2024/07/05/knockon1/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"insidepixce"},"description":"나의 기막힌 성장기","headline":"Home","url":"/insidepixce-blog/page3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -158,98 +158,9 @@
         
         <!-- 메인 콘텐츠 -->
         <main class="content">
-            <h1>리다이렉션</h1>
+            <h1>Home</h1>
             <div class="page-content">
-                    <article class="post">
-    <header class="post-header">
-        <p class="post-meta">
-            2024년 07월 05일 | sec
-        </p>
-    </header>
-    
-
-
-    <div class="post-content">
-        <svg width="100%" height="5px">
-            <line x1="0" y1="5" x2="5000" y2="5" stroke="#cccccc" stroke-width="6"/>
-        </svg>
-        <p>리다이렉션에 대해서 공부해보자</p>
-
-<ol>
-  <li>
-    <p>리다이렉션이란? 
-리다이렉션은 명령어의 출력을 파일로 보내거나 명령어의 입력을 파일에서 가져오는 기능이다. 기본적으로 명령어의 출력은 터미널에 표시되고, 명령어의 입력은 키보드로부터 받는다. 리다이렉션을 사용하면 출력을 파일에 저장하거나 파일을 입력으로 사용할 수 있다.</p>
-  </li>
-  <li>리다이렉션 기호
-    <blockquote>
-      <p>: 명령어의 출력을 파일로 저장합니다. 파일이 이미 존재하면 덮어씁니다.</p>
-      <blockquote>
-        <p>: 명령어의 출력을 파일의 끝에 추가합니다.</p>
-        <ul>
-          <li>&lt; : 명령어의 입력을 파일에서 가져온다</li>
-          <li>2&gt; : 표준 오류(stderr)를 파일로 저장한다</li>
-          <li>2» : 표준 오류를 파일의 끝에 추가한다.</li>
-          <li>&amp;&gt; 또는 &gt; file 2&gt;&amp;1 : 표준 출력(stdout)과 표준 오류(stderr)를 같은 파일에 저장한다</li>
-        </ul>
-      </blockquote>
-    </blockquote>
-  </li>
-  <li>파일 디스크립터 (stdin, stdout,stderr)
-리눅스와 유닉스 시스템에서 모든 프로세스는 파일 디스크립터를 사용하여 입력과 출력을 처리한다</li>
-</ol>
-
-<ul>
-  <li>stdin (표준 입력, 파일 디스크립터 0) : 기본적으로 키보드 입력을 받는다</li>
-  <li>stdout (표준 출력, 파일 디스크립터 1): 기본적으로 터미널에 출력을 보낸다</li>
-  <li>stderr (표준 오류 ,파일 디스크립터2 ) : 기본적으로 터미널에 오류 메세지를 보낸다</li>
-</ul>
-
-<h2 id="예제-1">예제 1</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" 1&gt;&amp; a.txt
-</code></pre></div></div>
-<p>이 명령어는 파일 디스크립터 1 (stdout)을 a.txt 파일로 리다이렉트한다</p>
-
-<p>올바른 형식은</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -name "*.txt" &gt; a.txt 또는 find / -name "*.txt" 1&gt; a.txt
-</code></pre></div></div>
-
-<h2 id="예제-2">예제 2</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -al -KnockOn 1&gt; b.txt 2&gt; a.txt
-</code></pre></div></div>
-<p>ls -al -KnockOn 명령어의 결과를 처리한다
-1&gt; b.txt : 표준 출력을 b.txt 파일로 리다이렉트한다
-2&gt; a.txt : 표준 오류를 a.txt 파일로 리다이렉트한다
-ls -al -KnockOn 명령어가 잘못된 옵션을 포함하고 있으므로 실행 시 오류가 발생한다. 이 오류 메시지는 a.txt 파일에 저장된다</p>
-
-<h2 id="예제-3">예제 3</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -knockOn &gt; c.txt 2&gt;&amp;1
-</code></pre></div></div>
-<p>ls -knockOn 명령어의 결과를 처리</p>
-<blockquote>
-  <p>c.txt : 표준 출력을 c.txt 파일로 리다이렉트
-2&gt;&amp;1 : 표준 오류를 표준 출력과 동일한 파일로 리다이렉트(c.txt).
-결과적으로 ls -knockOn 명령어의 출력과 오류 메시지가 모두 c.txt 파일에 저장된다</p>
-</blockquote>
-
-    </div>
-
-    <footer class="post-footer">
-        
-            <p>태그: sec</p>
-        
-
-        
-            <h3>댓글</h3>
-            <!-- 댓글 시스템 통합 (예: Disqus) -->
-        
-    </footer>
-
-    <nav class="post-navigation">
-        <p> 이전 게시물: <a href="/sec/2024/07/05/dockeruse/">맥에서 리눅스 환경 구축하기- 도커 기본 설정값 1편</a> </p>
-        <p> 다음 게시물: <a href="/test/2024/07/19/sd/">서버 로그 저장형 stopwatch 구현 (js편)</a> </p>
-    </nav>
-</article>
-
+                    
             </div>
         </main>
     </div>

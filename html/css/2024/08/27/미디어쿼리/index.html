@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/insidepixce-blog/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>[5]미디어 쿼리 | Insidepixce inworld</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="[5]미디어 쿼리" />
+<meta name="author" content="insidepixce" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="description" content="오늘은 오즈코딩스쿨 🖐🏻일차! 🎨미디어 쿼리에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?" />
+<meta property="og:description" content="오늘은 오즈코딩스쿨 🖐🏻일차! 🎨미디어 쿼리에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?" />
+<meta property="og:site_name" content="Insidepixce inworld" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-27T19:42:00-09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[5]미디어 쿼리" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"insidepixce"},"dateModified":"2024-08-27T19:42:00-09:00","datePublished":"2024-08-27T19:42:00-09:00","description":"오늘은 오즈코딩스쿨 🖐🏻일차! 🎨미디어 쿼리에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?","headline":"[5]미디어 쿼리","mainEntityOfPage":{"@type":"WebPage","@id":"/insidepixce-blog/html/css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/"},"url":"/insidepixce-blog/html/css/2024/08/27/%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/insidepixce-blog/logo.jpg" alt="Profile Picture" class="profile-picture">
+                <a href="/insidepixce-blog/" style="text-decoration: none; color:#000000; font-size:20px;">Park gyodam</a>
+                <p class="bio">방랑 개발자</p>
+                <a href="https://www.instagram.com/outsidepixce/" target="_blank">Git</a>
+                <a href="https://github.com/insidepixce" target="_blank">Instagram</a>
+                <a href="mailto:insidepixce@gmail.com">이메일</a>
+                
+                <h3 style="color:black">Categories</h3>
+                <ul class="category-list">
+                    <p>전체 글 수 31 개</p>
+                    
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/49challenge/index.html" class="category-title">49challenge (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/ect/index.html" class="category-title">ect (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/html-css/index.html" class="category-title">html/css (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/javascript/index.html" class="category-title">javascript (17)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/oz-coding/index.html" class="category-title">oz-coding (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/record/index.html" class="category-title">record (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/sec/index.html" class="category-title">sec (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/security/index.html" class="category-title">security (2)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/talk/index.html" class="category-title">talk (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <!-- 카테고리 링크를 category.html로 연결 -->
+                        <a href="/insidepixce-blog/categories/test/index.html" class="category-title">test (1)</a>
+                        <ul class="subcategory-list">
+                            
+                            
+                            <li class="subcategory-title"></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- 메인 콘텐츠 -->
+        <main class="content">
+            <h1>[5]미디어 쿼리</h1>
+            <div class="page-content">
+                    <article class="post">
+    <header class="post-header">
+        <p class="post-meta">
+            2024년 08월 27일 | html/css
+        </p>
+    </header>
+    
+
+
+    <div class="post-content">
+        <svg width="100%" height="5px">
+            <line x1="0" y1="5" x2="5000" y2="5" stroke="#cccccc" stroke-width="6"/>
+        </svg>
+        <p>오늘은 오즈코딩스쿨 🖐🏻일차! 🎨<strong>미디어 쿼리</strong>에 관해서 배워보았어요! 열심히 공부한 내용들을 블로그에 정리하는 게 참 재밌는 것 같아요. 그럼 가볼까요?</p>
+
+<h1 id="-미디어-쿼리-완벽-가이드-반응형-웹-디자인의-핵심-개념들-">🎨 미디어 쿼리 완벽 가이드: 반응형 웹 디자인의 핵심 개념들 💻</h1>
+
+<p>오늘날 웹사이트는 다양한 디바이스에서 사용되고 있어, 사용자의 화면 크기, 해상도, 플랫폼에 맞춰 디자인이 유연하게 조정되는 <strong>반응형 웹 디자인</strong>이 필수로 자리 잡았어요. 오늘은 그 반응형 웹 디자인의 중요한 요소 중 하나인 <strong>미디어 쿼리</strong>에 대해 알아볼게요! 🎉</p>
+
+<h2 id="1️⃣미디어-쿼리란-무엇인가">1️⃣ <strong>미디어 쿼리란 무엇인가?</strong></h2>
+
+<p>미디어 쿼리는 웹 페이지의 스타일을 특정 조건에 맞춰 조정할 수 있게 도와주는 <strong>CSS 기능</strong>이에요. 🎨</p>
+
+<ul>
+  <li>기본적으로 화면 크기나 해상도 등 사용자 환경에 따라 다른 스타일을 적용할 수 있어요.</li>
+</ul>
+
+<p>→ 작은 화면과 큰 화면에서 같은 웹 페이지라도 각각 다른 스타일을 제공해 더 편리한 시각적 경험을 제공할 수 있답니다! 📱➡️💻</p>
+
+<hr />
+
+<h2 id="2️⃣media-규칙의-기본-구조">2️⃣ <strong><code class="language-plaintext highlighter-rouge">@media</code> 규칙의 기본 구조</strong></h2>
+
+<p><code class="language-plaintext highlighter-rouge">@media</code> 규칙은 특정 조건이 충족될 때만 CSS 스타일을 적용할 수 있게 하는 기능이에요. ⚙️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> <span class="p">{</span>
+<span class="cm">/* 조건이 충족되면 적용될 스타일 */</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="-조건의-유형">✅ <strong>조건의 유형</strong></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code> : 화면의 너비/높이에 따라 스타일을 다르게 적용 🎯</li>
+  <li><code class="language-plaintext highlighter-rouge">resolution</code> : 해상도 조건을 기준으로 스타일을 조정 🖥️</li>
+</ul>
+
+<hr />
+
+<h2 id="3️⃣min-width-및-max-width">3️⃣ <strong><code class="language-plaintext highlighter-rouge">min-width</code> 및 <code class="language-plaintext highlighter-rouge">max-width</code></strong></h2>
+
+<p><code class="language-plaintext highlighter-rouge">min-width</code>와 <code class="language-plaintext highlighter-rouge">max-width</code>를 사용하면 화면 크기에 맞춰 스타일을 유연하게 조정할 수 있어요! 📐</p>
+
+<p>모바일에서는 간단한 레이아웃을 제공하고, 화면이 클수록 더 복잡한 레이아웃을 제공할 수 있어요. 📱➡️💻</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 작은 화면용 */</span>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span><span class="p">:</span> <span class="mi">480</span><span class="nx">px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nx">container</span> <span class="p">{</span>
+    <span class="nx">flex</span><span class="o">-</span><span class="nx">direction</span><span class="p">:</span> <span class="nx">column</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/* 중간 화면용 */</span>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span><span class="p">:</span> <span class="mi">481</span><span class="nx">px</span><span class="p">)</span> <span class="nf">and </span><span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span><span class="p">:</span> <span class="mi">1024</span><span class="nx">px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nx">container</span> <span class="p">{</span>
+    <span class="nx">flex</span><span class="o">-</span><span class="nx">direction</span><span class="p">:</span> <span class="nx">row</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4️⃣min-resolution---고해상도-️">4️⃣ <strong><code class="language-plaintext highlighter-rouge">min-resolution</code> - 고해상도</strong> 🖼️</h2>
+
+<p>고해상도 디바이스에서는 저해상도 이미지를 사용할 경우, 이미지가 뭉개져 보일 수 있어요. 이때 <code class="language-plaintext highlighter-rouge">min-resolution</code>을 사용해 더 선명한 이미지를 제공할 수 있답니다! 🖌️</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="p">:</span> <span class="mi">2</span><span class="nx">dppx</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nx">image</span> <span class="p">{</span>
+    <span class="nx">background</span><span class="o">-</span><span class="nx">image</span><span class="p">:</span> <span class="nf">url</span><span class="p">(</span><span class="dl">'</span><span class="s1">high-resolution-image.png</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5️⃣모바일-우선-접근법-️">5️⃣ <strong>모바일 우선 접근법</strong> 📱➡️💻</h2>
+
+<p>👉 기본 스타일을 <strong>모바일</strong>에 맞추고, 화면이 커질수록 점진적으로 스타일을 확장할 수 있어요.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cm">/* 기본적으로 모바일용 스타일 */</span>
+<span class="nx">body</span> <span class="p">{</span>
+  <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="p">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/* 태블릿 이상에서는 폰트 크기를 키움 */</span>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span><span class="p">:</span> <span class="mi">768</span><span class="nx">px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">body</span> <span class="p">{</span>
+    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="p">:</span> <span class="mi">16</span><span class="nx">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/* 데스크탑 이상에서는 더 큰 폰트 */</span>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span><span class="p">:</span> <span class="mi">1200</span><span class="nx">px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">body</span> <span class="p">{</span>
+    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="p">:</span> <span class="mi">18</span><span class="nx">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="6️⃣calc-함수-">6️⃣ <strong><code class="language-plaintext highlighter-rouge">calc()</code> 함수</strong> 🧮</h2>
+
+<p><code class="language-plaintext highlighter-rouge">calc()</code> 함수는 <strong>CSS에서 요소의 크기를 동적으로 계산</strong>할 수 있는 기능이에요!</p>
+
+<p>→ 예를 들어, 요소의 너비를 화면 크기의 50%로 설정하되 일부 여백을 빼고 싶을 때 사용할 수 있어요! 😎</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">.</span><span class="nx">element</span><span class="p">{</span>
+	<span class="nl">width</span><span class="p">:</span> <span class="nf">calc</span><span class="p">(</span><span class="mi">100</span><span class="o">%</span> <span class="o">-</span> <span class="mi">20</span><span class="nx">px</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="7️⃣미디어-쿼리가-너무-많아지면-">7️⃣ <strong>미디어 쿼리가 너무 많아지면?</strong> 🕑</h2>
+
+<p>미디어 쿼리가 많아지면 <strong>브라우저가 스타일을 계산하는 시간이 늘어날 수</strong> 있어요. 💨</p>
+
+<p>→ 복잡한 레이아웃의 경우 비효율적이어서 <strong>렌더링 시간</strong>이 오래 걸릴 수 있죠. 🚦</p>
+
+<blockquote>
+  <p>불필요한 미디어 쿼리를 줄이고, CSS를 효율적으로 관리하는 것이 중요해요! ✂️</p>
+
+</blockquote>
+
+<hr />
+
+<p>💡 <strong>비슷한 크기 범위의 미디어 쿼리 통합</strong></p>
+
+<p>💡 <strong>공통 스타일 재사용</strong></p>
+
+<hr />
+
+<h2 id="8️⃣prefers-color-scheme-다크-모드-">8️⃣ <strong><code class="language-plaintext highlighter-rouge">prefers-color-scheme</code> (다크 모드)</strong> 🌑</h2>
+
+<p>사용자가 <strong>다크 모드</strong>를 선호하는지에 따라 스타일을 자동으로 변경할 수 있는 <code class="language-plaintext highlighter-rouge">prefers-color-scheme</code>은 최신 CSS 기능 중 하나예요! 🌟</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">prefers</span><span class="o">-</span><span class="nx">color</span><span class="o">-</span><span class="nx">scheme</span><span class="p">:</span> <span class="nx">dark</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">body</span> <span class="p">{</span>
+    <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="p">:</span> <span class="nx">black</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">white</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이렇게 하면 사용자가 다크 모드를 설정했을 때 자동으로 스타일이 변경돼요! 🎨✨</p>
+
+<hr />
+
+<h2 id="9️⃣android와-ios에서의-미디어-쿼리-사용-방식-dpi-vs-dppx-">9️⃣ <strong>Android와 iOS에서의 미디어 쿼리 사용 방식</strong> (DPI vs DPPX) 📱</h2>
+
+<p>Android와 iOS는 해상도를 처리하는 방식이 달라요!</p>
+
+<p>Android는 <strong>DPI (Dots Per Inch)</strong>를 사용하고, iOS는 <strong>DPPX (Dots Per Pixel)</strong>를 사용하죠. ⚙️</p>
+
+<p>👋🏻 <strong>고해상도 기기를 위해 각 플랫폼에 맞춰 미디어 쿼리를 작성해보세요!</strong></p>
+
+<ul>
+  <li><strong>Android 기준 (DPI)</strong></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="p">:</span> <span class="mi">192</span><span class="nx">dpi</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* 고해상도 이미지 */</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li><strong>iOS 기준 (DPPX)</strong></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">@</span><span class="nd">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="p">:</span> <span class="mi">2</span><span class="nx">dppx</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* 고해상도 이미지 */</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>각 플랫폼에 맞게 미디어 쿼리를 적용해야 더 나은 사용자 경험을 제공할 수 있어요! 🏆</p>
+
+<hr />
+
+<p>이렇게 미디어 쿼리와 관련된 주요 개념과 활용법을 살펴보았습니다! ✨</p>
+
+<p><strong>반응형 웹 디자인</strong>에서 중요한 역할을 하는 미디어 쿼리는 다양한 기기와 사용자 환경에 맞춰 웹사이트를 유연하게 만들 수 있는 중요한 도구예요! 😊</p>
+
+<p>💡 앞으로도 미디어 쿼리를 잘 활용해 <strong>더 나은 웹 경험</strong>을 제공할 수 있도록 해봐요!</p>
+
+<hr />
+
+<h1 id="-미디어-쿼리-사용-예제-더-다양하게-활용해보자-">🎨 <strong>미디어 쿼리 사용 예제: 더 다양하게 활용해보자!</strong> 💻</h1>
+
+<p>미디어 쿼리는 단순히 배경색을 바꾸는 것뿐만 아니라, 다양한 용도로 활용될 수 있어요! 여기 몇 가지 예제를 통해 미디어 쿼리의 다양한 사용법을 함께 알아볼까요? ✨</p>
+
+<hr />
+
+<h2 id="1️⃣텍스트-크기-조정-"><strong>1️⃣ 텍스트 크기 조정</strong> 📝</h2>
+
+<p>화면 크기에 따라 폰트 크기를 조정해 사용자가 더 쉽게 읽을 수 있도록 할 수 있어요!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 작은 화면에서는 더 작은 글씨 📱 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 중간 화면에서는 중간 크기 💻 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">601px</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 큰 화면에서는 더 큰 글씨 🖥️ */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1025px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="2️⃣레이아웃-변화-️"><strong>2️⃣ 레이아웃 변화</strong> 🛠️</h2>
+
+<p>화면 크기에 따라 레이아웃을 조정해보세요. 작은 화면에서는 세로 배치, 큰 화면에서는 가로 배치로 변경할 수 있답니다!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 모바일 화면에서는 세로 배치 📱 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 데스크탑 화면에서는 가로 배치 💻 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">601px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">row</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="3️⃣이미지-교체-️"><strong>3️⃣ 이미지 교체</strong> 🖼️</h2>
+
+<p>고해상도 디바이스에서는 더 고품질의 이미지를 제공할 수 있어요. 미디어 쿼리를 사용해 해상도에 따라 이미지를 교체해보세요!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 고해상도 기기에서는 고해상도 이미지 사용 📸 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-resolution</span><span class="p">:</span> <span class="m">2dppx</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.logo</span> <span class="p">{</span>
+    <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url('logo-highres.png')</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4️⃣-네비게이션-메뉴-변환-">4️⃣ <strong>네비게이션 메뉴 변환</strong> 🍔</h2>
+
+<p>화면 크기에 따라 네비게이션 메뉴가 다른 방식으로 표시되도록 조정해보세요. 작은 화면에서는 햄버거 메뉴로, 큰 화면에서는 기본 네비게이션 바를 사용할 수 있어요!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 모바일에서는 햄버거 메뉴 🍔 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.hamburger-menu</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 데스크탑에서는 기본 네비게이션 💻 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">769px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.hamburger-menu</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5️⃣그리드-시스템-변화-"><strong>5️⃣ 그리드 시스템 변화</strong> 🔲</h2>
+
+<p>미디어 쿼리를 사용해 그리드 레이아웃을 화면 크기에 맞게 변경할 수 있어요. 예를 들어, 작은 화면에서는 한 열로, 큰 화면에서는 여러 열로 표시할 수 있답니다!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 작은 화면에서는 한 열 📱 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.grid</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 큰 화면에서는 여러 열 💻 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">601px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.grid</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="6️⃣컨테이너-크기-조정-"><strong>6️⃣ 컨테이너 크기 조정</strong> 📏</h2>
+
+<p>화면 크기에 따라 컨테이너의 최대 너비를 조정해보세요. 이렇게 하면 콘텐츠가 항상 잘 맞도록 조절할 수 있어요!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 작은 화면에서는 전체 너비 사용 📱 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 큰 화면에서는 고정된 최대 너비 사용 💻 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">769px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="7️⃣애니메이션-적용-"><strong>7️⃣애니메이션 적용</strong> 🎥</h2>
+
+<p>화면 크기에 따라 애니메이션 속도나 동작을 다르게 설정할 수도 있어요! 작은 화면에서는 느리게, 큰 화면에서는 빠르게 설정할 수 있답니다.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 작은 화면에서는 느린 애니메이션 🐢 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.box</span> <span class="p">{</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="n">slide</span> <span class="m">3s</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* 큰 화면에서는 빠른 애니메이션 🐇 */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">601px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.box</span> <span class="p">{</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="n">slide</span> <span class="m">1s</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="결론-">결론 ✨</h3>
+
+<p>미디어 쿼리는 배경색을 바꾸는 것 이상의 다양한 기능을 제공해요! 텍스트 크기, 레이아웃 조정, 이미지 교체, 네비게이션 메뉴 변경 등 다양한 방법으로 활용할 수 있답니다. 반응형 웹 디자인을 구현할 때, 미디어 쿼리를 적극 활용해 유연한 레이아웃과 멋진 사용자 경험을 제공해보세요! 😎</p>
+
+<hr />
+
+    </div>
+
+    <footer class="post-footer">
+        
+            <p>태그: </p>
+        
+
+        
+            <h3>댓글</h3>
+            <!-- 댓글 시스템 통합 (예: Disqus) -->
+        
+    </footer>
+
+    <nav class="post-navigation">
+        <p> 이전 게시물: <a href="/49challenge/record/2024/08/20/%EC%98%A4%EB%8A%98%EC%9D%98-%EA%B3%B5%EB%B6%80/">typeof/객체리터럴-49완독챌린지</a> </p>
+        <p></p>
+    </nav>
+</article>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+                             <p>                       </p>&copy; 2024 Insidepixce inworld - All rights reserved. 디자인은 너무 어려워 
+    </footer>
+</body>
+</html>
